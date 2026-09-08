@@ -1,0 +1,96 @@
+# CourseSelector
+
+A React app for comparing UK university courses — entry requirements, fees, and
+graduate career prospects — across Computer Science, Physics, Chemistry,
+Biology, Mathematics, Engineering, Medicine, Psychology, and Biomedical
+Sciences at the 24 Russell Group universities, with more subjects being added
+over time. It also lets you sort by Complete University Guide ranking and by
+course popularity (applicants per place).
+
+## Running locally
+
+This project was built with [Vite](https://vitejs.dev/). You'll need
+[Node.js](https://nodejs.org/) 18+ installed.
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the URL Vite prints (usually http://localhost:5173).
+
+> **Note:** this project's source was written in a sandboxed environment
+> without access to the npm package registry, so `npm install` and the build
+> could not be verified there. The code follows a standard Vite + React
+> layout, but if `npm install` or `npm run dev` surfaces an error, let me know
+> the error message and I'll fix it.
+
+## Building for production
+
+```bash
+npm run build
+```
+
+This outputs static files to `dist/` which can be deployed anywhere that
+serves static sites (Vercel, Netlify, GitHub Pages, Cloudflare Pages, etc.).
+
+## Project structure
+
+```
+src/
+  data/courses.json       — the course dataset (edit this to add/update courses)
+  components/             — UI components (Filters, CourseList, CompareView, CourseDetail)
+  utils/format.js          — display formatting helpers
+  App.jsx                  — top-level state (search, filters, sort, comparison, routing between views)
+  main.jsx                 — React entry point
+```
+
+## Updating the data
+
+Each course in `src/data/courses.json` follows this shape:
+
+```json
+{
+  "id": "unique-id",
+  "university": "...",
+  "courseTitle": "...",
+  "subjectArea": "...",
+  "ucasCode": "...",
+  "degreeType": "...",
+  "duration": "...",
+  "entryRequirements": { "aLevel": "...", "ib": "...", "ucasTariffPoints": 160, "admissionsTests": "...", "otherRequirements": "..." },
+  "fees": { "homeAnnual": 9790, "internationalAnnual": 37800, "feeYear": "..." },
+  "careerOutcomes": { "inWorkOrStudy15mo": 90, "highlySkilledWork": 95, "medianSalary15mo": 45000, "salaryRange15mo": "...", "commonDestination": "..." },
+  "sources": ["https://...", "https://..."]
+}
+```
+
+Use `null` for any figure you don't have yet — the UI will show "N/A" rather
+than a misleading blank or zero.
+
+## Current data coverage
+
+- **Computer Science**: all 24 Russell Group universities (LSE's closest equivalent, BSc Data Science, is used since it doesn't offer a standalone CS degree).
+- **Physics**: 23 of 24 (all except LSE, which doesn't offer Physics). Cambridge is covered via its Natural Sciences Tripos (no standalone Physics degree there).
+- **Chemistry**: 23 of 24 (all except LSE, which doesn't offer Chemistry). Cambridge is covered via its Natural Sciences Tripos. Exeter has no standalone Chemistry BSc/MChem — its Biological and Medicinal Chemistry BSc is used as the closest equivalent, and that entry's exact grades/UCAS code/fees could not be confirmed from an official source in this pass (marked with a `dataNote`).
+- **Biology**: 23 of 24 (all except LSE, which doesn't offer Biology). Cambridge is covered via its Natural Sciences Tripos. Glasgow has no plain "Biology" degree — Molecular & Cellular Biology is used as the closest equivalent. KCL has no standalone Biology/Biological Sciences degree — Biomedical Science is used instead. Exeter's Biological Sciences BSc, unlike its Chemistry situation, was fully confirmed from an official source.
+- **Mathematics**: all 24 Russell Group universities. LSE has no standalone Mathematics degree — BSc Mathematics with Economics is used as the closest equivalent (mirroring its Data Science substitution for Computer Science). Cambridge, unlike Physics/Chemistry/Biology, has its own standalone Mathematical Tripos rather than routing through Natural Sciences.
+- **Engineering**: 23 of 24 (all except LSE, which doesn't offer Engineering). Most universities don't offer a plain "Engineering" degree — where a general first-year-common "General Engineering" or "Engineering Science" course exists (Oxford, Cambridge, Durham, Edinburgh, Warwick, KCL, Sheffield, York, Exeter, and Birmingham's general BEng), that's used; everywhere else, Mechanical Engineering is used as the representative discipline (flagged with a `dataNote` on each such entry).
+- **Medicine**: 21 of 24. Excluded: LSE (no Medicine degree), Durham (no standalone clinical Medicine programme — historically merged into Newcastle), and Warwick (Medicine there is Graduate-Entry only, no direct A-level entry route). York's entry is delivered via the Hull York Medical School partnership. Edinburgh's A-level/IB grades could not be extracted (rendered via an interactive dropdown widget rather than static text) and are marked `null` with a `dataNote`; Liverpool's detailed entry requirements similarly could not be confirmed from an official source that was reachable in this pass.
+- **Psychology**: 23 of 24. Excluded: Imperial College London (no undergraduate Psychology degree — postgraduate/intercalated only). LSE's "Psychological and Behavioural Science" is a genuine full equivalent here (unlike its CS/Maths substitutions elsewhere) — flagged in a `dataNote` to make that distinction clear. Edinburgh again has the dropdown-widget grades limitation seen in Medicine.
+- **Biomedical Sciences**: 20 of 24. Excluded: LSE (no science degrees), Glasgow (no standalone undergraduate Biomedical Sciences — only Biomedical Engineering and an MSc/MRes at postgraduate level), Durham (folded into the Biosciences MBiol as a themed route rather than a separately admitted degree), and Cambridge (biomedical topics sit within the Natural Sciences Tripos, the same course already used for Cambridge's Biology entry — a fourth entry would have duplicated it with no distinct admission code). Imperial's closest equivalent is Medical Biosciences BSc. KCL's Biomedical Science entry here (`kcl-biomed`) is the same real-world course already listed under KCL's Biology entry (`kcl-biology`) as its proxy — Biomedical Science is KCL's closest match for both subject areas.
+
+204 courses total. All entry requirements and fees were researched from official university course pages and UCAS. Graduate outcomes (employment/further study rate, median salary) come from Discover Uni, which draws on the HESA Graduate Outcomes survey — coverage is still partial (strongest for Computer Science; only Oxford/Imperial so far for most other subjects); the rest show "N/A" rather than a guess. A few other gaps are marked with a `dataNote` field on the course entry (e.g. Cardiff CS/Physics outcomes, Sheffield CS's unusually low 60% figure worth double-checking, LSE's Data Science and Mathematics-with-Economics proxies, Exeter's Chemistry proxy, Glasgow's and KCL's Biology proxies, the many Mechanical-Engineering-as-proxy entries, Queen's Belfast and Newcastle missing some detailed grade breakdowns, several Medicine/Psychology/Biomedical Sciences fee figures not yet confirmed from an official source).
+
+### University ranking & popularity
+
+Every course also carries:
+- `universityRanking` — the university's overall Complete University Guide 2027 ranking, restricted to the 24 Russell Group universities (1 = highest-ranked).
+- `popularity` — applicants-per-place, where available, either stated directly by the department or derived as 1/offer-rate from Freedom of Information data (source: admissionreport.com / tutorhunt.com). Coverage is patchy (currently strongest for Computer Science) — most courses in the other five subjects show "N/A" here rather than a guess.
+
+The app's sort dropdown includes "University ranking (best first)" and "Popularity (most applicants per place first)" alongside the original tariff/salary/employment sorts.
+
+All nine subjects from the original plan are now covered. Further subjects can be added in the same subject-by-subject, all-24-universities pattern.
+
+Entry requirements and fees change year to year — always verify against the
+official university/UCAS pages before relying on this for a real application.
