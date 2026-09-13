@@ -178,12 +178,17 @@ body {
   overflow-wrap: break-word;
 }
 
+.info-icon-wrap {
+  position: relative;
+  display: inline-block;
+}
+
 .info-icon {
   display: inline-block;
   margin-left: 0.3em;
   font-size: 0.85em;
   color: var(--color-text-muted);
-  cursor: help;
+  cursor: pointer;
   text-transform: none;
   letter-spacing: normal;
   vertical-align: middle;
@@ -193,6 +198,39 @@ body {
 .info-icon:focus-visible {
   color: var(--color-accent, #4f46e5);
   outline: none;
+}
+
+.info-icon__tooltip {
+  position: absolute;
+  z-index: 30;
+  left: 0;
+  top: 100%;
+  margin-top: 6px;
+  width: max-content;
+  max-width: 240px;
+  background: #1c2128;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.35;
+  padding: 8px 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  pointer-events: none;
+}
+
+.info-icon-wrap:hover .info-icon__tooltip,
+.info-icon-wrap:focus-within .info-icon__tooltip,
+.info-icon-wrap.is-open .info-icon__tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .finder__intro {
@@ -530,5 +568,9 @@ body {
 
   .detail-grid {
     grid-template-columns: 1fr;
+  }
+
+  .info-icon__tooltip {
+    max-width: 180px;
   }
 }
