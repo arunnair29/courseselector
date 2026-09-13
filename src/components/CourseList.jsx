@@ -1,4 +1,6 @@
 import { formatCurrency, formatPercent } from '../utils/format.js'
+import { FIELD_INFO } from '../utils/fieldInfo.js'
+import InfoIcon from './InfoIcon.jsx'
 
 export default function CourseList({
   courses,
@@ -50,7 +52,10 @@ export default function CourseList({
 
             <div className="course-card__stats">
               <div className="stat">
-                <span className="stat__label">Uni rank</span>
+                <span className="stat__label">
+                  Uni rank
+                  <InfoIcon text={FIELD_INFO.universityRank} />
+                </span>
                 <span className="stat__value">
                   {course.universityRanking?.russellGroupRank
                     ? `#${course.universityRanking.russellGroupRank} of ${course.universityRanking.of}`
@@ -58,33 +63,37 @@ export default function CourseList({
                 </span>
               </div>
               <div className="stat">
-                <span className="stat__label">Typical offer</span>
+                <span className="stat__label">
+                  Typical offer
+                  <InfoIcon text={FIELD_INFO.typicalOffer} />
+                </span>
                 <span className="stat__value">
                   {course.entryRequirements.aLevel}
                 </span>
               </div>
               <div className="stat">
-                <span className="stat__label">Tariff pts</span>
+                <span className="stat__label">
+                  Tariff pts
+                  <InfoIcon text={FIELD_INFO.tariffPoints} />
+                </span>
                 <span className="stat__value">
                   {course.entryRequirements.ucasTariffPoints ?? 'N/A'}
                 </span>
               </div>
               <div className="stat">
-                <span className="stat__label">Applicants/place</span>
-                <span className="stat__value">
-                  {course.popularity?.applicantsPerPlace != null
-                    ? `${course.popularity.applicantsPerPlace}:1`
-                    : 'N/A'}
+                <span className="stat__label">
+                  Home fees/yr
+                  <InfoIcon text={FIELD_INFO.homeFees} />
                 </span>
-              </div>
-              <div className="stat">
-                <span className="stat__label">Home fees/yr</span>
                 <span className="stat__value">
                   {formatCurrency(course.fees.homeAnnual)}
                 </span>
               </div>
               <div className="stat">
-                <span className="stat__label">Highly skilled work</span>
+                <span className="stat__label">
+                  Highly skilled work
+                  <InfoIcon text={FIELD_INFO.highlySkilledWork} />
+                </span>
                 <span className="stat__value">
                   {formatPercent(
                     course.careerOutcomes.highlySkilledWork ??
@@ -93,7 +102,10 @@ export default function CourseList({
                 </span>
               </div>
               <div className="stat">
-                <span className="stat__label">Median salary</span>
+                <span className="stat__label">
+                  Median salary
+                  <InfoIcon text={FIELD_INFO.medianSalary} />
+                </span>
                 <span className="stat__value">
                   {formatCurrency(course.careerOutcomes.medianSalary15mo)}
                 </span>

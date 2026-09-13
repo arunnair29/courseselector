@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
 import { formatCurrency, formatPercent } from '../utils/format.js'
 import { computeDatasetStats, scoreCourse } from '../utils/ranking.js'
+import { FIELD_INFO } from '../utils/fieldInfo.js'
+import InfoIcon from './InfoIcon.jsx'
 
 const RESULT_COUNT = 25
 const DEFAULT_WEIGHTS = { popularity: 50, ranking: 50, jobPotential: 50 }
@@ -108,7 +110,10 @@ export default function CourseFinder({
 
           <label className="weight-control">
             <div className="weight-control__label">
-              <span>Popularity</span>
+              <span>
+                Popularity
+                <InfoIcon text={FIELD_INFO.weightPopularity} />
+              </span>
               <span className="weight-control__pct">
                 {weightPct(weights.popularity)}%
               </span>
@@ -124,7 +129,10 @@ export default function CourseFinder({
 
           <label className="weight-control">
             <div className="weight-control__label">
-              <span>University ranking</span>
+              <span>
+                University ranking
+                <InfoIcon text={FIELD_INFO.weightRanking} />
+              </span>
               <span className="weight-control__pct">
                 {weightPct(weights.ranking)}%
               </span>
@@ -140,7 +148,10 @@ export default function CourseFinder({
 
           <label className="weight-control">
             <div className="weight-control__label">
-              <span>Job potential</span>
+              <span>
+                Job potential
+                <InfoIcon text={FIELD_INFO.weightJobPotential} />
+              </span>
               <span className="weight-control__pct">
                 {weightPct(weights.jobPotential)}%
               </span>
@@ -236,7 +247,10 @@ export default function CourseFinder({
 
                     <div className="course-card__stats">
                       <div className="stat">
-                        <span className="stat__label">Uni rank</span>
+                        <span className="stat__label">
+                          Uni rank
+                          <InfoIcon text={FIELD_INFO.universityRank} />
+                        </span>
                         <span className="stat__value">
                           {course.universityRanking?.russellGroupRank
                             ? `#${course.universityRanking.russellGroupRank} of ${course.universityRanking.of}`
@@ -244,33 +258,37 @@ export default function CourseFinder({
                         </span>
                       </div>
                       <div className="stat">
-                        <span className="stat__label">Typical offer</span>
+                        <span className="stat__label">
+                          Typical offer
+                          <InfoIcon text={FIELD_INFO.typicalOffer} />
+                        </span>
                         <span className="stat__value">
                           {course.entryRequirements.aLevel}
                         </span>
                       </div>
                       <div className="stat">
-                        <span className="stat__label">Tariff pts</span>
+                        <span className="stat__label">
+                          Tariff pts
+                          <InfoIcon text={FIELD_INFO.tariffPoints} />
+                        </span>
                         <span className="stat__value">
                           {course.entryRequirements.ucasTariffPoints ?? 'N/A'}
                         </span>
                       </div>
                       <div className="stat">
-                        <span className="stat__label">Applicants/place</span>
-                        <span className="stat__value">
-                          {course.popularity?.applicantsPerPlace != null
-                            ? `${course.popularity.applicantsPerPlace}:1`
-                            : 'N/A'}
+                        <span className="stat__label">
+                          Home fees/yr
+                          <InfoIcon text={FIELD_INFO.homeFees} />
                         </span>
-                      </div>
-                      <div className="stat">
-                        <span className="stat__label">Home fees/yr</span>
                         <span className="stat__value">
                           {formatCurrency(course.fees.homeAnnual)}
                         </span>
                       </div>
                       <div className="stat">
-                        <span className="stat__label">Highly skilled work</span>
+                        <span className="stat__label">
+                          Highly skilled work
+                          <InfoIcon text={FIELD_INFO.highlySkilledWork} />
+                        </span>
                         <span className="stat__value">
                           {formatPercent(
                             course.careerOutcomes.highlySkilledWork ??
@@ -279,7 +297,10 @@ export default function CourseFinder({
                         </span>
                       </div>
                       <div className="stat">
-                        <span className="stat__label">Median salary</span>
+                        <span className="stat__label">
+                          Median salary
+                          <InfoIcon text={FIELD_INFO.medianSalary} />
+                        </span>
                         <span className="stat__value">
                           {formatCurrency(course.careerOutcomes.medianSalary15mo)}
                         </span>

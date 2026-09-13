@@ -178,6 +178,23 @@ body {
   overflow-wrap: break-word;
 }
 
+.info-icon {
+  display: inline-block;
+  margin-left: 0.3em;
+  font-size: 0.85em;
+  color: var(--color-text-muted);
+  cursor: help;
+  text-transform: none;
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+
+.info-icon:hover,
+.info-icon:focus-visible {
+  color: var(--color-accent, #4f46e5);
+  outline: none;
+}
+
 .finder__intro {
   color: var(--color-text-muted);
   max-width: 720px;
