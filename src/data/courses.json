@@ -8980,5 +8980,2583 @@
       "note": "Not retrieved in this pass.",
       "source": null
     }
+  },
+  {
+    "id": "oxford-geology",
+    "university": "University of Oxford",
+    "courseTitle": "Earth Sciences (Geology)",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F642",
+    "degreeType": "BA (3yr) / MEarthSci (4yr)",
+    "duration": "3 or 4 years",
+    "entryRequirements": {
+      "aLevel": "A*AA or AAAA, including Mathematics and one of Chemistry or Physics",
+      "ib": "39 points (incl. core), 766 at Higher Level",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "No written admissions test for Earth Sciences (unlike some other Oxford science subjects); two ~30-minute interviews instead",
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": null,
+      "feeYear": "2027 entry (home, general Oxford rate); international fee varies by programme and was not confirmed for this course in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.earth.ox.ac.uk/undergraduate/admissions",
+      "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/earth-sciences-geology"
+    ],
+    "dataNote": "4-year MEarthSci route uses UCAS code F644. International fee not confirmed for this specific course.",
+    "universityRanking": {
+      "russellGroupRank": 2,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "cambridge-geology",
+    "university": "University of Cambridge",
+    "courseTitle": "Earth Sciences",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": null,
+    "degreeType": "BA (Natural Sciences Tripos)",
+    "duration": "3 years (BA) + optional 4th year (MSci)",
+    "entryRequirements": {
+      "aLevel": "Mathematics plus at least two science subjects (prior Geology study not required)",
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": null
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.esc.cam.ac.uk/join-us/prospective-undergraduates/admissions-criteria",
+      "https://www.natsci.tripos.cam.ac.uk/"
+    ],
+    "dataNote": "Earth Sciences/Geology is a formal subject option within the Natural Sciences Tripos (the same course used for Cambridge's Physics/Chemistry/Biology entries in this dataset), not a separately admitted degree. Specific grade profile and UCAS code not published centrally — individual Colleges may set requirements above the university minimum.",
+    "universityRanking": {
+      "russellGroupRank": 1,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "imperial-geology",
+    "university": "Imperial College London",
+    "courseTitle": "Geology",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F600",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAA",
+      "ib": "38 points",
+      "ucasTariffPoints": 144,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 45500,
+      "feeYear": "2027 entry (home, subject to parliamentary approval); international figure is the published 2026-27 rate, used as reference pending 2027 confirmation"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.imperial.ac.uk/study/courses/undergraduate/geology-bsc/"
+    ],
+    "dataNote": "Accredited by the Geological Society of London; includes an Associateship of the Royal School of Mines.",
+    "universityRanking": {
+      "russellGroupRank": 4,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "ucl-geology",
+    "university": "University College London (UCL)",
+    "courseTitle": "Earth Sciences",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F603",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB, preferred subjects Biology, Chemistry, Geology/Geography, Mathematics, Further Mathematics or Physics",
+      "ib": "36 points in three HL subjects, at least two sciences, no HL score below 5",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 42700,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/earth-sciences-bsc-2026"
+    ],
+    "dataNote": "Students choose a general stream or a specialised Palaeobiology pathway.",
+    "universityRanking": {
+      "russellGroupRank": 10,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "bristol-geology",
+    "university": "University of Bristol",
+    "courseTitle": "Geology",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F600",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including two science-related subjects (contextual offer: BBC including BB in two science-related subjects)",
+      "ib": "32 points overall, 16 at Higher Level including 5,5 in two science-related subjects (contextual: 29/14 with 5,5 HL)",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 31300,
+      "feeYear": "2026/27 (first year; subject to annual review)"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.bristol.ac.uk/study/undergraduate/2026/geology/bsc-geology/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 13,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "cardiff-geology",
+    "university": "Cardiff University",
+    "courseTitle": "Geology",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F603",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB-BBC (with 1 science subject) or BBB-BCC (with 2 science subjects); acceptable sciences include Biology, Chemistry, Geography, Geology, Maths, Physics",
+      "ib": "32-30 overall or 665-655 in 3 HL subjects (1 HL science), or 31-29 / 665-655 (2 HL sciences)",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "listed as awaiting confirmation for 2027/28 on the page checked"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.cardiff.ac.uk/study/undergraduate/courses/course/geology-bsc"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 21,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "durham-geology",
+    "university": "Durham University",
+    "courseTitle": "Earth Sciences",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F644",
+    "degreeType": "MEarthSci (integrated Master's)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "BBB (or equivalent) including 2 science subjects from Biology, Chemistry, Economics, Further Maths, Geography, Geology, Maths, Physics, Psychology or Environmental Science",
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9535,
+      "internationalAnnual": 33250,
+      "feeYear": "year 1"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://digital.ucas.com/coursedisplay/courses/34ce99f8-5cb8-9e3e-ecab-2bc1cb0793ef?academicYearId=2025"
+    ],
+    "dataNote": "The BBB figure found in this pass is described as a contextual offer; the standard (non-contextual) offer is likely higher and was not confirmed in this pass.",
+    "universityRanking": {
+      "russellGroupRank": 5,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "edinburgh-geology",
+    "university": "University of Edinburgh",
+    "courseTitle": "Earth Sciences",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F600",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 or 4 years",
+    "entryRequirements": {
+      "aLevel": null,
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "fees page requires an external calculator; not retrieved in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://study.ed.ac.uk/programmes/undergraduate/47-earth-sciences"
+    ],
+    "dataNote": "Edinburgh renders A-level/IB grade thresholds via an interactive dropdown tool rather than static text — could not be extracted in this pass (the same limitation recurs across several Edinburgh entries in this dataset).",
+    "universityRanking": {
+      "russellGroupRank": 15,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "exeter-geology",
+    "university": "University of Exeter",
+    "courseTitle": "Geology",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F600",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB, including two science A-levels or A-level Geology at grade B",
+      "ib": "32 points, 655 at Higher Level, including HL5 in Geology or HL5 in two other science subjects",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 31500,
+      "feeYear": "2027 entry"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.exeter.ac.uk/undergraduate-degrees/bsc-geology/"
+    ],
+    "dataNote": "Taught at the Penryn Campus, Cornwall, through the Camborne School of Mines; over 60 days of fieldwork.",
+    "universityRanking": {
+      "russellGroupRank": 7,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "glasgow-geology",
+    "university": "University of Glasgow",
+    "courseTitle": "Geology",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F610",
+    "degreeType": "BSc (Hons)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "ABB – BBB, with an A-level science subject at grade B",
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": "Scottish Higher: minimum BBBB from S5, typical offers AAAB by end of S6, with two Higher Science subjects at AA (AB may be considered)"
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.gla.ac.uk/undergraduate/degrees/geology/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 22,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "leeds-geology",
+    "university": "University of Leeds",
+    "courseTitle": "Geology",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F600",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including two from: Biology, Chemistry, Computer Science, Environmental Science, Further Mathematics, Geography, Geology, Marine Science, Mathematics, Physics, Statistics",
+      "ib": "6,5,5 at Higher Level including two relevant subjects",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 33700,
+      "feeYear": "2027 entry"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://courses.leeds.ac.uk/i683/geology-bsc"
+    ],
+    "dataNote": "Formal prior study of Geology is not required.",
+    "universityRanking": {
+      "russellGroupRank": 14,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "liverpool-geology",
+    "university": "University of Liverpool",
+    "courseTitle": "Geology",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F600",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including one science A-level",
+      "ib": "32 points overall, no score below 4, including 5 in one HL science subject",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 32000,
+      "feeYear": "2027/28 entry"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.liverpool.ac.uk/study/undergraduate/courses/geology-bsc-hons/entry-requirements/"
+    ],
+    "dataNote": "Accredited by the Geological Society of London (Gold-rated teaching); optional year in industry or year abroad carry separate add-on fees.",
+    "universityRanking": {
+      "russellGroupRank": 17,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "manchester-geology",
+    "university": "University of Manchester",
+    "courseTitle": "Earth and Planetary Sciences",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F701",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB, including at least one science or mathematics subject",
+      "ib": "34 points overall, 6,5,5 at Higher Level including at least one science or mathematics subject",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": null,
+      "feeYear": "2026 entry (home); 2027 fees not yet set. International fee not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12106/bsc-earth-and-planetary-sciences/"
+    ],
+    "dataNote": "Manchester has no course named plain 'Geology' — Earth and Planetary Sciences is used as the closest equivalent. Accredited by the Geological Society of London.",
+    "universityRanking": {
+      "russellGroupRank": 19,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "southampton-geology",
+    "university": "University of Southampton",
+    "courseTitle": "Geology",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F600",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including two accepted sciences (minimum grade B); acceptable sciences include Biology, Chemistry, Physics, Mathematics, Psychology, Statistics, Environmental Science, Environmental Studies, Geography, Geology",
+      "ib": "32 points overall, 16 at Higher Level, including 5 in two HL accepted science subjects",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 30300,
+      "feeYear": "current cycle"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.southampton.ac.uk/courses/geology-degree-bsc"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 11,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "birmingham-geology",
+    "university": "University of Birmingham",
+    "courseTitle": "Geology",
+    "subjectArea": "Geology & Earth Sciences",
+    "ucasCode": "F600",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB, including 1 required science (Biology, Chemistry, Computing, Electronics, Environmental Studies, Further Maths, Geography, Geology, Human Biology, Maths, Physics, Psychology or PE)",
+      "ib": "6,5,5 at Higher Level including HL in 1 required science, 32 points overall",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "listed as 'to be confirmed' on the page checked"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.birmingham.ac.uk/study/undergraduate/subjects/geology-and-earth-sciences-courses/geology-bsc"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 8,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "birmingham-envsci",
+    "university": "University of Birmingham",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F900",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including 1 required science",
+      "ib": "6,5,5 at Higher Level plus 32 points overall",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "listed as 'to be confirmed' on the page checked"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.birmingham.ac.uk/study/undergraduate/subjects/geography-urban-planning-and-environmental-sciences-courses/environmental-science-bsc"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 8,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "bristol-envsci",
+    "university": "University of Bristol",
+    "courseTitle": "Environmental Geoscience",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F640",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including two science-related subjects (contextual: BBC)",
+      "ib": "32 points overall, 16 HL including 5,5 in two science-related subjects (contextual: 29/14)",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 31300,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.bristol.ac.uk/study/undergraduate/2026/geoscience/bsc-environmental-geoscience/"
+    ],
+    "dataNote": "Bristol has no course named plain 'Environmental Science' — Environmental Geoscience is used as the closest equivalent.",
+    "universityRanking": {
+      "russellGroupRank": 13,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "cardiff-envsci",
+    "university": "Cardiff University",
+    "courseTitle": "Environmental Sustainability Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F651",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB-BBC (1 science) or BBB-BCC (2 sciences)",
+      "ib": "32-30 overall or 665-655 (1 HL science), or 31-29 (2 HL sciences)",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.theuniguide.co.uk/cardiff-university-c15/courses/environmental-sustainability-science-bsc-hons-2025-43e4e76cf10e"
+    ],
+    "dataNote": "Cardiff has no course named plain 'Environmental Science' — Environmental Sustainability Science is used as the closest equivalent.",
+    "universityRanking": {
+      "russellGroupRank": 21,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "durham-envsci",
+    "university": "Durham University",
+    "courseTitle": "Environmental Geoscience",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F630",
+    "degreeType": "BSc",
+    "duration": "3 years (4 with placement/year abroad)",
+    "entryRequirements": {
+      "aLevel": "AAB including two sciences from a wide list (Biology, Chemistry, Computer Science, Marine Science, Economics, Environmental Sciences, Engineering, Life and Health Sciences, Further Mathematics, Geography, Geology, Mathematics, Physics, Psychology, Statistics)",
+      "ib": "35 points, 665 at Higher Level including two science subjects",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.durham.ac.uk/study/courses/environmental-geoscience-f630/"
+    ],
+    "dataNote": "Durham has no course named plain 'Environmental Science' — Environmental Geoscience is used as the closest equivalent.",
+    "universityRanking": {
+      "russellGroupRank": 5,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "edinburgh-envsci",
+    "university": "University of Edinburgh",
+    "courseTitle": "Ecological and Environmental Sciences",
+    "subjectArea": "Environmental Science",
+    "ucasCode": null,
+    "degreeType": "BSc (Hons)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "AAA to ABB, with two of Biology, Chemistry, Environmental Science, Environmental Technology, Geography, Geology or Mathematics at grade B or higher (at least one of Biology, Chemistry or Mathematics)",
+      "ib": "34 points with 666 at HL, down to 32 points with 655 at HL; two HL subjects at 5+ from Biology, Chemistry, Geography or Mathematics",
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://study.ed.ac.uk/programmes/undergraduate/16-ecological-and-environmental-sciences/entry-requirements"
+    ],
+    "dataNote": "Edinburgh has no course named plain 'Environmental Science' — Ecological and Environmental Sciences is used as the closest equivalent.",
+    "universityRanking": {
+      "russellGroupRank": 15,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "exeter-envsci",
+    "university": "University of Exeter",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F750",
+    "degreeType": "BSc",
+    "duration": "3 years (4 with professional placement or study abroad)",
+    "entryRequirements": {
+      "aLevel": "AAB-ABB with grade B in an accepted science subject",
+      "ib": "34/665 to 32/655",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 31500,
+      "feeYear": "2027 entry"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.exeter.ac.uk/undergraduate-degrees/bsc-environmental-science/"
+    ],
+    "dataNote": "Taught at the Penryn Campus, Cornwall.",
+    "universityRanking": {
+      "russellGroupRank": 7,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "glasgow-envsci",
+    "university": "University of Glasgow",
+    "courseTitle": "Environmental Science and Sustainability",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "D447",
+    "degreeType": "BSc (Hons)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "BBB - CCC",
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": "Delivered at Glasgow's Dumfries campus"
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.ucas.com/explore/courses/e16a982a-83bc-49de-217d-8bdbb6fd0978/course"
+    ],
+    "dataNote": "Glasgow has no course named plain 'Environmental Science' — Environmental Science and Sustainability is used as the closest equivalent.",
+    "universityRanking": {
+      "russellGroupRank": 22,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "imperial-envsci",
+    "university": "Imperial College London",
+    "courseTitle": "Ecology and Environmental Biology",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "C180",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAA including Biology, plus Chemistry, Mathematics or Physics",
+      "ib": "38 points, with 6 in HL Biology and 6 in HL Chemistry/Mathematics/Physics",
+      "ucasTariffPoints": 144,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 45500,
+      "feeYear": "2027 entry (home, subject to parliamentary approval); international figure is the published 2026-27 rate, used as reference"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.imperial.ac.uk/study/courses/undergraduate/ecology-environmental-biology/"
+    ],
+    "dataNote": "Imperial has no course named plain 'Environmental Science' — Ecology and Environmental Biology (Department of Life Sciences) is used as the closest equivalent.",
+    "universityRanking": {
+      "russellGroupRank": 4,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "kcl-envsci",
+    "university": "King's College London",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F750",
+    "degreeType": "MSci",
+    "duration": "4 years (integrated Master's)",
+    "entryRequirements": {
+      "aLevel": "AAA",
+      "ib": null,
+      "ucasTariffPoints": 144,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.kcl.ac.uk/study/undergraduate/courses/environmental-science-msci"
+    ],
+    "dataNote": "Taught by the Department of Geography, Strand Campus; only the 4-year MSci route was found (no separate 3-year BSc).",
+    "universityRanking": {
+      "russellGroupRank": 12,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "leeds-envsci",
+    "university": "University of Leeds",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F851",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including two from: Biology, Chemistry, Computer Science, Environmental Science, Further Mathematics, Geography, Geology, Marine Science, Mathematics, Physics, Statistics",
+      "ib": "6,5,5 at Higher Level including two relevant subjects",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 33700,
+      "feeYear": "current cycle"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://courses.leeds.ac.uk/3314/environmental-science-bsc"
+    ],
+    "dataNote": "Accredited by the Institution of Environmental Sciences.",
+    "universityRanking": {
+      "russellGroupRank": 14,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "liverpool-envsci",
+    "university": "University of Liverpool",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F750",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including one Science A level",
+      "ib": "32 points overall, no score below 4, including 5 in one HL science subject",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 32000,
+      "feeYear": "2026/27 (subject to change for 2027/28)"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.liverpool.ac.uk/courses/environmental-science-bsc-hons"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 17,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "manchester-envsci",
+    "university": "University of Manchester",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F900",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB including at least one science subject",
+      "ib": "35 points overall, 6,6,5 at Higher Level including at least one science subject",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.manchester.ac.uk/study/undergraduate/courses/2025/12124/bsc-environmental-science/entry-requirements/"
+    ],
+    "dataNote": "If Geography is the only science subject offered, an A grade is typically required plus a possible interview.",
+    "universityRanking": {
+      "russellGroupRank": 19,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "newcastle-envsci",
+    "university": "Newcastle University",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F900",
+    "degreeType": "MEnvSci (Hons)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "ABB",
+      "ib": "32 points",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9250,
+      "internationalAnnual": 25200,
+      "feeYear": "year 1"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://pdf.ncl.ac.uk/ug/2022/f900.pdf"
+    ],
+    "dataNote": "Integrated Master's exploring biological organisms, physical environments and their interactions; 4th-year specialisations include agriculture, clean technology, ecosystem management and environmental geochemistry.",
+    "universityRanking": {
+      "russellGroupRank": 23,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "nottingham-envsci",
+    "university": "University of Nottingham",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F900",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB (or AAC or A*BC), including one of Biology, Chemistry, Physics, Geography, Geology, Maths, Further Maths, Environmental Science, Environmental Technology or Psychology",
+      "ib": "28 points overall, minimum HL4 in Biology or a similar qualifying subject",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 33500,
+      "feeYear": "current cycle"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Environmental-Science-BSc-Hons.html"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 20,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "qmul-envsci",
+    "university": "Queen Mary University of London",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F850",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including at least one of Biology, Chemistry, Physics, Mathematics, Geography, Geology, Psychology, Environmental Studies or Environmental Science",
+      "ib": "32 points, 6,5,5 at Higher Level including one of the accepted subjects",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": null,
+      "feeYear": "2027 entry (home, provisional); international fee not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.ucas.com/explore/courses/a8c17d98-8685-bd37-7722-69b5143548ae/environmental-science?studyYear=2027"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 24,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "qub-envsci",
+    "university": "Queen's University Belfast",
+    "courseTitle": "Environmental Management",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F850",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "BBB/ABB",
+      "ib": null,
+      "ucasTariffPoints": 120,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.qub.ac.uk/courses/undergraduate/environmental-management-bsc-f850/"
+    ],
+    "dataNote": "QUB has no course named plain 'Environmental Science' — Environmental Management is used as the closest equivalent.",
+    "universityRanking": {
+      "russellGroupRank": 18,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "sheffield-envsci",
+    "university": "University of Sheffield",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F900",
+    "degreeType": "BSc",
+    "duration": "3 years (optional placement year)",
+    "entryRequirements": {
+      "aLevel": "ABB including a science subject (BBB with Access Sheffield eligibility)",
+      "ib": "33 with a Higher Level science subject (32 with Access Sheffield)",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": null,
+      "feeYear": "2026 entry (home, general Sheffield undergraduate rate); international fee not confirmed for this specific course"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://sheffield.ac.uk/undergraduate/courses/2026/environmental-science-bsc"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 9,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "southampton-envsci",
+    "university": "University of Southampton",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F900",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including one acceptable science subject",
+      "ib": "32 points overall, 16 at Higher Level including 5 in one HL accepted science",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 33900,
+      "feeYear": "current cycle"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.southampton.ac.uk/courses/environmental-science-degree-bsc"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 11,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "ucl-envsci",
+    "university": "University College London (UCL)",
+    "courseTitle": "Environmental Geoscience",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F644",
+    "degreeType": "BSc",
+    "duration": null,
+    "entryRequirements": {
+      "aLevel": null,
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/environmental-geoscience-bsc"
+    ],
+    "dataNote": "UCL has no course named plain 'Environmental Science' — Environmental Geoscience is used as the closest equivalent. Grades, duration and fees could not be confirmed from a reachable official source in this pass.",
+    "universityRanking": {
+      "russellGroupRank": 10,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "york-envsci",
+    "university": "University of York",
+    "courseTitle": "Environmental Science",
+    "subjectArea": "Environmental Science",
+    "ucasCode": "F900",
+    "degreeType": "BSc",
+    "duration": "3 years (plus optional placement year)",
+    "entryRequirements": {
+      "aLevel": "ABB including two of: Biology, Chemistry, Geography, Geology, Environmental Studies, Mathematics, Physics, Psychology, Life and Health Sciences",
+      "ib": "34 points including two of the accepted science subjects at Higher Level",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": null,
+      "feeYear": "2026/27 (home); UK government has signalled a rise to £10,050 for 2027/28. International fee not confirmed"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.york.ac.uk/study/undergraduate/courses/bsc-environmental-science/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 16,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "cambridge-neuroscience",
+    "university": "University of Cambridge",
+    "courseTitle": "Psychology, Neuroscience & Behaviour",
+    "subjectArea": "Neuroscience",
+    "ucasCode": null,
+    "degreeType": "BA (Natural Sciences Tripos)",
+    "duration": "3 years (BA) + optional 4th year (MSci)",
+    "entryRequirements": {
+      "aLevel": "Not separately published; general NST entry requires Mathematics plus at least two science subjects",
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": null
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://neuroscience.cam.ac.uk/information/prospective-students/",
+      "https://www.natsci.tripos.cam.ac.uk/admissions"
+    ],
+    "dataNote": "Neuroscience is studied via the Natural Sciences Tripos: Neurobiology/Pharmacology in Part IB, and a dedicated 'Psychology, Neuroscience & Behaviour' Part II course in year 3 (run jointly by Physiology/Development & Neuroscience, Psychology and Zoology). Not a separately admitted degree, so no distinct UCAS code.",
+    "universityRanking": {
+      "russellGroupRank": 1,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "ucl-neuroscience",
+    "university": "University College London (UCL)",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAA, Chemistry required plus one from Biology, Life and Health Sciences, Mathematics or Physics",
+      "ib": "18 points in three HL subjects including Chemistry and one of Biology, Mathematics or Physics",
+      "ucasTariffPoints": 144,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 42700,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/neuroscience-bsc-2026"
+    ],
+    "dataNote": "UCL also offers a separate 'Human Neuroscience BSc'.",
+    "universityRanking": {
+      "russellGroupRank": 10,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "manchester-neuroscience",
+    "university": "University of Manchester",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAA-AAB including two of Biology, Chemistry, Physics and Mathematics, minimum AB in at least two",
+      "ib": "35-36 points overall, 6,6,5 to 6,6,6 at Higher Level including two science subjects, normally Biology and Chemistry",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 36200,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.manchester.ac.uk/study/undergraduate/courses/2026/00617/bsc-neuroscience/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 19,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "bristol-neuroscience",
+    "university": "University of Bristol",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAA including two core science/mathematics subjects (contextual: ABB)",
+      "ib": "36 points overall, 18 HL including 6,6 in two core science/mathematics subjects (contextual: 32/16 with 6,5 HL)",
+      "ucasTariffPoints": 144,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 33400,
+      "feeYear": "2026/27 (first year)"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.bristol.ac.uk/study/undergraduate/2026/neuroscience/bsc-neuroscience/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 13,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "edinburgh-neuroscience",
+    "university": "University of Edinburgh",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": null,
+    "degreeType": "BSc (Hons)",
+    "duration": null,
+    "entryRequirements": {
+      "aLevel": "AAB, Biology and Chemistry required (one at A, one at B); widening access: ABB",
+      "ib": "34 points, 655 at HL including Biology and Chemistry (one at 5, one at 6); widening access: 32 points, 655 at HL",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": null
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://study.ed.ac.uk/programmes/undergraduate/2-neuroscience/entry-requirements"
+    ],
+    "dataNote": "UCAS code, duration and fees not confirmed from a reachable official source in this pass.",
+    "universityRanking": {
+      "russellGroupRank": 15,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "leeds-neuroscience",
+    "university": "University of Leeds",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB including Biology or Chemistry plus another science or science-related subject",
+      "ib": "31 overall, 6,6,5 at Higher Level including Biology or Chemistry and another science",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 33800,
+      "feeYear": "current cycle"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://courses.leeds.ac.uk/3539/neuroscience-bsc"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 14,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "birmingham-neuroscience",
+    "university": "University of Birmingham",
+    "courseTitle": "Human Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAA including Biology/Human Biology",
+      "ib": "6,6,6 at Higher Level, minimum 32 points overall",
+      "ucasTariffPoints": 144,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "listed as 'to be confirmed' on the page checked"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.birmingham.ac.uk/study/undergraduate/subjects/psychology-and-neuroscience-courses/human-neuroscience-bsc"
+    ],
+    "dataNote": "Birmingham has no course named plain 'Neuroscience' — Human Neuroscience is used as the closest equivalent.",
+    "universityRanking": {
+      "russellGroupRank": 8,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "cardiff-neuroscience",
+    "university": "Cardiff University",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": null,
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB-ABB, must include Biology (or Human Biology) or Chemistry",
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": "Students may switch to other bioscience courses, or to the 4-year MNeuro integrated Master's, during their studies"
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": null
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://goingto.university/institutions/cardiff-university/courses/189151"
+    ],
+    "dataNote": "UCAS code and current fees could not be confirmed from a reliable official source in this pass (a third-party aggregator listed figures that looked out of date, so they were not used).",
+    "universityRanking": {
+      "russellGroupRank": 21,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "exeter-neuroscience",
+    "university": "University of Exeter",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc",
+    "duration": "3 years (4 years with professional placement, B141)",
+    "entryRequirements": {
+      "aLevel": "ABB with grade B in two science A-levels (contextual: ABC)",
+      "ib": "32/655 with HL5 in two science subjects (contextual: 30/654)",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 31500,
+      "feeYear": "2027 entry"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.exeter.ac.uk/undergraduate-degrees/bsc-neuroscience/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 7,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "kcl-neuroscience",
+    "university": "King's College London",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc",
+    "duration": "3 years (4 years with year abroad or extra-mural year)",
+    "entryRequirements": {
+      "aLevel": "AAA, grade A in Biology and Chemistry required",
+      "ib": "36 points overall or 18 from three Higher Levels, including grade 6 in HL Biology and HL Chemistry",
+      "ucasTariffPoints": 144,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": null
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.kcl.ac.uk/study/undergraduate/courses/neuroscience-bsc/entry-requirements"
+    ],
+    "dataNote": "Fees not confirmed in this pass. KCL also offers a combined 'Neuroscience and Psychology BSc'.",
+    "universityRanking": {
+      "russellGroupRank": 12,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "southampton-neuroscience",
+    "university": "University of Southampton",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B141",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including Biology or Chemistry and one further science subject",
+      "ib": "32 points overall, 16 at HL including 5 and 6 in Biology or Chemistry and one further science",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 32000,
+      "feeYear": "current cycle"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.southampton.ac.uk/courses/neuroscience-degree-bsc"
+    ],
+    "dataNote": "A 4-year MSci version (B140) is also offered.",
+    "universityRanking": {
+      "russellGroupRank": 11,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "glasgow-neuroscience",
+    "university": "University of Glasgow",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc (Hons)",
+    "duration": "4 years (5-year MSci transfer option)",
+    "entryRequirements": {
+      "aLevel": "AAB – BBB, with A-level Biology or Chemistry",
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": "Scottish Higher: standard offer typically AAAAA by end of S6, with Higher Biology or Chemistry (A in either)"
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": null
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.gla.ac.uk/undergraduate/degrees/neuroscience/"
+    ],
+    "dataNote": "Fees not confirmed in this pass.",
+    "universityRanking": {
+      "russellGroupRank": 22,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "nottingham-neuroscience",
+    "university": "University of Nottingham",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB-ABB including biology/human biology and/or chemistry and a second science",
+      "ib": "32 points overall or 6,6,5 in three HL subjects, with HL5 in biology or chemistry and a second science",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 33500,
+      "feeYear": "current cycle"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Neuroscience-BSc-Hons.html"
+    ],
+    "dataNote": "Nottingham also offers a combined 'Psychology and Cognitive Neuroscience BSc'.",
+    "universityRanking": {
+      "russellGroupRank": 20,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "qmul-neuroscience",
+    "university": "Queen Mary University of London",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including A-level Biology or Chemistry, plus a second science (Biology, Chemistry, Maths or Physics)",
+      "ib": "32 points overall including 6,5,5 from three HL subjects, including Biology and Chemistry at HL",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "figures found (£9,535 home) were dated 2024-25 and not used as current; not confirmed for the current cycle in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.qmul.ac.uk/undergraduate/coursefinder/courses/2026/neuroscience/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 24,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "warwick-neuroscience",
+    "university": "University of Warwick",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB including Biology and a second Science, or AAA including Biology",
+      "ib": "34 including 5 in HL Biology and 5 in HL Chemistry/Physics/Maths/Geography/Psychology, or 36 including 5 in HL Biology",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 35530,
+      "feeYear": "2027-28 (home); 2026-27 (international, laboratory-based Band 2 rate)"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://warwick.ac.uk/study/undergraduate/courses/bsc-neuroscience/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 6,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "york-neuroscience",
+    "university": "University of York",
+    "courseTitle": "Neuroscience",
+    "subjectArea": "Neuroscience",
+    "ucasCode": "B140",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB including Biology and a second science",
+      "ib": "35 points including 5 in HL Biology plus 5 in another HL science or mathematics subject",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 32350,
+      "feeYear": "current cycle; UK government has signalled a rise to £10,050 for 2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.york.ac.uk/study/undergraduate/courses/bsc-neuroscience/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 16,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "cambridge-genetics",
+    "university": "University of Cambridge",
+    "courseTitle": "Genetics",
+    "subjectArea": "Genetics",
+    "ucasCode": null,
+    "degreeType": "BA (Natural Sciences Tripos)",
+    "duration": "3 years (BA) + optional 4th year (MSci)",
+    "entryRequirements": {
+      "aLevel": "Mathematics plus at least two science subjects (general NST requirement; typical successful offer is around A*A*A)",
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": null
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.gen.cam.ac.uk/undergraduate/genetics-year13",
+      "https://www.natsci.tripos.cam.ac.uk/admissions"
+    ],
+    "dataNote": "Genetics is a formal subject option within the Natural Sciences Tripos (introduced in Year 1, developed through Year 2, and offered as a dedicated Part II course in Year 3), not a separately admitted degree — so it carries no distinct UCAS code.",
+    "universityRanking": {
+      "russellGroupRank": 1,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "glasgow-genetics",
+    "university": "University of Glasgow",
+    "courseTitle": "Genetics",
+    "subjectArea": "Genetics",
+    "ucasCode": "C400",
+    "degreeType": "BSc (Hons)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "AAB – BBB, with A-level Biology or Chemistry",
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": "Scottish Higher: minimum ABBB from S5, typical offers AAAAA by end of S6, with Higher Biology or Chemistry (A in either)"
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": null
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.gla.ac.uk/undergraduate/degrees/genetics/"
+    ],
+    "dataNote": "Fees not confirmed in this pass.",
+    "universityRanking": {
+      "russellGroupRank": 22,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "leeds-genetics",
+    "university": "University of Leeds",
+    "courseTitle": "Genetics",
+    "subjectArea": "Genetics",
+    "ucasCode": "C400",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB including Biology (A required if Biology is the only science subject), preferably with another science",
+      "ib": "31 overall, 6,6,5 at Higher Level including Biology and preferably another science",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 33800,
+      "feeYear": "current cycle"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://courses.leeds.ac.uk/3360/genetics-bsc"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 14,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "manchester-genetics",
+    "university": "University of Manchester",
+    "courseTitle": "Genetics",
+    "subjectArea": "Genetics",
+    "ucasCode": "C400",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB including two of Biology, Chemistry, Physics and Mathematics",
+      "ib": "35 points overall, 6,6,5 at Higher Level including two science subjects, normally Biology and Chemistry",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": null,
+      "feeYear": "2026 entry (home); 2027 not yet confirmed. International fee not confirmed in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00571/bsc-genetics/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 19,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "edinburgh-genetics",
+    "university": "University of Edinburgh",
+    "courseTitle": "Biological Sciences (Genetics)",
+    "subjectArea": "Genetics",
+    "ucasCode": "C400",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 or 4 years",
+    "entryRequirements": {
+      "aLevel": null,
+      "ib": null,
+      "ucasTariffPoints": null,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "fees page requires an external calculator; not retrieved in this pass"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://study.ed.ac.uk/programmes/undergraduate/10-biological-sciences-genetics"
+    ],
+    "dataNote": "Edinburgh has no separately named 'Genetics' degree — Biological Sciences (Genetics) is its named pathway. Grade thresholds render via an interactive dropdown tool rather than static text and could not be extracted in this pass (the same limitation recurs across several Edinburgh entries in this dataset).",
+    "universityRanking": {
+      "russellGroupRank": 15,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "kcl-genetics",
+    "university": "King's College London",
+    "courseTitle": "Molecular Genetics",
+    "subjectArea": "Genetics",
+    "ucasCode": "C400",
+    "degreeType": "BSc",
+    "duration": "3 years (4 years with year abroad/extra-mural year, or transfer to MSci)",
+    "entryRequirements": {
+      "aLevel": "AAA, grade A in Biology and Chemistry required",
+      "ib": "36 points overall or 18 from three Higher Levels, including grade 6 in HL Biology and HL Chemistry",
+      "ucasTariffPoints": 144,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": null
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.kcl.ac.uk/study/undergraduate/courses/molecular-genetics-bsc/requirements"
+    ],
+    "dataNote": "KCL has no course named plain 'Genetics' — Molecular Genetics is used as the closest equivalent. Fees not confirmed in this pass.",
+    "universityRanking": {
+      "russellGroupRank": 12,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "qmul-genetics",
+    "university": "Queen Mary University of London",
+    "courseTitle": "Medical Genetics",
+    "subjectArea": "Genetics",
+    "ucasCode": "C431",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including Biology",
+      "ib": "32 points, 6,5,5 from three HL subjects including Biology at HL",
+      "ucasTariffPoints": 128,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": null,
+      "internationalAnnual": null,
+      "feeYear": "listed as provisional/not confirmed on the page checked"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.ucas.com/explore/courses/c0f89e6d-af5a-a1d0-b1b3-c803553f4c61/course"
+    ],
+    "dataNote": "QMUL has no course named plain 'Genetics' — Medical Genetics is used as the closest equivalent.",
+    "universityRanking": {
+      "russellGroupRank": 24,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
+  },
+  {
+    "id": "york-genetics",
+    "university": "University of York",
+    "courseTitle": "Genetics",
+    "subjectArea": "Genetics",
+    "ucasCode": "C400",
+    "degreeType": "BSc",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB including Biology and a second science",
+      "ib": "35 points including 5 in HL Biology plus 5 in another HL science or mathematics subject",
+      "ucasTariffPoints": 136,
+      "admissionsTests": null,
+      "otherRequirements": null
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 32350,
+      "feeYear": "current cycle; UK government has signalled a rise to £10,050 for 2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.york.ac.uk/study/undergraduate/courses/bsc-genetics/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 16,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": null,
+      "basis": null,
+      "cycle": null,
+      "note": "Not retrieved in this pass.",
+      "source": null
+    }
   }
 ]

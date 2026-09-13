@@ -4,7 +4,7 @@ export default function CourseDetail({ course, onBack, onToggleSelect, isSelecte
   return (
     <div className="course-detail">
       <button className="button" onClick={onBack}>
-        ← Back to browse
+        ← Back
       </button>
 
       <h2>

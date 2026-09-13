@@ -48,6 +48,7 @@ body {
 
 .app-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -80,6 +81,7 @@ body {
   border-radius: var(--radius);
   font-size: 0.9rem;
   background: var(--color-surface);
+  min-width: 0;
 }
 
 .filters__search {
@@ -92,7 +94,214 @@ body {
   margin: 0 0 12px;
 }
 
-.course-table-wrap,
+.course-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.course-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 16px;
+}
+
+.course-card.is-selected {
+  background: var(--color-selected-bg);
+  border-color: var(--color-primary);
+}
+
+.course-card__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px 12px;
+  margin-bottom: 12px;
+}
+
+.course-card__checkbox {
+  margin-top: 4px;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.course-card__heading {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.course-card__heading h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.course-card__heading p {
+  margin: 2px 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+.course-card__details {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.course-card__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px 16px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.stat__label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-text-muted);
+}
+
+.stat__value {
+  font-size: 0.92rem;
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+
+.finder__intro {
+  color: var(--color-text-muted);
+  max-width: 720px;
+  margin: 0 0 16px;
+}
+
+.finder-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 18px;
+  margin-bottom: 20px;
+}
+
+.finder-subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  flex: 1 1 320px;
+}
+
+.finder-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  flex: 1 1 160px;
+}
+
+.finder-field select {
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  width: 100%;
+  min-width: 0;
+}
+
+.finder-weights {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 280px;
+  border-left: 1px solid var(--color-border);
+  padding-left: 20px;
+}
+
+@media (max-width: 720px) {
+  .finder-weights {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--color-border);
+    padding-top: 14px;
+  }
+}
+
+.finder-weights__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.finder-weights__header h3 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.weight-control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.weight-control__label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.weight-control__pct {
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.weight-control input[type='range'] {
+  width: 100%;
+  accent-color: var(--color-primary);
+}
+
+.match-score {
+  flex-shrink: 0;
+  background: var(--color-selected-bg);
+  color: var(--color-primary-dark);
+  border-radius: var(--radius);
+  padding: 4px 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.match-score__of {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.match-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-bottom: 10px;
+}
+
 .compare-table-wrap {
   overflow-x: auto;
   background: var(--color-surface);
@@ -101,37 +310,26 @@ body {
   box-shadow: var(--shadow);
 }
 
-.course-table,
 .compare-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.88rem;
+  table-layout: fixed;
 }
 
-.course-table th,
-.course-table td,
 .compare-table th,
 .compare-table td {
   padding: 10px 12px;
   text-align: left;
   border-bottom: 1px solid var(--color-border);
-  white-space: nowrap;
-}
-
-.course-table td:nth-child(2),
-.course-table td:nth-child(3) {
   white-space: normal;
-  min-width: 160px;
+  overflow-wrap: break-word;
+  vertical-align: top;
+  width: 180px;
 }
 
-.course-table th {
+.compare-table th {
   background: #fafbfc;
-  font-weight: 600;
-  color: var(--color-text-muted);
-}
-
-.course-table tr.is-selected {
-  background: var(--color-selected-bg);
 }
 
 .link-button {
@@ -178,14 +376,19 @@ body {
   gap: 8px;
 }
 
-.compare-table th {
+.compare-table__row-label,
+.compare-table__corner {
+  position: sticky;
+  left: 0;
+  z-index: 1;
   background: #fafbfc;
+  width: 150px;
+  box-shadow: 1px 0 0 var(--color-border);
 }
 
 .compare-table__row-label {
   color: var(--color-text-muted);
   font-weight: 600;
-  white-space: nowrap;
 }
 
 .remove-button {
@@ -254,6 +457,60 @@ body {
 }
 
 @media (max-width: 640px) {
+  .app {
+    padding: 16px 14px 48px;
+  }
+
+  .app-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .app-nav {
+    gap: 6px;
+  }
+
+  .nav-button {
+    flex: 1 1 auto;
+    padding: 10px 8px;
+    font-size: 0.82rem;
+    text-align: center;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters__search {
+    flex-basis: auto;
+  }
+
+  .course-card {
+    padding: 12px;
+  }
+
+  .course-card__stats {
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+    gap: 8px 12px;
+  }
+
+  .finder-panel {
+    padding: 14px;
+    gap: 16px;
+  }
+
+  .compare-table th,
+  .compare-table td {
+    width: 130px;
+    padding: 8px 10px;
+    font-size: 0.82rem;
+  }
+
+  .compare-table__row-label,
+  .compare-table__corner {
+    width: 100px;
+  }
+
   .detail-grid {
     grid-template-columns: 1fr;
   }

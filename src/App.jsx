@@ -4,6 +4,7 @@ import Filters from './components/Filters.jsx'
 import CourseList from './components/CourseList.jsx'
 import CompareView from './components/CompareView.jsx'
 import CourseDetail from './components/CourseDetail.jsx'
+import CourseFinder from './components/CourseFinder.jsx'
 
 const MAX_COMPARE = 4
 
@@ -13,8 +14,9 @@ export default function App() {
   const [universityFilter, setUniversityFilter] = useState('')
   const [sortBy, setSortBy] = useState('university')
   const [selectedIds, setSelectedIds] = useState([])
-  const [view, setView] = useState('browse') // 'browse' | 'compare' | 'detail'
+  const [view, setView] = useState('browse') // 'browse' | 'finder' | 'compare' | 'detail'
   const [detailId, setDetailId] = useState(null)
+  const [returnView, setReturnView] = useState('browse')
 
   const subjects = useMemo(
     () => [...new Set(coursesData.map((c) => c.subjectArea))].sort(),
@@ -92,6 +94,7 @@ export default function App() {
 
   function viewDetail(id) {
     setDetailId(id)
+    setReturnView(view)
     setView('detail')
   }
 
@@ -102,8 +105,8 @@ export default function App() {
       <header className="app-header">
         <h1>CourseSelector</h1>
         <p className="app-header__subtitle">
-          Compare Computer Science courses at Russell Group universities —
-          entry requirements, fees, and graduate prospects.
+          Compare undergraduate courses across the 24 Russell Group
+          universities — entry requirements, fees, and graduate prospects.
         </p>
         <nav className="app-nav">
           <button
@@ -111,6 +114,12 @@ export default function App() {
             onClick={() => setView('browse')}
           >
             Browse
+          </button>
+          <button
+            className={view === 'finder' ? 'nav-button is-active' : 'nav-button'}
+            onClick={() => setView('finder')}
+          >
+            Find my course
           </button>
           <button
             className={view === 'compare' ? 'nav-button is-active' : 'nav-button'}
@@ -150,6 +159,17 @@ export default function App() {
           </>
         )}
 
+        {view === 'finder' && (
+          <CourseFinder
+            coursesData={coursesData}
+            subjects={subjects}
+            selectedIds={selectedIds}
+            onToggleSelect={toggleSelect}
+            onViewDetail={viewDetail}
+            maxSelected={MAX_COMPARE}
+          />
+        )}
+
         {view === 'compare' && (
           <CompareView
             courses={selectedCourses}
@@ -161,7 +181,7 @@ export default function App() {
         {view === 'detail' && detailCourse && (
           <CourseDetail
             course={detailCourse}
-            onBack={() => setView('browse')}
+            onBack={() => setView(returnView)}
             onToggleSelect={toggleSelect}
             isSelected={selectedIds.includes(detailCourse.id)}
           />

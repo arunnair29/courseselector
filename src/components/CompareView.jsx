@@ -85,7 +85,7 @@ export default function CompareView({ courses, onRemove, onClose }) {
         <table className="compare-table">
           <thead>
             <tr>
-              <th></th>
+              <th className="compare-table__corner"></th>
               {courses.map((c) => (
                 <th key={c.id}>
                   {c.university}
