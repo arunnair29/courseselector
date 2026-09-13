@@ -50,7 +50,7 @@ export default function Filters({
         <option value="tariff-asc">Sort: Entry tariff (low to high)</option>
         <option value="salary-desc">Sort: Median salary (high to low)</option>
         <option value="employment-desc">
-          Sort: Employment rate (high to low)
+          Sort: Highly skilled work (high to low)
         </option>
         <option value="ranking-asc">
           Sort: University ranking (best first)

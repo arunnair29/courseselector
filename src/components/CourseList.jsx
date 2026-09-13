@@ -84,9 +84,12 @@ export default function CourseList({
                 </span>
               </div>
               <div className="stat">
-                <span className="stat__label">In work/study</span>
+                <span className="stat__label">Highly skilled work</span>
                 <span className="stat__value">
-                  {formatPercent(course.careerOutcomes.inWorkOrStudy15mo)}
+                  {formatPercent(
+                    course.careerOutcomes.highlySkilledWork ??
+                      course.careerOutcomes.inWorkOrStudy15mo,
+                  )}
                 </span>
               </div>
               <div className="stat">

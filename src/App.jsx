@@ -58,8 +58,8 @@ export default function App() {
           )
         case 'employment-desc':
           return (
-            (b.careerOutcomes.inWorkOrStudy15mo ?? 0) -
-            (a.careerOutcomes.inWorkOrStudy15mo ?? 0)
+            (b.careerOutcomes.highlySkilledWork ?? b.careerOutcomes.inWorkOrStudy15mo ?? 0) -
+            (a.careerOutcomes.highlySkilledWork ?? a.careerOutcomes.inWorkOrStudy15mo ?? 0)
           )
         case 'ranking-asc':
           return (

@@ -3,7 +3,9 @@
 // Combines three signals into one 0-100 composite score per course:
 //   - popularity      (applicants per place — higher is treated as more sought-after)
 //   - university rank (Russell Group rank — lower rank number is better)
-//   - job potential    (average of graduate employment rate and a normalized
+//   - job potential    (average of a graduate employment-outcome rate —
+//                       preferring the highly-skilled-work figure, which has
+//                       the best coverage in this dataset — and a normalized
 //                       median-salary score)
 //
 // Courses missing a raw figure for popularity, employment rate, or salary are
@@ -22,7 +24,7 @@ export function computeDatasetStats(courses) {
     .map((c) => c.popularity?.applicantsPerPlace)
     .filter((v) => v != null)
   const employment = courses
-    .map((c) => c.careerOutcomes?.inWorkOrStudy15mo)
+    .map((c) => c.careerOutcomes?.highlySkilledWork ?? c.careerOutcomes?.inWorkOrStudy15mo)
     .filter((v) => v != null)
   const salaries = courses
     .map((c) => c.careerOutcomes?.medianSalary15mo)
@@ -61,7 +63,14 @@ export function scoreCourse(course, stats, weights) {
     stats.maxApplicantsPerPlace,
   )
 
-  const rawEmployment = course.careerOutcomes?.inWorkOrStudy15mo
+  // Prefer highlySkilledWork (the best-covered real figure in this
+  // dataset, sourced from Complete University Guide's Graduate Prospects
+  // metric) and fall back to the broader inWorkOrStudy15mo figure where
+  // that's the only one available (e.g. Oxford/Imperial's Discover Uni
+  // data), then the dataset average of whichever is available.
+  const rawEmployment =
+    course.careerOutcomes?.highlySkilledWork ??
+    course.careerOutcomes?.inWorkOrStudy15mo
   const employmentEstimated = rawEmployment == null
   const employmentValue = rawEmployment ?? stats.avgEmploymentRate ?? 50
 
