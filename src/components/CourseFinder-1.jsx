@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { formatCurrency, formatPercent } from '../utils/format.js'
 import { computeDatasetStats, scoreCourse } from '../utils/ranking.js'
 import { FIELD_INFO } from '../utils/fieldInfo.js'
-import { A_LEVEL_SUBJECTS, GRADE_OPTIONS, matchCourse } from '../utils/aLevelMatch.js'
+import { A_LEVEL_SUBJECTS, matchCourse } from '../utils/aLevelMatch.js'
 import InfoIcon from './InfoIcon.jsx'
 
 const RESULT_COUNT = 25
@@ -33,11 +33,6 @@ function describeGap(match) {
       }`,
     )
   }
-  if (match.tariffMatch && !match.tariffMatch.meetsTariff) {
-    parts.push(
-      `predicted grades (${match.tariffMatch.userTariff} pts) are below the typical ${match.tariffMatch.requiredTariff}pt offer`,
-    )
-  }
   return parts.join(' · ')
 }
 
@@ -50,37 +45,16 @@ export default function CourseFinder({
   maxSelected,
 }) {
   const [chosenALevels, setChosenALevels] = useState(DEFAULT_A_LEVELS)
-  const [gradesBySubject, setGradesBySubject] = useState({})
   const [interestFilter, setInterestFilter] = useState('')
   const [weights, setWeights] = useState(DEFAULT_WEIGHTS)
 
   const stats = useMemo(() => computeDatasetStats(coursesData), [coursesData])
 
   function toggleALevel(subject) {
-    const isChosen = chosenALevels.includes(subject)
-    if (isChosen) {
-      setChosenALevels((prev) => prev.filter((s) => s !== subject))
-      setGradesBySubject((prev) => {
-        if (!(subject in prev)) return prev
-        const next = { ...prev }
-        delete next[subject]
-        return next
-      })
-    } else {
-      if (chosenALevels.length >= MAX_A_LEVELS) return
-      setChosenALevels((prev) => [...prev, subject])
-    }
-  }
-
-  function updateGrade(subject, grade) {
-    setGradesBySubject((prev) => {
-      if (!grade) {
-        if (!(subject in prev)) return prev
-        const next = { ...prev }
-        delete next[subject]
-        return next
-      }
-      return { ...prev, [subject]: grade }
+    setChosenALevels((prev) => {
+      if (prev.includes(subject)) return prev.filter((s) => s !== subject)
+      if (prev.length >= MAX_A_LEVELS) return prev
+      return [...prev, subject]
     })
   }
 
@@ -96,7 +70,7 @@ export default function CourseFinder({
     const closeRows = []
 
     for (const course of pool) {
-      const match = matchCourse(course, chosenALevels, gradesBySubject)
+      const match = matchCourse(course, chosenALevels)
       const scored = scoreCourse(course, stats, weights)
       if (match.eligible) {
         eligibleRows.push({ course, match, ...scored })
@@ -113,7 +87,7 @@ export default function CourseFinder({
       eligibleTotal: eligibleRows.length,
       close: closeRows.slice(0, CLOSE_COUNT),
     }
-  }, [coursesData, chosenALevels, gradesBySubject, interestFilter, stats, weights])
+  }, [coursesData, chosenALevels, interestFilter, stats, weights])
 
   const totalWeight = weights.popularity + weights.ranking + weights.jobPotential
   const weightPct = (w) => (totalWeight > 0 ? round((w / totalWeight) * 100) : 0)
@@ -178,21 +152,6 @@ export default function CourseFinder({
             </span>
           )}
         </div>
-
-        {match.tariffMatch && (
-          <p className="tariff-note">
-            Predicted tariff: {match.tariffMatch.userTariff} pts{' '}
-            {match.tariffMatch.meetsTariff ? '≥' : '<'} course's typical{' '}
-            {match.tariffMatch.requiredTariff} pts offer
-            {match.tariffMatch.gradesCounted < 3 && (
-              <em className="detail-note">
-                {' '}
-                (from {match.tariffMatch.gradesCounted} grade
-                {match.tariffMatch.gradesCounted === 1 ? '' : 's'} entered)
-              </em>
-            )}
-          </p>
-        )}
 
         <div className="match-breakdown">
           <span>
@@ -273,9 +232,7 @@ export default function CourseFinder({
         Choose the A-level subjects being studied (or planned), and we'll show
         which courses across all 24 Russell Group universities you're
         eligible for, based on each course's published entry requirements —
-        plus any "close match" courses just one subject away. Add predicted
-        grades for a closer estimate that also checks against each course's
-        typical UCAS Tariff offer.
+        plus any "close match" courses just one subject away.
       </p>
 
       <div className="finder-panel">
@@ -310,35 +267,6 @@ export default function CourseFinder({
             })}
           </div>
 
-          {chosenALevels.length > 0 && (
-            <div className="grade-picker">
-              <div className="grade-picker__header">
-                <span>
-                  Predicted grades (optional)
-                  <InfoIcon text={FIELD_INFO.predictedGrades} />
-                </span>
-              </div>
-              <div className="grade-picker__rows">
-                {chosenALevels.map((subject) => (
-                  <label key={subject} className="grade-picker__row">
-                    <span className="grade-picker__subject">{subject}</span>
-                    <select
-                      value={gradesBySubject[subject] || ''}
-                      onChange={(e) => updateGrade(subject, e.target.value)}
-                    >
-                      <option value="">Not sure yet</option>
-                      {GRADE_OPTIONS.map((g) => (
-                        <option key={g} value={g}>
-                          {g}
-                        </option>
-                      ))}
-                    </select>
-                  </label>
-                ))}
-              </div>
-            </div>
-          )}
-
           <label className="finder-field finder-interest">
             <span>
               Narrow by subject area (optional)
@@ -369,64 +297,62 @@ export default function CourseFinder({
             </button>
           </div>
 
-          <div className="finder-weights__row">
-            <label className="weight-control">
-              <div className="weight-control__label">
-                <span>
-                  Popularity
-                  <InfoIcon text={FIELD_INFO.weightPopularity} />
-                </span>
-                <span className="weight-control__pct">
-                  {weightPct(weights.popularity)}%
-                </span>
-              </div>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value={weights.popularity}
-                onChange={(e) => updateWeight('popularity', e.target.value)}
-              />
-            </label>
+          <label className="weight-control">
+            <div className="weight-control__label">
+              <span>
+                Popularity
+                <InfoIcon text={FIELD_INFO.weightPopularity} />
+              </span>
+              <span className="weight-control__pct">
+                {weightPct(weights.popularity)}%
+              </span>
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value={weights.popularity}
+              onChange={(e) => updateWeight('popularity', e.target.value)}
+            />
+          </label>
 
-            <label className="weight-control">
-              <div className="weight-control__label">
-                <span>
-                  University ranking
-                  <InfoIcon text={FIELD_INFO.weightRanking} />
-                </span>
-                <span className="weight-control__pct">
-                  {weightPct(weights.ranking)}%
-                </span>
-              </div>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value={weights.ranking}
-                onChange={(e) => updateWeight('ranking', e.target.value)}
-              />
-            </label>
+          <label className="weight-control">
+            <div className="weight-control__label">
+              <span>
+                University ranking
+                <InfoIcon text={FIELD_INFO.weightRanking} />
+              </span>
+              <span className="weight-control__pct">
+                {weightPct(weights.ranking)}%
+              </span>
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value={weights.ranking}
+              onChange={(e) => updateWeight('ranking', e.target.value)}
+            />
+          </label>
 
-            <label className="weight-control">
-              <div className="weight-control__label">
-                <span>
-                  Job potential
-                  <InfoIcon text={FIELD_INFO.weightJobPotential} />
-                </span>
-                <span className="weight-control__pct">
-                  {weightPct(weights.jobPotential)}%
-                </span>
-              </div>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value={weights.jobPotential}
-                onChange={(e) => updateWeight('jobPotential', e.target.value)}
-              />
-            </label>
-          </div>
+          <label className="weight-control">
+            <div className="weight-control__label">
+              <span>
+                Job potential
+                <InfoIcon text={FIELD_INFO.weightJobPotential} />
+              </span>
+              <span className="weight-control__pct">
+                {weightPct(weights.jobPotential)}%
+              </span>
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value={weights.jobPotential}
+              onChange={(e) => updateWeight('jobPotential', e.target.value)}
+            />
+          </label>
         </div>
       </div>
 
@@ -472,12 +398,8 @@ export default function CourseFinder({
             guarantee of an offer — universities also apply contextual
             offers, accept EPQs, IB, BTECs, and Scottish Highers as
             alternatives, and some list requirements that aren't captured
-            here. The predicted-grade tariff check compares your best 3
-            grades against a course's typical UCAS Tariff offer, which
-            doesn't capture subject-specific grade requirements (e.g.
-            "including Mathematics at grade A"). Always check the course's
-            own entry requirements page (via "Details →" below) before
-            making decisions.
+            here. Always check the course's own entry requirements page (via
+            "Details →" below) before making decisions.
           </p>
         </>
       )}

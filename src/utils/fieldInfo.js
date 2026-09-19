@@ -34,4 +34,12 @@ export const FIELD_INFO = {
     'How much graduate career outcomes (highly skilled work rate and salary) affect the ranking.',
   matchScore:
     'A score out of 100 combining popularity, university ranking, and job potential using the weights below.',
+  aLevelPicker:
+    "Select the A-level subjects being studied (or planned). We match them against each course's published A-level entry requirement text — this is best-effort text matching, not an official eligibility check.",
+  interestFilter:
+    'Optionally narrow results to one subject area (e.g. Biology, Computer Science) — leave as "All subject areas" to see every eligible course.',
+  closeMatch:
+    "Courses whose typical entry requirements aren't fully met by your chosen subjects, but where you're only missing one subject (or one alternative-subject group).",
+  predictedGrades:
+    "Optional. Enter a predicted (or achieved) grade for each subject to estimate your UCAS Tariff points (best 3 grades) and compare it against each course's typical offer — leave any you're unsure of as \"Not sure yet\".",
 }

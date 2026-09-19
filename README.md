@@ -9,7 +9,9 @@ Science, Pharmacology, Pharmacy, Astrophysics, Chemical Engineering,
 Veterinary Medicine, Dentistry, Data Science, Artificial Intelligence, and
 many more) across all 24 Russell Group universities — 481 courses in total.
 It also lets you sort by Complete University Guide ranking and by course
-popularity (applicants per place).
+popularity (applicants per place), and its "Find my course" tab matches a
+student's actual A-level subject choices against each course's real entry
+requirements to show which courses they're eligible for.
 
 ## Running locally
 
@@ -124,6 +126,42 @@ Every course also carries:
 - `popularity` — applicants-per-place, where available (20 of 481 courses — see above), either stated directly by the department, taken from a university's own published admissions statistics, or derived as 1/offer-rate from Freedom of Information data (source: admissionreport.com / tutorhunt.com). None of the third pass's 185 new courses had a scalable source for this field, so it's omitted on all of them (consistent with how ungathered popularity data is handled elsewhere: the key is left off rather than set to a guessed value).
 
 The app's sort dropdown includes "University ranking (best first)" and "Popularity (most applicants per place first)" alongside the original tariff/salary/employment sorts.
+
+### Find my course: A-level subject matching
+
+The "Find my course" tab lets a student or parent pick the actual A-level
+subjects being studied (or planned) — not a `subjectArea` course category —
+and see which courses across all 24 Russell Group universities they're
+eligible for, based on each course's real, published A-level entry
+requirement text.
+
+There's no structured "required subjects" field in the dataset —
+`entryRequirements.aLevel` is free text taken verbatim from university
+course pages (e.g. "AAB including Chemistry and a second science subject",
+"A*AA, including Mathematics and Physics at A*A"). `src/utils/aLevelMatch.js`
+parses this text into a best-effort structured requirement: specific
+required subjects, "one of" alternative-subject groups (including nested
+groups inside parentheses, e.g. Edinburgh's dual "two of ... (must include
+one of ...)" wording), and generic slots like "a science subject" or
+"another core science/maths subject" that don't name one specific subject.
+A course whose requirement text doesn't name any recognisable subject is
+treated as open (no specific subject required) rather than excluded, which
+matches how most grade-only offers actually work.
+
+Results are split into courses the student is fully eligible for and
+"close matches" — courses missing just one subject or one alternative
+group — each showing exactly what's missing. The existing popularity /
+university ranking / job potential weighting sliders still apply, ranking
+matches within each group. An optional "narrow by subject area" filter lets
+a parent/student combine A-level eligibility with a specific field of
+interest (e.g. only show eligible Biology courses).
+
+This matching is necessarily approximate — offer wording varies hugely
+between universities, and contextual offers, EPQ substitutions, and
+IB/BTEC/Scottish Highers alternative routes aren't modelled — so the UI
+carries an explicit disclaimer, and every result links through to the
+course's own detail page (with its original source) to verify before
+relying on it.
 
 The original thirteen subjects span the original plan plus four additional science-based subjects (Geology & Earth Sciences, Environmental Science, Neuroscience, Genetics), covered consistently across all 24 Russell Group universities. A second pass added 19 more specialised science subjects at Oxford, Cambridge, and the five London Russell Group universities. A third pass then extended broad, open-ended science coverage to the remaining 17 Russell Group universities outside London — see above. Further subjects, or deeper coverage of any single university, can be added in the same research-first, no-fabrication pattern.
 
