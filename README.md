@@ -4,11 +4,12 @@ A React app for comparing UK university courses — entry requirements, fees, an
 graduate career prospects — across Computer Science, Physics, Chemistry,
 Biology, Mathematics, Engineering, Medicine, Psychology, Biomedical Sciences,
 Geology & Earth Sciences, Environmental Science, Neuroscience, Genetics, and a
-growing set of specialised science subjects (Biochemistry, Materials Science,
-Pharmacology, Pharmacy, Astrophysics, Chemical Engineering, Statistics, and
-more) at the 24 Russell Group universities, with more subjects being added
-over time. It also lets you sort by Complete University Guide ranking and by
-course popularity (applicants per place).
+wide, growing set of specialised science subjects (Biochemistry, Materials
+Science, Pharmacology, Pharmacy, Astrophysics, Chemical Engineering,
+Veterinary Medicine, Dentistry, Data Science, Artificial Intelligence, and
+many more) across all 24 Russell Group universities — 481 courses in total.
+It also lets you sort by Complete University Guide ranking and by course
+popularity (applicants per place).
 
 ## Running locally
 
@@ -106,15 +107,25 @@ This pass was research-only (no fabricated data) and, as with earlier passes, so
 
 A few other gaps are marked with a `dataNote` field on the course entry (e.g. Cardiff CS/Physics outcomes, Sheffield CS's unusually low 60% figure worth double-checking, LSE's Data Science and Mathematics-with-Economics proxies, Exeter's Chemistry proxy, Glasgow's and KCL's Biology proxies, the many Mechanical-Engineering-as-proxy entries, Queen's Belfast and Newcastle missing some detailed grade breakdowns, and a couple of discontinued/withdrawn Genetics courses excluded rather than listed with stale data).
 
+### Extended science coverage at the 17 non-London Russell Group universities
+
+A third expansion pass added 185 more real, currently-offered undergraduate science courses at every Russell Group university not already covered by the second pass — Birmingham, Bristol, Cardiff, Durham, Edinburgh, Exeter, Glasgow, Leeds, Liverpool, Manchester, Newcastle, Nottingham, Queen's University Belfast, Sheffield, Southampton, Warwick, and York. Combined with the original 13-subject baseline and the Oxbridge/London expansion, all 24 Russell Group universities now have broad, "fully open" science coverage rather than a fixed subject list — this pass wasn't limited to a preset set of subjects, and each university was researched independently for whatever real science-based courses it actually offers beyond what was already in the dataset (common additions: Biochemistry, Pharmacology, Dentistry, specific engineering disciplines such as Civil/Electrical/Aerospace/Chemical/Materials, Veterinary Medicine, Sport and Exercise Science, Data Science and Artificial Intelligence, plus a long tail of university-specific courses like Ship Science at Southampton, Bioarchaeology at York, and Landscape Architecture at Sheffield).
+
+This introduced roughly 30 new subject-area categories beyond the previous two passes. Where an independently-researched course clearly matched an existing category under a different name, labels were reconciled for consistency (e.g. "Mathematics and Statistics" → "Mathematics & Statistics"; "Physics with Astrophysics" → "Astrophysics"; "Immunology"/"Infectious Diseases"/"Immunology and Infectious Disease" → "Infection and Immunity"; "Anatomy and Development" → "Anatomy"; "Ecology and Conservation Biology" → "Conservation Biology and Ecology"; Imperial's existing "Aeronautical Engineering" entry was also relabelled to "Aerospace Engineering" to match the label this pass established as the more common convention). Genuinely distinct courses were kept as their own specific category rather than forced into an existing one.
+
+As with the earlier passes, this was research-only with no fabricated data, and courses that don't actually exist as standalone degrees were deliberately left out rather than invented — for example Manchester and Glasgow have no standalone undergraduate Data Science degree (postgraduate only), Liverpool has no Chemical Engineering or Sport Science course, Southampton's "Data Science" only exists as a joint Economics degree, Warwick's undergraduate engineering is a single unified General Engineering route with no separate Civil/Electrical/Chemical Engineering admission, and a couple of previously-existing Genetics-adjacent courses at other universities were confirmed withdrawn rather than listed with stale data. Several entries carry a `dataNote` flagging a specific limitation: fee pages that hadn't yet published a 2027/28 figure (the confirmed 2026/27 figure or the government's announced UK-wide cap was used instead, with the actual page wording preserved); Discover Uni substituting a broader subject-group or newer-course's still-building outcomes cohort; Scottish universities' A-level/IB requirements published as a range (the lower, widening-access bound was used for the Tariff-points calculation, flagged accordingly); and Scottish-domiciled students paying a separate SAAS-funded fee (~£1,820/year) instead of the rest-of-UK cap shown in `fees.homeAnnual`.
+
+481 courses total across all 24 Russell Group universities.
+
 ### University ranking & popularity
 
 Every course also carries:
 - `universityRanking` — the university's overall Complete University Guide 2027 ranking, restricted to the 24 Russell Group universities (1 = highest-ranked).
-- `popularity` — applicants-per-place, where available (20 of 296 courses — see above), either stated directly by the department, taken from a university's own published admissions statistics, or derived as 1/offer-rate from Freedom of Information data (source: admissionreport.com / tutorhunt.com).
+- `popularity` — applicants-per-place, where available (20 of 481 courses — see above), either stated directly by the department, taken from a university's own published admissions statistics, or derived as 1/offer-rate from Freedom of Information data (source: admissionreport.com / tutorhunt.com). None of the third pass's 185 new courses had a scalable source for this field, so it's omitted on all of them (consistent with how ungathered popularity data is handled elsewhere: the key is left off rather than set to a guessed value).
 
 The app's sort dropdown includes "University ranking (best first)" and "Popularity (most applicants per place first)" alongside the original tariff/salary/employment sorts.
 
-The original thirteen subjects span the original plan plus four additional science-based subjects (Geology & Earth Sciences, Environmental Science, Neuroscience, Genetics), covered consistently across all 24 Russell Group universities. A second pass then added 19 more specialised science subjects, but only at Oxford, Cambridge, and the five London Russell Group universities (Imperial, UCL, KCL, LSE, QMUL) rather than all 24 — see "Extended science coverage" above. Further subjects, or wider university coverage of the newer subjects, can be added in the same research-first, no-fabrication pattern.
+The original thirteen subjects span the original plan plus four additional science-based subjects (Geology & Earth Sciences, Environmental Science, Neuroscience, Genetics), covered consistently across all 24 Russell Group universities. A second pass added 19 more specialised science subjects at Oxford, Cambridge, and the five London Russell Group universities. A third pass then extended broad, open-ended science coverage to the remaining 17 Russell Group universities outside London — see above. Further subjects, or deeper coverage of any single university, can be added in the same research-first, no-fabrication pattern.
 
 Entry requirements and fees change year to year — always verify against the
 official university/UCAS pages before relying on this for a real application.
