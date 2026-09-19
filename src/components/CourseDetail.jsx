@@ -23,6 +23,8 @@ export default function CourseDetail({ course, onBack, onToggleSelect, isSelecte
         {isSelected ? 'Remove from comparison' : 'Add to comparison'}
       </button>
 
+      {course.dataNote && <p className="data-note">{course.dataNote}</p>}
+
       <section>
         <h3>University ranking &amp; popularity</h3>
         <dl className="detail-grid">
@@ -105,37 +107,33 @@ export default function CourseDetail({ course, onBack, onToggleSelect, isSelecte
 
       <section>
         <h3>Career prospects</h3>
-        {course.dataNote ? (
-          <p className="data-note">{course.dataNote}</p>
-        ) : (
-          <dl className="detail-grid">
-            <dt>
-              In work or further study (15mo)
-              <InfoIcon text={FIELD_INFO.inWorkOrStudy} />
-            </dt>
-            <dd>{formatPercent(course.careerOutcomes.inWorkOrStudy15mo)}</dd>
-            <dt>
-              In highly skilled work
-              <InfoIcon text={FIELD_INFO.highlySkilledWork} />
-            </dt>
-            <dd>{formatPercent(course.careerOutcomes.highlySkilledWork)}</dd>
-            <dt>
-              Median salary (15mo)
-              <InfoIcon text={FIELD_INFO.medianSalary} />
-            </dt>
-            <dd>{formatCurrency(course.careerOutcomes.medianSalary15mo)}</dd>
-            <dt>
-              Salary range (15mo)
-              <InfoIcon text={FIELD_INFO.salaryRange} />
-            </dt>
-            <dd>{formatValue(course.careerOutcomes.salaryRange15mo)}</dd>
-            <dt>
-              Common destination
-              <InfoIcon text={FIELD_INFO.commonDestination} />
-            </dt>
-            <dd>{formatValue(course.careerOutcomes.commonDestination)}</dd>
-          </dl>
-        )}
+        <dl className="detail-grid">
+          <dt>
+            In work or further study (15mo)
+            <InfoIcon text={FIELD_INFO.inWorkOrStudy} />
+          </dt>
+          <dd>{formatPercent(course.careerOutcomes.inWorkOrStudy15mo)}</dd>
+          <dt>
+            In highly skilled work
+            <InfoIcon text={FIELD_INFO.highlySkilledWork} />
+          </dt>
+          <dd>{formatPercent(course.careerOutcomes.highlySkilledWork)}</dd>
+          <dt>
+            Median salary (15mo)
+            <InfoIcon text={FIELD_INFO.medianSalary} />
+          </dt>
+          <dd>{formatCurrency(course.careerOutcomes.medianSalary15mo)}</dd>
+          <dt>
+            Salary range (15mo)
+            <InfoIcon text={FIELD_INFO.salaryRange} />
+          </dt>
+          <dd>{formatValue(course.careerOutcomes.salaryRange15mo)}</dd>
+          <dt>
+            Common destination
+            <InfoIcon text={FIELD_INFO.commonDestination} />
+          </dt>
+          <dd>{formatValue(course.careerOutcomes.commonDestination)}</dd>
+        </dl>
       </section>
 
       <section>

@@ -11607,5 +11607,1336 @@
       "source": null
     },
     "dataNote": "Highly-skilled-work figure sourced from the Complete University Guide's \"Graduate Prospects – Outcomes\" league table metric (% of graduates with known destinations in highly skilled work or further study 15 months after graduating; HESA Graduate Outcomes 2022-23 cohort). This is a subject-at-university figure, not specific to this individual course variant. (Complete University Guide has no standalone subject table for this subject, so its Biological Sciences table figure for this university is used as the closest available proxy.) Admissions test field not explicitly confirmed on this specific course's own page in this research pass. UK undergraduate admissions tests for this subject are concentrated at a small, specifically-checked set of universities (Oxford, Cambridge, Imperial, UCL, Warwick, and — for Mathematics only — Durham; plus UCAT for Medicine everywhere); this university/subject combination was confirmed not to be on any current admissions-test requirement list, so \"None required\" reflects the actual 2027-entry policy rather than an unresearched gap."
+  },
+  {
+    "id": "oxford-biochemistry",
+    "university": "University of Oxford",
+    "courseTitle": "Biochemistry (Molecular and Cellular)",
+    "subjectArea": "Biochemistry",
+    "ucasCode": "C700",
+    "degreeType": "MBiochem (Hons)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "A*AA, including Chemistry and another science or Mathematics; the A* must be in Mathematics, Physics, Chemistry or Biology",
+      "ib": "39 points overall (including core points), with 766 at Higher Level — HL Chemistry at 7, plus two other relevant subjects at HL/SL with a minimum of 6",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "None required",
+      "otherRequirements": "No written admissions test; selection based on UCAS application, GCSE profile and predicted grades, and interview for shortlisted candidates (department states roughly 3 applicants are shortlisted for interview per available place)"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 58280,
+      "feeYear": "2027/28 entry"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 80,
+      "highlySkilledWork": 90,
+      "medianSalary15mo": 32000,
+      "salaryRange15mo": "£29,500–£39,000",
+      "commonDestination": "Scientific/research professional roles (35% natural & social science professionals), business & public-service associate roles (20%), and business/research/admin roles (15%); figures based on a small Discover Uni survey sample (10 respondents, 55% response rate) so should be treated as indicative"
+    },
+    "sources": [
+      "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/biochemistry-molecular-and-cellular",
+      "https://discoveruni.gov.uk/course-details/10007774/C700/Full-time/",
+      "https://www.bioch.ox.ac.uk/undergraduate-admissions"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 2,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "ucasTariffPoints (152) is a computed UCAS Tariff equivalent of the stated A-level grade profile — Oxford itself admits on specific grades, not UCAS Tariff, so this figure is for cross-university comparison only. Career-outcome figures are Discover Uni's published stats for this exact course, but from a very small sample (10 respondents). No official Oxford applicants-per-place figure specific to Biochemistry alone was found (the department's own page cites a ~3:1 interview-shortlisting ratio, which is not the same as an applicants-per-place admission ratio), so 'popularity' is omitted rather than estimated."
+  },
+  {
+    "id": "oxford-materials-science",
+    "university": "University of Oxford",
+    "courseTitle": "Materials Science",
+    "subjectArea": "Materials Science",
+    "ucasCode": "FJ22",
+    "degreeType": "MEng (Hons)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "A*AA, with the A* in Mathematics, Physics or Chemistry; Mathematics and Physics are required subjects, Chemistry is highly desirable (GCSE Chemistry required)",
+      "ib": "40 points overall (including core points), with 766 at Higher Level — Mathematics and Physics at HL, and 7 at HL in one of Mathematics/Physics/Chemistry",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "None required (the course no longer requires a written admissions test)",
+      "otherRequirements": "GCSE-level Chemistry (or equivalent) required; two interviews for shortlisted candidates; holistic assessment of UCAS application, predicted/actual grades and interview performance"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 66580,
+      "feeYear": "2027/28 entry"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 100,
+      "highlySkilledWork": 95,
+      "medianSalary15mo": 45000,
+      "salaryRange15mo": "£40,000–£51,000",
+      "commonDestination": "Engineering/materials R&D professional roles (~20%), business & research professional roles (~20%), and finance roles (~15%); based on 15 Discover Uni respondents (85% response rate) from the 2022–23 graduating cohort"
+    },
+    "sources": [
+      "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/materials-science",
+      "https://www.materials.ox.ac.uk/admissions/undergraduate/admissions-criteria.html",
+      "https://discoveruni.gov.uk/course-details/10007774/FJ22/Full-time/",
+      "https://www.materials.ox.ac.uk/sitefiles/oxford-materials-2023-ug-admissions-exercise-feedback-leaflet.pdf-2"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 2,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": 5.0,
+      "basis": "stated",
+      "cycle": "2023/24 (applications in autumn 2023 for October 2024 entry)",
+      "note": "210 applicants for 42 available places (38 places in the 2023 exercise plus 4 already committed from earlier deferred offers), per the Department of Materials' own 2023 admissions-exercise feedback leaflet.",
+      "source": "https://www.materials.ox.ac.uk/sitefiles/oxford-materials-2023-ug-admissions-exercise-feedback-leaflet.pdf-2"
+    },
+    "dataNote": "ucasTariffPoints (152) is a computed UCAS Tariff equivalent of the stated A-level grade profile — Oxford itself admits on specific grades, not UCAS Tariff, so this figure is for cross-university comparison only. Admissions-test requirement has changed over time: the 2023 admissions-exercise cohort (used for the popularity figure) sat the Physics Admissions Test (PAT); the Department's current (2027-entry) admissions-criteria page confirms Materials Science no longer requires any written test."
+  },
+  {
+    "id": "oxford-physics-and-philosophy",
+    "university": "University of Oxford",
+    "courseTitle": "Physics and Philosophy",
+    "subjectArea": "Physics and Philosophy",
+    "ucasCode": "VF53",
+    "degreeType": "BA (Hons) / MPhysPhil (Hons)",
+    "duration": "3 years (BA) or 4 years (MPhysPhil)",
+    "entryRequirements": {
+      "aLevel": "A*AA, with the A* in Physics, Mathematics or Further Mathematics; Physics and Mathematics are required subjects",
+      "ib": "39 points overall (including core points), with 766 at Higher Level — the 7 in either Physics or Mathematics",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "Engineering and Science Admissions Test (ESAT) — three modules required: Mathematics 1, Mathematics 2, and Physics",
+      "otherRequirements": "Interview for shortlisted candidates; ESAT booking window 20 Jul–28 Sep 2026, test sat 12–16 Oct 2026"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 50420,
+      "feeYear": "2027/28 entry"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": "Per the Department of Physics' own course page: nearly 40% go on to further/higher degrees; others enter research & development or technical industry roles, or non-technical careers such as the civil or diplomatic service."
+    },
+    "sources": [
+      "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/physics-and-philosophy",
+      "https://discoveruni.gov.uk/course-details/10007774/VF53/Full-time/",
+      "https://www.queens.ox.ac.uk/wp-content/uploads/2026/01/UG-Admissions_Physics_Report_2025_2026.pdf"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 2,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Discover Uni does not publish stand-alone graduate-outcome statistics for the joint Physics and Philosophy course itself (too few respondents); it instead shows the parent single-honours Physics figures (87% in work/study, 95% highly skilled, £35,500 median) and parent single-honours Philosophy figures (89%, 85%, £33,000) as context. To avoid attributing another course's figures to this one, those numeric fields are left null here rather than borrowed. ucasTariffPoints (152) is a computed UCAS Tariff equivalent of the stated A-level grade profile — Oxford itself admits on specific grades, not UCAS Tariff, so this figure is for cross-university comparison only. No official applicants-per-place figure isolating Physics and Philosophy was found — the 2025 physics admissions report notes only that 12 offers were made for Physics and Philosophy for 2026 entry (out of 201 total physics-department offers), without a matching course-specific applicant count — so 'popularity' is omitted."
+  },
+  {
+    "id": "oxford-human-sciences",
+    "university": "University of Oxford",
+    "courseTitle": "Human Sciences",
+    "subjectArea": "Human Sciences",
+    "ucasCode": "BCL0",
+    "degreeType": "BA (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAA",
+      "ib": "38 points overall (including core points), with 666 at Higher Level",
+      "ucasTariffPoints": 144,
+      "admissionsTests": "Test of Academic Reasoning for Admissions (TARA) — all three modules required (Critical Thinking, Problem Solving, Writing Task)",
+      "otherRequirements": "Biology or Mathematics at A-level/equivalent recommended but not required; interview for shortlisted candidates; English-language proficiency evidence required for non-native speakers"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 46210,
+      "feeYear": "2027/28 entry"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 95,
+      "highlySkilledWork": 80,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": "Public health, civil service/social policy, conservation, media, teaching, law and business roles. Discover Uni reports salary as two separate occupational tracks rather than one course-wide figure: ~£29,500 (range £25,500–£35,000) for graduates in bioscience-related roles, and ~£29,000 (range £27,000–£33,000) for those in sociology/social-policy/anthropology-related roles."
+    },
+    "sources": [
+      "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/human-sciences",
+      "https://discoveruni.gov.uk/course-details/10007774/BCL0/Full-time/",
+      "https://www.keble.ox.ac.uk/wp-content/uploads/Human-Sciences-Feedback-2024-Department.pdf"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 2,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": 4.6,
+      "basis": "stated",
+      "cycle": "2024/25",
+      "note": "167 applicants for 36 offers (including 5 open offers), per Keble College's own Human Sciences admissions feedback report for the 2024–25 cycle; 159 of the 167 applicants sat the compulsory admissions test that cycle (then still called the TSA).",
+      "source": "https://www.keble.ox.ac.uk/wp-content/uploads/Human-Sciences-Feedback-2024-Department.pdf"
+    },
+    "dataNote": "ucasTariffPoints (144) is a computed UCAS Tariff equivalent of the stated A-level grade profile — Oxford itself admits on specific grades, not UCAS Tariff, so this figure is for cross-university comparison only. medianSalary15mo/salaryRange15mo are null because Discover Uni only publishes salary as two separate occupational-track breakdowns for this course (see commonDestination), not one overall median; inWorkOrStudy15mo (95%) and highlySkilledWork (80%) ARE Discover Uni's genuine single overall headline figures for the whole course. The admissionsTests field reflects the CURRENT (2027-entry) requirement, TARA, which replaced the TSA sat by the 2024–25 cohort used for the popularity figure."
+  },
+  {
+    "id": "cambridge-materials",
+    "university": "University of Cambridge",
+    "courseTitle": "Natural Sciences (Materials Science)",
+    "subjectArea": "Materials Science",
+    "ucasCode": "BCF0",
+    "degreeType": "BA (Hons) / MSci",
+    "duration": "3 years (BA) or 4 years (MSci)",
+    "entryRequirements": {
+      "aLevel": "A*A*A (general Natural Sciences offer). Essential for the Materials Science Part IA option: A-level in Chemistry or Physics; no prior study of Materials Science itself is needed.",
+      "ib": "41-42 points, with 776 at Higher Level",
+      "ucasTariffPoints": 160,
+      "admissionsTests": "ESAT (Engineering and Science Admissions Test) required for all Natural Sciences applicants: Mathematics 1 (compulsory) plus two further modules chosen from Biology, Chemistry, Physics or Mathematics 2",
+      "otherRequirements": "Applicants apply via either the Biological or Physical Sciences route at UCAS application stage; this affects interview allocation but does not restrict which Part IA (year one) subjects, including Materials Science, can actually be chosen."
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 44214,
+      "feeYear": "2027/28 (home fee cap, per UK-wide fee-cap methodology); international figure is Cambridge's published 2026-entry rate for its 'Group 4' STEM band, as 2027-entry international fees were not yet published on Cambridge's site as of September 2026"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": 90,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": null
+    },
+    "sources": [
+      "https://www.natsci.tripos.cam.ac.uk/course-structure/year-one-part-ia",
+      "https://www.natsci.tripos.cam.ac.uk/admissions",
+      "https://www.undergraduate.study.cam.ac.uk/courses/natural-sciences",
+      "https://www.undergraduate.study.cam.ac.uk/apply/how/science-engineering-admission-test",
+      "https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs",
+      "https://www.thecompleteuniversityguide.co.uk/league-tables/rankings/materials-technology?tabletype=full-table",
+      "https://www.tutorhunt.com/admissionreport/university-of-cambridge/ba-msci-natural-sciences"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 1,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": 3.8,
+      "basis": "derived_from_offer_rate",
+      "cycle": "2023/24",
+      "note": "Derived as 1 / offer rate. Cambridge's published Natural Sciences (BA/MSci) offer rate for 2023/24 entry was 26% (roughly 1 in 4 applicants received an offer) — this is an approximation of applicants-per-place, not a stated ratio, and covers the whole Natural Sciences course, not the Materials Science pathway specifically.",
+      "source": "https://www.tutorhunt.com/admissionreport/university-of-cambridge/ba-msci-natural-sciences (FOI-derived data originally published via admissionreport.com)"
+    },
+    "dataNote": "highlySkilledWork (90%) is Complete University Guide's 2027 'Graduate Prospects – Outcomes' figure for Cambridge from the Materials Technology subject table (closest CUG proxy for this pathway; CUG doesn't publish a separate Natural Sciences (Materials Science) row). inWorkOrStudy15mo, medianSalary15mo, salaryRange15mo and commonDestination are null: Discover Uni's Cambridge course pages redirect to its homepage rather than showing course data in this environment, and CUG does not publish salary/destination figures."
+  },
+  {
+    "id": "cambridge-vetmed",
+    "university": "University of Cambridge",
+    "courseTitle": "Veterinary Medicine (VetMB)",
+    "subjectArea": "Veterinary Medicine",
+    "ucasCode": "D100",
+    "degreeType": "VetMB (Bachelor of Veterinary Medicine)",
+    "duration": "6 years full-time",
+    "entryRequirements": {
+      "aLevel": "A*AA, with the A* required in Chemistry, plus at least one of Biology, Physics or Mathematics",
+      "ib": "41-42 points overall, with 776 in Higher Level subjects (Chemistry plus two other science/maths subjects recommended, at least two at Higher Level)",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "ESAT (Engineering and Science Admissions Test) required: Mathematics 1 (compulsory) plus two further modules chosen from Biology, Chemistry, Physics or Mathematics 2. Applicants must register separately for it (by late September in the application cycle).",
+      "otherRequirements": "Applicants must be at least 18 years old by 1 March of Year 1 of the course. Around two weeks of relevant experience (either 'seeing practice' with a vet or animal-handling/management) is recommended but explicitly not required — lack of it is not disqualifying. Occupational health clearance is required, and applicants previously excluded or failed from another UK veterinary school cannot apply."
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 70554,
+      "feeYear": "2027/28 (home fee cap, per UK-wide fee-cap methodology); international figure is Cambridge's published 2026-entry rate for its 'Group 5: Medical and Veterinary Science' band, as 2027-entry international fees were not yet published on Cambridge's site as of September 2026"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": null,
+      "highlySkilledWork": 97,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": "Clinical veterinary practice, further specialist veterinary training/residencies, veterinary research, government and regulatory bodies (e.g. APHA), animal welfare charities, and the pharmaceutical/animal-health industry"
+    },
+    "sources": [
+      "https://www.vet.cam.ac.uk/study/vet/howtoapply",
+      "https://www.undergraduate.study.cam.ac.uk/courses/veterinary-medicine-vetmb",
+      "https://www.undergraduate.study.cam.ac.uk/apply/how/science-engineering-admission-test",
+      "https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs",
+      "https://www.thecompleteuniversityguide.co.uk/league-tables/rankings/veterinary-medicine?tabletype=full-table",
+      "https://www.tutorhunt.com/admissionreport/university-of-cambridge/vetmb-veterinary-medicine"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 1,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "popularity": {
+      "applicantsPerPlace": 3.7,
+      "basis": "derived_from_offer_rate",
+      "cycle": "2023/24",
+      "note": "Derived as 1 / offer rate. Cambridge's published VetMB offer rate for 2023/24 entry was 27% (roughly 1 in 4 applicants received an offer) — this is an approximation of applicants-per-place, not a stated ratio.",
+      "source": "https://www.tutorhunt.com/admissionreport/university-of-cambridge/vetmb-veterinary-medicine (FOI-derived data originally published via admissionreport.com)"
+    },
+    "dataNote": "highlySkilledWork (97%) is Complete University Guide's 2027 'Graduate Prospects – Outcomes' figure for Cambridge from the Veterinary Medicine subject table (Cambridge ranks 1st in that table). commonDestination is a qualitative summary from Cambridge's own vet school admissions/course pages, not a percentage breakdown from a stats source, so treat it as indicative rather than measured. inWorkOrStudy15mo, medianSalary15mo and salaryRange15mo are null: Discover Uni's Cambridge course pages redirect to its homepage in this environment rather than showing course-level HESA data, and CUG does not publish salary figures."
+  },
+  {
+    "id": "imperial-materials",
+    "university": "Imperial College London",
+    "courseTitle": "Materials Science and Engineering MEng",
+    "subjectArea": "Materials Science",
+    "ucasCode": "JFM2",
+    "degreeType": "MEng (Integrated Master's)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "AAA",
+      "ib": "38 points",
+      "ucasTariffPoints": 144,
+      "admissionsTests": "None required — Imperial's Materials department states it does not use an admissions test for this course; selection is via personal statement screening, a 30-minute interview, and a group problem-solving task instead.",
+      "otherRequirements": "ATAS certificate required for most international students (some nationalities exempt, e.g. Switzerland, Australia, Canada, Japan, New Zealand, Singapore, South Korea, USA, EEA)."
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 45500,
+      "feeYear": "2027/28 entry (home fee, subject to parliamentary approval); international figure is Imperial's confirmed 2026/27 rate carried forward as the most recent published value — 2027/28 international fee was not yet set at time of research."
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 95,
+      "highlySkilledWork": 95,
+      "medianSalary15mo": 35000,
+      "salaryRange15mo": "£32,000–£47,500",
+      "commonDestination": "Engineering professional roles (~20% of employed graduates), with IT, finance, and business/public-administration roles also common (Discover Uni, 2022/23 cohort, 25 respondents, 60% response rate)."
+    },
+    "sources": [
+      "https://www.imperial.ac.uk/study/courses/undergraduate/materials-science-engineering-meng/",
+      "https://www.imperial.ac.uk/engineering/departments/materials/study/undergraduate/apply-to-study-materials-science/",
+      "https://discoveruni.gov.uk/course-details/10003270/JFM2/Full-time/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 4,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Imperial's own course-marketing page separately states 97% in work/study and 91% highly skilled work for 'Materials' graduates generally — a different figure from the course-specific Discover Uni stats used here (95%/95%), likely reflecting a different cohort year or a combined UG+PG population. Discover Uni's course-specific HESA data was preferred as the more precisely scoped source. ucasTariffPoints (144) computed from the stated A-level grade profile using the standard UCAS Tariff (2017) table, consistent with how other Oxbridge/Russell-Group entries in this dataset are scored, even though this university's own offers are expressed in specific grades rather than tariff points."
+  },
+  {
+    "id": "imperial-chemeng",
+    "university": "Imperial College London",
+    "courseTitle": "Chemical Engineering MEng",
+    "subjectArea": "Chemical Engineering",
+    "ucasCode": "H801",
+    "degreeType": "MEng (Integrated Master's)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "A*A*A, including A* Chemistry and A* Mathematics, plus A in Biology/Business Studies/Economics/Further Mathematics/Physics",
+      "ib": "40 points, including 7 Mathematics HL, 7 Chemistry HL, 6 in Biology/Business Management/Economics/Physics HL (typical offer 41 points)",
+      "ucasTariffPoints": 160,
+      "admissionsTests": "ESAT (Engineering and Science Admissions Test) required — Mathematics 1, Mathematics 2, and Chemistry modules — plus an interview.",
+      "otherRequirements": "Science Practical Endorsement pass required if applicable; professionally accredited by IChemE; Year Abroad variant requires host-country language proficiency."
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 45500,
+      "feeYear": "2027/28 entry (home fee); international figure is Imperial's confirmed 2026/27 rate carried forward — 2027/28 international fee was not yet set at time of research."
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 90,
+      "highlySkilledWork": 90,
+      "medianSalary15mo": 39000,
+      "salaryRange15mo": "£31,000–£65,000",
+      "commonDestination": "Engineering professional roles (~25% of employed graduates), followed by business/research/administrative roles (~20%) and finance (~10%) (Discover Uni, HESA Graduate Outcomes)."
+    },
+    "sources": [
+      "https://www.imperial.ac.uk/study/courses/undergraduate/chemical-engineering/",
+      "https://www.ucas.com/explore/courses/e2de716c-a608-771f-2df1-fd3de0742a94/course",
+      "https://discoveruni.gov.uk/course-details/10003270/H801/Full-time/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 4,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "UCAS's own course page explicitly states UCAS Tariff is 'Not accepted' for this course, confirming Imperial admits on specific grades rather than a tariff score."
+  },
+  {
+    "id": "imperial-biochem",
+    "university": "Imperial College London",
+    "courseTitle": "Biochemistry BSc",
+    "subjectArea": "Biochemistry",
+    "ucasCode": "C700",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years (4 years with Year Abroad or Year in Industry)",
+    "entryRequirements": {
+      "aLevel": "AAA",
+      "ib": "38 points",
+      "ucasTariffPoints": 144,
+      "admissionsTests": "None required — the department states it does not use a test as part of its selection process.",
+      "otherRequirements": "Personal statement and references considered; interviews generally not held; Year Abroad option requires host-country language proficiency (minimum 60% for France/Germany placements)."
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 45500,
+      "feeYear": "2027/28 entry (course page also directly confirms £9,790 for 2026/27 entry)."
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 85,
+      "highlySkilledWork": 85,
+      "medianSalary15mo": 33000,
+      "salaryRange15mo": "£30,000–£45,000",
+      "commonDestination": "Finance, business/research, media, teaching, and science professional/associate roles, each roughly 10–15% of employed graduates (Discover Uni; small sample, 15–25 respondents)."
+    },
+    "sources": [
+      "https://www.imperial.ac.uk/study/courses/undergraduate/2026/biochemistry-bsc/",
+      "https://discoveruni.gov.uk/course-details/10003270/C700/Full-time/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 4,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Distinct department (Life Sciences) and UCAS code from the existing 'Biological Sciences' entry already in the dataset, so not a duplicate. Discover Uni notes modest sample sizes (15-25 respondents) for the salary/outcome figures. ucasTariffPoints (144) computed from the stated A-level grade profile using the standard UCAS Tariff (2017) table, consistent with how other Oxbridge/Russell-Group entries in this dataset are scored, even though this university's own offers are expressed in specific grades rather than tariff points."
+  },
+  {
+    "id": "imperial-physics-theoretical",
+    "university": "Imperial College London",
+    "courseTitle": "Physics with Theoretical Physics MSci",
+    "subjectArea": "Theoretical Physics",
+    "ucasCode": "F390",
+    "degreeType": "MSci (Integrated Master's)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "A*A*A, including A* Mathematics, A* Physics, A in a third subject (Further Mathematics recommended but not essential)",
+      "ib": "40 points, including 7 Mathematics HL, 7 Physics HL, 6 in a third HL subject (typical offer 42 points)",
+      "ucasTariffPoints": 160,
+      "admissionsTests": "ESAT (Engineering and Science Admissions Test) required — Mathematics 1, Mathematics 2, and Physics modules.",
+      "otherRequirements": "Science Practical Endorsement pass required if applicable."
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 45500,
+      "feeYear": "2027/28 entry (home fee); international figure is Imperial's confirmed 2026/27 rate carried forward — 2027/28 international fee was not yet set at time of research."
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 100,
+      "highlySkilledWork": 85,
+      "medianSalary15mo": 40000,
+      "salaryRange15mo": "£34,000–£50,000",
+      "commonDestination": "IT roles and business/research/administrative roles are equally most common (~35% each of employed graduates), with some in science/project management (Discover Uni, 2022/23 cohort, 20 respondents, 70% response rate)."
+    },
+    "sources": [
+      "https://www.imperial.ac.uk/study/courses/undergraduate/physics-theoretical-msci/",
+      "https://discoveruni.gov.uk/course-details/10003270/F390/Full-time/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 4,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Distinct named pathway from the existing plain 'Physics' entry, with its own UCAS code (F390) and a subject-specific ESAT combination (includes Mathematics 2, unlike the standard Physics course), justifying separate inclusion. ucasTariffPoints (160) computed from the stated A-level grade profile using the standard UCAS Tariff (2017) table, consistent with how other Oxbridge/Russell-Group entries in this dataset are scored, even though this university's own offers are expressed in specific grades rather than tariff points."
+  },
+  {
+    "id": "imperial-aero",
+    "university": "Imperial College London",
+    "courseTitle": "Aeronautical Engineering MEng",
+    "subjectArea": "Aeronautical Engineering",
+    "ucasCode": "H401",
+    "degreeType": "MEng (Integrated Master's)",
+    "duration": "4 years (5 years with Year Abroad or Year in Industry)",
+    "entryRequirements": {
+      "aLevel": "A*A*A, including A* Mathematics, A or A* Physics, A in a third subject",
+      "ib": "40 points, including 7 Mathematics HL, 7 Physics HL (typical offer 43-44 points)",
+      "ucasTariffPoints": 160,
+      "admissionsTests": "ESAT (Engineering and Science Admissions Test) required — Mathematics 1, Mathematics 2, and Physics modules — plus an interview.",
+      "otherRequirements": "Science Practical Endorsement pass required if applicable; Grade B/6 GCSE French or German needed for the European Year Abroad option."
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": null,
+      "feeYear": "2027/28 entry (home fee; UK-wide fee-cap methodology applied, not a course-specific figure)."
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 95,
+      "highlySkilledWork": 100,
+      "medianSalary15mo": 35000,
+      "salaryRange15mo": "£32,000–£36,000",
+      "commonDestination": "IT professional roles (~40% of employed graduates) and engineering professional roles (~35%), with the remainder in finance and business/research/administrative roles (Discover Uni)."
+    },
+    "sources": [
+      "https://www.imperial.ac.uk/study/courses/undergraduate/aeronautical-engineering/",
+      "https://discoveruni.gov.uk/course-details/10003270/H401/Full-time/",
+      "https://www.imperial.ac.uk/study/fees-and-funding/undergraduate/tuition-fees/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 4,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "This course's own page did not display specific fee figures when fetched, so homeAnnual uses the confirmed Imperial-wide 2027/28 home cap rather than a course-specific quote. internationalAnnual is left null rather than assumed: other Imperial Engineering/Science courses (Chemical Engineering, Materials, Physics with Theoretical Physics) list £45,500 for 2026/27, which is plausibly the same fee band, but this was not directly confirmed on the Aeronautical Engineering page itself, so it is not stated as fact here. ucasTariffPoints (160) computed from the stated A-level grade profile using the standard UCAS Tariff (2017) table, consistent with how other Oxbridge/Russell-Group entries in this dataset are scored, even though this university's own offers are expressed in specific grades rather than tariff points."
+  },
+  {
+    "id": "ucl-biochemistry",
+    "university": "University College London (UCL)",
+    "courseTitle": "Biochemistry BSc",
+    "subjectArea": "Biochemistry",
+    "ucasCode": "C700",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAA, including Biology, Chemistry and Mathematics",
+      "ib": "38 points, with 5,5,5 at Higher Level including Biology, Chemistry and Mathematics",
+      "ucasTariffPoints": 144,
+      "admissionsTests": "None required",
+      "otherRequirements": "GCSE English Language and Mathematics at grade B/6. Contextual offer: ABB with grade A in Chemistry (34 IB points, Chemistry at 6)."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 42700,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 90,
+      "highlySkilledWork": 95,
+      "medianSalary15mo": 30500,
+      "salaryRange15mo": "£29,000–£32,500",
+      "commonDestination": "Finance/accountancy, scientific consultancy, data analysis, biotech and pharmaceutical industries"
+    },
+    "sources": [
+      "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/biochemistry-bsc-2026",
+      "https://discoveruni.gov.uk/course-details/10007784/UBSBOCSING18/FullTime/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 10,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Discover Uni reports these outcome figures under a combined 'Molecular Biology, Biophysics and Biochemistry' subject grouping for UCL, not isolated to the Biochemistry BSc course code alone."
+  },
+  {
+    "id": "ucl-pharmacology",
+    "university": "University College London (UCL)",
+    "courseTitle": "Pharmacology BSc",
+    "subjectArea": "Pharmacology",
+    "ucasCode": "B210",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAB, including Chemistry and one of Biology, Mathematics or Physics",
+      "ib": "36 points at Higher Level, no score below 5, including Chemistry and one of Biology, Mathematics or Physics",
+      "ucasTariffPoints": 136,
+      "admissionsTests": "None required",
+      "otherRequirements": "GCSE English Language and Mathematics at grade B/6. Contextual offer: ABB or 34 IB points."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 42700,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 80,
+      "highlySkilledWork": 80,
+      "medianSalary15mo": 30000,
+      "salaryRange15mo": "£26,000–£34,000",
+      "commonDestination": "Pharmaceutical research, healthcare-related roles, and science/technology associate professional roles"
+    },
+    "sources": [
+      "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/pharmacology-bsc-2026",
+      "https://discoveruni.gov.uk/course-details/10007784/UBSPHASING18/FullTime/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 10,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "UCL's own admissions page separately cites 87.5% in work or further study 15 months after graduation — likely a different cohort year/survey than the Discover Uni figure of 80% used here. Discover Uni's course-specific page was treated as the primary source."
+  },
+  {
+    "id": "ucl-pharmacy-mpharm",
+    "university": "University College London (UCL)",
+    "courseTitle": "Pharmacy MPharm",
+    "subjectArea": "Pharmacy",
+    "ucasCode": "B230",
+    "degreeType": "MPharm (Hons)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "AAB, including Chemistry and one of Biology, Mathematics or Physics",
+      "ib": "36 points at Higher Level, no score below 5, including Chemistry and one of Biology, Mathematics or Physics",
+      "ucasTariffPoints": 136,
+      "admissionsTests": "No standardised written admissions test, but shortlisted applicants are invited to an interview/selection event, and offer-holders must pass Occupational Health screening and an enhanced DBS check before enrolment.",
+      "otherRequirements": "GCSE English Language and Mathematics at grade B/6. Strong numeracy and literacy expected; ability to communicate confidently with the public."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 35400,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 75,
+      "highlySkilledWork": 80,
+      "medianSalary15mo": 35000,
+      "salaryRange15mo": "£25,000–£40,000",
+      "commonDestination": "Community pharmacy, hospital pharmacy, industrial pharmacy and academia"
+    },
+    "sources": [
+      "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/pharmacy-mpharm-2026",
+      "https://discoveruni.gov.uk/course-details/10007784/UMPPHMSING01/FullTime/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 10,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "UCL's own School of Pharmacy page separately claims 96% of students in highly skilled work 15 months after graduation, which is notably higher than the Discover Uni course-page figure of 80% used here (possibly a different survey year, cohort, or includes the pre-registration/foundation variants of the course). Discover Uni's small-cohort figures (based on ~20 respondents) also carry wide uncertainty."
+  },
+  {
+    "id": "ucl-statistics",
+    "university": "University College London (UCL)",
+    "courseTitle": "Statistics BSc",
+    "subjectArea": "Statistics",
+    "ucasCode": "G300",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "A*AA, including A* in Mathematics (Further Mathematics preferred, along with Chemistry, Economics, Physics or Statistics)",
+      "ib": "39 points at Higher Level, with grade 7 in Mathematics, no score below 5",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "None required",
+      "otherRequirements": "GCSE English Language and Mathematics at grade C/4. Contextual offer: A*BB (36 IB points with grade 7 Mathematics). Accredited by the Royal Statistical Society (2023–2028 entrants)."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 42700,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 90,
+      "highlySkilledWork": 95,
+      "medianSalary15mo": 41500,
+      "salaryRange15mo": "£33,000–£60,000",
+      "commonDestination": "Financial sector, technology companies, actuarial/accountancy professions, and data/business analysis roles"
+    },
+    "sources": [
+      "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/statistics-bsc-2026",
+      "https://discoveruni.gov.uk/course-details/10007784/UBSSTASING18/FullTime/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 10,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Discover Uni salary figure based on 25 respondents (55% response rate) — a relatively small sample."
+  },
+  {
+    "id": "ucl-chemical-engineering",
+    "university": "University College London (UCL)",
+    "courseTitle": "Chemical Engineering MEng",
+    "subjectArea": "Chemical Engineering",
+    "ucasCode": "H801",
+    "degreeType": "MEng (Hons)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "AAA, including Mathematics and Chemistry",
+      "ib": "38 points at Higher Level, with 6,6 in Mathematics and Chemistry, no score below 5",
+      "ucasTariffPoints": 144,
+      "admissionsTests": "None required",
+      "otherRequirements": "GCSE English Language and Mathematics at grade C/4. Contextual offer: ABB (34 IB points). Provides a direct route to IChemE membership and Chartered Engineer (CEng) status. A 3-year BEng variant (UCAS H800) is also offered."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 42700,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 85,
+      "highlySkilledWork": 80,
+      "medianSalary15mo": 34000,
+      "salaryRange15mo": "£32,000–£36,500",
+      "commonDestination": "Accountancy/finance, manufacturing, IT/technology, engineering and consultancy (employers cited include Johnson Matthey, BP, Deloitte, ExxonMobil)"
+    },
+    "sources": [
+      "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/chemical-engineering-meng-2026",
+      "https://discoveruni.gov.uk/course-details/10007784/UMNCENSING22/FullTime/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 10,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "UCL's own course page separately states 87.5% in full-time work or self-employment within six months of graduation — a different metric/timeframe than the Discover Uni 15-month figure (85%) used here."
+  },
+  {
+    "id": "ucl-astrophysics",
+    "university": "University College London (UCL)",
+    "courseTitle": "Astrophysics BSc",
+    "subjectArea": "Astrophysics",
+    "ucasCode": "F510",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "A*AA, with A* and A in Mathematics and Physics (in either order)",
+      "ib": "39 points at Higher Level, with grades 7 and 6 in Mathematics and Physics, no score below 5",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "None required",
+      "otherRequirements": "GCSE English Language and Mathematics at grade C/4. Run by UCL's Physics & Astronomy department; a 4-year MSci variant is also offered."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 42700,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 80,
+      "highlySkilledWork": 89,
+      "medianSalary15mo": 34000,
+      "salaryRange15mo": "£31,000–£40,000",
+      "commonDestination": "Around 30% continue to postgraduate study (MSc/PhD); others enter financial services, IT, engineering or teaching"
+    },
+    "sources": [
+      "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/astrophysics-bsc-2026",
+      "https://discoveruni.gov.uk/course-details/10007784/UBSASTSPHY18/FullTime/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 10,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    }
+  },
+  {
+    "id": "ucl-infection-and-immunity",
+    "university": "University College London (UCL)",
+    "courseTitle": "Infection and Immunity BSc",
+    "subjectArea": "Infection and Immunity",
+    "ucasCode": "C550",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "AAA, including Biology and Chemistry (Mathematics preferred)",
+      "ib": "38 points at Higher Level, with 6,6 in Biology and Chemistry",
+      "ucasTariffPoints": 144,
+      "admissionsTests": "None required",
+      "otherRequirements": "GCSE English Language and Mathematics at grade B/6. Contextual offer: ABB (34 IB points). Some final-year research projects require a Hepatitis B vaccination (~£150 cost to the student)."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 39200,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 86,
+      "highlySkilledWork": 65,
+      "medianSalary15mo": 31000,
+      "salaryRange15mo": "£29,500–£37,500",
+      "commonDestination": "Biomedical science, scientific research, public health, teaching and science publishing"
+    },
+    "sources": [
+      "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/infection-and-immunity-bsc-2026",
+      "https://discoveruni.gov.uk/course-details/10007784/UBSIFCAIMM18/FullTime/"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 10,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Discover Uni explicitly notes this course's cohort was too small to publish course-specific employment/earnings data, so the figures shown reflect broader UCL Biosciences graduates rather than this course exclusively."
+  },
+  {
+    "id": "kcl-pharmacology",
+    "university": "King's College London",
+    "courseTitle": "Pharmacology BSc",
+    "subjectArea": "Pharmacology",
+    "ucasCode": "B210",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years (4 years with year abroad, industry placement, or integrated MSci option)",
+    "entryRequirements": {
+      "aLevel": "AAA, including grade A in Biology and Chemistry (AAC for contextual offers, same subject requirement)",
+      "ib": "36 points overall (or 18 from three Higher Level subjects), including grade 6 in Higher Level Biology and Chemistry (33 points / 16 HL for contextual offers)",
+      "ucasTariffPoints": 144,
+      "admissionsTests": "None required — no subject-specific admissions test is listed for this course (KCL does not require UCAT or any other test outside Medicine).",
+      "otherRequirements": "Practical endorsement required in all science A-levels (England, linear specifications). General Studies, Critical Thinking, Thinking Skills and Global Perspectives not accepted; EPQ not considered. Access to HE Diploma route also accepted (60 credits, 45 at Level 3, with 15 Level 3 credits each in Biology and Chemistry at Distinction). International applicants: English language Band D."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 38300,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 90,
+      "highlySkilledWork": 35,
+      "medianSalary15mo": 28000,
+      "salaryRange15mo": "£25,000–£33,000",
+      "commonDestination": "Business/public service associate professional roles, research/administrative roles, pharmaceutical industry and biomedical research; some progress to graduate-entry Medicine, Dentistry or further pharmacology/pharmaceutical science study."
+    },
+    "sources": [
+      "https://www.kcl.ac.uk/study/undergraduate/courses/pharmacology-bsc",
+      "https://www.kcl.ac.uk/study/undergraduate/courses/pharmacology-bsc/entry-requirements",
+      "https://www.kcl.ac.uk/study/undergraduate/courses/pharmacology-bsc/careers",
+      "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/tuition-fees",
+      "https://discoveruni.gov.uk/course-details/10003645/UBSH3BSPC/Full-time/",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/pharmacology/54965792"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 12,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "From Discover Uni Graduate Outcomes survey (based on 10 respondents, ~70% response rate) — a small cohort, so treat the salary figures as indicative rather than precise. International fee (£38,300) could not be confirmed directly on KCL's own JS-rendered fee page; it is sourced from Complete University Guide/collegedunia, which show the identical figure across several unrelated KCL Life Sciences courses — treat as an indicative Life Sciences band fee rather than a course-specific confirmed figure. Home fee (£9,790, 2026/27) is confirmed directly from KCL's official tuition-fees page."
+  },
+  {
+    "id": "kcl-pharmacy",
+    "university": "King's College London",
+    "courseTitle": "Pharmacy MPharm",
+    "subjectArea": "Pharmacy",
+    "ucasCode": "B230",
+    "degreeType": "MPharm (Hons)",
+    "duration": "4 years",
+    "entryRequirements": {
+      "aLevel": "ABB, including grade A in Chemistry and grade A in one of Biology, Mathematics or Physics (AAC for contextual offers, same subject requirement)",
+      "ib": "36 points overall (or 18 from three Higher Levels), including grade 6 in Higher Level Chemistry and grade 6 in HL Biology, Mathematics or Physics (33 points / 16 HL for contextual offers)",
+      "ucasTariffPoints": 128,
+      "admissionsTests": "No UCAT, PCAT or other subject-specific admissions test is required.",
+      "otherRequirements": "GCSE grade 6/B required in both English Language and Mathematics. Mandatory 30-minute online interview (Microsoft Teams). Applicants must be 18 by 1 January of the year of entry. DBS (criminal record) check and Occupational Health clearance required for all offer-holders, since this is the professional qualifying degree for registration as a pharmacist."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 38300,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 76,
+      "highlySkilledWork": 90,
+      "medianSalary15mo": 42000,
+      "salaryRange15mo": "£35,000–£45,000",
+      "commonDestination": "Overwhelmingly registers as a pharmacist ('Other Health Professionals', ~85%) in hospital, community pharmacy, GP practices, or the pharmaceutical industry — this is the only UK degree route to professional registration as a pharmacist."
+    },
+    "sources": [
+      "https://www.kcl.ac.uk/study/undergraduate/courses/pharmacy-mpharm",
+      "https://www.kcl.ac.uk/study/undergraduate/courses/pharmacy-mpharm/requirements",
+      "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/tuition-fees",
+      "https://discoveruni.gov.uk/course-details/10003645/UMPH4BSPR/FullTime/",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/pharmacy-mpharm/54965726"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 12,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Discover Uni Graduate Outcomes survey, 2022–23 graduating cohort (25–80 respondents depending on metric). International fee (£38,300/year) is a secondary-source figure (Complete University Guide/collegedunia), not confirmed directly from KCL's own JS-rendered fee page — treat as indicative. Home fee (£9,790, 2026/27) confirmed directly from KCL."
+  },
+  {
+    "id": "kcl-biochemistry",
+    "university": "King's College London",
+    "courseTitle": "Biochemistry BSc",
+    "subjectArea": "Biochemistry",
+    "ucasCode": "C700",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years (4 years with year abroad, extra-mural year, or MSci transfer)",
+    "entryRequirements": {
+      "aLevel": "AAA, including grade A in Biology and Chemistry (AAC for contextual offers)",
+      "ib": "36 points overall (or 18 from three Higher Levels), including grade 6 in HL Biology and Chemistry (33 points / 16 HL for contextual offers)",
+      "ucasTariffPoints": 144,
+      "admissionsTests": "None required.",
+      "otherRequirements": "Practical endorsement required for linear science A-levels (England). General Studies, Critical Thinking, Thinking Skills and Global Perspectives not accepted; EPQ not considered. Shares a 'Common Year One' with related biomedical degrees, allowing transfer after Year 1. Access to HE Diploma route accepted with 15 Level 3 credits each in Biology and Chemistry at Distinction. English language Band D for international applicants."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 38300,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 85,
+      "highlySkilledWork": 70,
+      "medianSalary15mo": 30000,
+      "salaryRange15mo": "£25,000–£31,000",
+      "commonDestination": "Science and engineering associate/professional roles, IT, finance, healthcare and teaching; graduates go into scientific research environments as well as broader business roles."
+    },
+    "sources": [
+      "https://www.kcl.ac.uk/study/undergraduate/courses/biochemistry-bsc",
+      "https://www.kcl.ac.uk/study/undergraduate/courses/biochemistry-bsc/entry-requirements",
+      "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/tuition-fees",
+      "https://discoveruni.gov.uk/course-details/10003645/UBSH3BSBC/Full-time",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/biochemistry/54965790"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 12,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Discover Uni Graduate Outcomes survey (15 respondents, ~55% response rate — a small cohort). International fee (£38,300) is a secondary-source figure, not confirmed on KCL's own JS-rendered fee page — treat as indicative Life Sciences band fee. Home fee (£9,790, 2026/27) confirmed directly from KCL."
+  },
+  {
+    "id": "kcl-anatomy-developmental-human-biology",
+    "university": "King's College London",
+    "courseTitle": "Anatomy, Developmental & Human Biology BSc",
+    "subjectArea": "Anatomy",
+    "ucasCode": "B150",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years (4 years with year abroad)",
+    "entryRequirements": {
+      "aLevel": "AAA, including grade A in Biology and Chemistry (AAC for contextual offers)",
+      "ib": "36 points overall (or 18 from three Higher Levels), including grade 6 in HL Biology and Chemistry (33 points / 16 HL for contextual offers)",
+      "ucasTariffPoints": 144,
+      "admissionsTests": "None required.",
+      "otherRequirements": "Practical endorsement required for linear science A-levels (England). General Studies, Critical Thinking, Thinking Skills and Global Perspectives not accepted. Access to HE Diploma accepted (15 Level 3 credits each in Biology and Chemistry at Distinction). Part of the School of Bioscience Education 'Common Year One' suite, allowing transfer to related programmes after Year 1. English language Band D for international applicants. Note: this BSc is distinct from KCL's separate one-year Anatomy, Developmental & Human Biology iBSc, which is an intercalated degree for students already on another (typically Medicine) programme, not a standalone entry route."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 38300,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 90,
+      "highlySkilledWork": 60,
+      "medianSalary15mo": 30000,
+      "salaryRange15mo": "£25,000–£32,000",
+      "commonDestination": "Teaching professionals, science/technology associates, IT, business/public service associate roles, and further study/graduate entry routes (e.g. Medicine, Dentistry)."
+    },
+    "sources": [
+      "https://www.kcl.ac.uk/study/undergraduate/courses/anatomy-developmental-and-human-biology-bsc",
+      "https://www.kcl.ac.uk/study/undergraduate/courses/anatomy-developmental-and-human-biology-bsc/entry-requirements",
+      "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/tuition-fees",
+      "https://discoveruni.gov.uk/course-details/10003645/UBSH3BSAD/Full-time/",
+      "https://www.ucas.com/explore/courses/8ff8364a-fbda-0a66-94ec-594b44d12e24/anatomy-developmental-and-human-biology"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 12,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Discover Uni reports this course's outcomes aggregated under broader 'Medical sciences' and 'Biosciences' subject groupings rather than as a standalone course-level figure (cohort too small to report individually); figures given here are the 'Biosciences' grouping. International fee (£38,300) is a secondary-source figure, not confirmed on KCL's own JS-rendered fee page — treat as indicative. Home fee (£9,790, 2026/27) confirmed both on KCL's own tuition-fees page and via The Uni Guide's course fee table."
+  },
+  {
+    "id": "kcl-nutritional-sciences",
+    "university": "King's College London",
+    "courseTitle": "Nutritional Sciences BSc",
+    "subjectArea": "Nutritional Sciences",
+    "ucasCode": "B400",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years (4 years with optional industry placement)",
+    "entryRequirements": {
+      "aLevel": "ABB, including grade B in Biology (BBC for contextual offers, same Biology requirement)",
+      "ib": "33 points overall (or 16 from three Higher Levels), including grade 5 in HL Biology (31 points / 14 HL for contextual offers)",
+      "ucasTariffPoints": 128,
+      "admissionsTests": "None required.",
+      "otherRequirements": "Practical endorsement required for linear science A-levels (England, science subjects). EPQ not considered. Access to HE Diploma accepted (15 Level 3 Biology credits at Distinction). Course is accredited by the Association for Nutrition (AfN), giving graduates eligibility for the UK Voluntary Register of Nutritionists at Associate level. English language Band B for international applicants. No transfers permitted onto/off this course."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 38300,
+      "feeYear": "2026/27"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 95,
+      "highlySkilledWork": 85,
+      "medianSalary15mo": 30000,
+      "salaryRange15mo": "£28,500–£35,000",
+      "commonDestination": "Predominantly 'Other Health Professionals' (~70%) — includes registered associate nutritionist roles, food industry (e.g. Waitrose, Kellogg's placements), public health, and food policy/retail roles."
+    },
+    "sources": [
+      "https://www.kcl.ac.uk/study/undergraduate/courses/nutrition-bsc",
+      "https://www.kcl.ac.uk/study/undergraduate/courses/nutrition-bsc/requirements",
+      "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/tuition-fees",
+      "https://www.discoveruni.gov.uk/course-details/10003645/UBSH3MSNTSCI/Full-time",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/nutritional-sciences/54965794"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 12,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "International fee (£38,300) is a secondary-source figure, not confirmed on KCL's own JS-rendered fee page — treat as indicative. Home fee (£9,790, 2026/27) confirmed directly from KCL."
+  },
+  {
+    "id": "kcl-astrophysics",
+    "university": "King's College London",
+    "courseTitle": "Physics with Astrophysics and Cosmology BSc",
+    "subjectArea": "Astrophysics",
+    "ucasCode": "FF35",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years (4 years for integrated MSci pathway)",
+    "entryRequirements": {
+      "aLevel": "AAA, including grade A in Mathematics and Physics (AAC for contextual offers)",
+      "ib": "36 points overall (or 18 from three Higher Levels), including grade 6 in HL Mathematics and Physics (33 points / 16 HL for contextual offers)",
+      "ucasTariffPoints": 144,
+      "admissionsTests": "None required.",
+      "otherRequirements": "Practical endorsement required for linear science A-levels (England). General Studies, Critical Thinking, Thinking Skills and Global Perspectives not accepted. Access to HE Diploma accepted (15 Level 3 credits each in Mathematics and Physics at Distinction). Optional third-year study abroad. Accredited pathway allows graduates meeting further requirements to work towards Chartered Physicist (CPhys) status."
+    },
+    "fees": {
+      "homeAnnual": 9790,
+      "internationalAnnual": 31260,
+      "feeYear": "2026/27 (home); international figure sourced for 2025/26 entry — see dataNote"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 80,
+      "highlySkilledWork": 70,
+      "medianSalary15mo": 32000,
+      "salaryRange15mo": "£27,000–£35,000",
+      "commonDestination": "IT professional roles (~20%), finance (~15%), natural/social science professional roles, and teaching; broader transferable-skills base for varied 'future-facing' careers per KCL."
+    },
+    "sources": [
+      "https://www.kcl.ac.uk/study/undergraduate/courses/physics-with-astrophysics-and-cosmology-bsc",
+      "https://www.kcl.ac.uk/study/undergraduate/courses/physics-with-astrophysics-and-cosmology-bsc/requirements",
+      "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/tuition-fees",
+      "https://discoveruni.gov.uk/en/course-details/10003645/UBSH3MPHAC/Full-time/",
+      "https://yocket.com/universities/king-s-college-london/physics-with-astrophysics-and-cosmology-62677"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 12,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Discover Uni Graduate Outcomes survey, 2021–23 graduating cohorts (25 respondents, ~60% response rate — small sample, treat as indicative). International fee (£31,260/year) is a third-party aggregator figure (Yocket) explicitly labelled 2025-26 entry — notably lower than the £38,300 shown for KCL's Life Sciences courses, consistent with Physics sitting in a different (Natural Sciences) fee band, but not confirmed directly on KCL's own JS-rendered fee page for 2026/27 entry. Home fee (£9,790, 2026/27) confirmed directly from KCL and via The Uni Guide."
+  },
+  {
+    "id": "lse-actuarial-science",
+    "university": "London School of Economics (LSE)",
+    "courseTitle": "BSc Actuarial Science",
+    "subjectArea": "Actuarial Science",
+    "ucasCode": "N321",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years (4 years with placement year option)",
+    "entryRequirements": {
+      "aLevel": "A*AA including A* in Mathematics (A*AB with A* in Mathematics under LSE's contextual-offer scheme); Further Mathematics expected at grade A where offered",
+      "ib": "39 points overall, including 766 at Higher Level, with 7 in Mathematics: Analysis and Approaches (38 points under the contextual offer)",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "None required",
+      "otherRequirements": "GCSE grade B/6 or above in English and Mathematics; Physics or Chemistry A-level recommended but not mandatory"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": null,
+      "feeYear": "2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 100,
+      "highlySkilledWork": 85,
+      "medianSalary15mo": 43000,
+      "salaryRange15mo": "£38,000–£58,500",
+      "commonDestination": "Insurance, banking, finance, pensions, consultancy and statistics; largest single group in \"Business, Research and Administrative Professional\" roles"
+    },
+    "sources": [
+      "https://www.lse.ac.uk/study-at-lse/undergraduate/bsc-actuarial-science",
+      "https://discoveruni.gov.uk/course-details/10004063/N321-UBACT2/Full-time",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/actuarial-science/54987344",
+      "https://info.lse.ac.uk/staff/divisions/Planning-Division/Assets/Documents/Table-of-Fees-2026-27-and-PGR-structure-combined-28Nov2025.pdf"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 3,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Discover Uni's course-specific sample (10 respondents, 70% response rate, 2022-23 cohort) gives the 100% in-work-or-study figure, but its highly-skilled-work, salary and destination figures are substituted from the broader LSE Mathematics-graduate cohort because the Actuarial Science sample itself was too small — flagged here rather than presented as course-exclusive. International fee left null: LSE's 2026/27 fee table gives only an overseas fee range (£28,900–£39,900) varying by programme tier, with no Actuarial Science-specific figure published."
+  },
+  {
+    "id": "lse-financial-mathematics-and-statistics",
+    "university": "London School of Economics (LSE)",
+    "courseTitle": "BSc Financial Mathematics and Statistics",
+    "subjectArea": "Mathematics",
+    "ucasCode": "GN13",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "A*AA including A* in Mathematics (A*AB under the contextual offer); Further Mathematics expected at grade A where offered",
+      "ib": "39 points overall, including 766 at Higher Level, with 7 in Mathematics: Analysis and Approaches (38 points under the contextual offer)",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "None required",
+      "otherRequirements": "GCSE grade B/6 or above in English and Mathematics"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": null,
+      "feeYear": "2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 100,
+      "highlySkilledWork": null,
+      "medianSalary15mo": null,
+      "salaryRange15mo": null,
+      "commonDestination": "Corporate finance, accountancy, management and banking; many pursue graduate study in mathematics/economics-related fields"
+    },
+    "sources": [
+      "https://www.lse.ac.uk/study-at-lse/undergraduate/bsc-financial-mathematics-and-statistics",
+      "https://discoveruni.gov.uk/course-details/10004063/GN13-UBFIMAST/Full-time",
+      "https://info.lse.ac.uk/staff/divisions/Planning-Division/Assets/Documents/Table-of-Fees-2026-27-and-PGR-structure-combined-28Nov2025.pdf"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 3,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "highlySkilledWork/salary left null rather than fabricated: Discover Uni reports this joint course's outcomes as two separate proxy cohorts (\"Mathematics graduates\": 85% highly skilled, £43,000 median, £38,000–£58,500 range; \"Statistics graduates\": 90% highly skilled, £38,000 median, £34,000–£43,000 range) rather than one combined figure for the course itself, and picking one over the other would misrepresent the data. International fee left null for the same reason as the other LSE entries (no course-specific overseas figure published, only a £28,900–£39,900 institutional range)."
+  },
+  {
+    "id": "lse-mathematics-with-data-science",
+    "university": "London School of Economics (LSE)",
+    "courseTitle": "BSc Mathematics with Data Science",
+    "subjectArea": "Mathematics",
+    "ucasCode": "G140",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "A*AA including A* in Mathematics (A*AB under the contextual offer); Further Mathematics expected at grade A where offered",
+      "ib": "39 points overall, including 766 at Higher Level, with 7 in Mathematics: Analysis and Approaches (38 points under the contextual offer)",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "None required",
+      "otherRequirements": "GCSE grade B/6 or above in English and Mathematics"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": null,
+      "feeYear": "2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 95,
+      "highlySkilledWork": 85,
+      "medianSalary15mo": 43000,
+      "salaryRange15mo": "£38,000–£58,500",
+      "commonDestination": "Business, Research and Administrative Professionals (40%); Finance Professionals (20%); business/public-service associate professionals (15%); IT Professionals (10%)"
+    },
+    "sources": [
+      "https://www.lse.ac.uk/study-at-lse/undergraduate/bsc-mathematics-with-data-science",
+      "https://www.discoveruni.gov.uk/course-details/10004063/G140-UBMAWDS/FullTime/",
+      "https://info.lse.ac.uk/staff/divisions/Planning-Division/Assets/Documents/Table-of-Fees-2026-27-and-PGR-structure-combined-28Nov2025.pdf"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 3,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "This is a recently-introduced programme; Discover Uni itself notes the outcome figures shown are drawn from the broader LSE Mathematics-graduate cohort rather than this specific course, due to insufficient course-specific survey history. International fee left null for the same reason as the other LSE entries."
+  },
+  {
+    "id": "qmul-biochemistry",
+    "university": "Queen Mary University of London",
+    "courseTitle": "BSc (Hons) Biochemistry",
+    "subjectArea": "Biochemistry",
+    "ucasCode": "C700",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including A-level Chemistry; a Pass in the practical endorsement is required for Biology/Chemistry/Physics A-levels taken with an English awarding body",
+      "ib": null,
+      "ucasTariffPoints": 128,
+      "admissionsTests": "None required",
+      "otherRequirements": "Minimum GCSE profile including English and Mathematics"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 32950,
+      "feeYear": "2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 80,
+      "highlySkilledWork": 70,
+      "medianSalary15mo": 32000,
+      "salaryRange15mo": "£28,000–£36,000",
+      "commonDestination": "Business/public-service professional, finance, IT, science/engineering and teaching roles"
+    },
+    "sources": [
+      "https://www.qmul.ac.uk/sbbs/about-us/our-departments/biochemistry/",
+      "https://www.theuniguide.co.uk/queen-mary-university-of-london-10007775-q50/courses/biochemistry-bsc-hons-full-time-3-years-2026-412c8de2d8ba",
+      "https://discoveruni.gov.uk/course-details/10007775/UBSF-QMBIOF1-USBCY/Full-time/",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/biochemistry/54966080"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 24,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "IB requirement not independently confirmed from a QMUL source (left null rather than estimated). Home fee: QMUL's own coursefinder page still displays a stale 2024-25 figure of £9,535; the current UK fee-cap methodology (£10,050 for 2027/28 entry) was applied instead, consistent with project convention. Career-outcome figures are Discover Uni's, which itself substitutes broader related molecular-bioscience graduate data because the course-specific sample is small."
+  },
+  {
+    "id": "qmul-mathematics-and-statistics",
+    "university": "Queen Mary University of London",
+    "courseTitle": "Mathematics and Statistics BSc (Hons)",
+    "subjectArea": "Mathematics & Statistics",
+    "ucasCode": "GG31",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years",
+    "entryRequirements": {
+      "aLevel": "ABB including grade A or above in A-level Mathematics",
+      "ib": "32 points overall, including 6,5,5 from three Higher Level subjects",
+      "ucasTariffPoints": 128,
+      "admissionsTests": "None required",
+      "otherRequirements": "Commonly combined with Further Mathematics, Physics, Chemistry or Economics at A-level; practical science endorsement pass required where applicable"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 29450,
+      "feeYear": "2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 87,
+      "highlySkilledWork": 75,
+      "medianSalary15mo": 30000,
+      "salaryRange15mo": "£26,000–£35,000",
+      "commonDestination": "IT Professionals, Finance Professionals, business/public-service associate and teaching roles; also cited for pharmaceutical research, banking, investment and forensics pathways"
+    },
+    "sources": [
+      "https://www.qmul.ac.uk/undergraduate/coursefinder/courses/2026/mathematics-and-statistics/",
+      "https://www.discoveruni.gov.uk/course-details/10007775/UBSF-QMMATY1-UJMAPSTP/FullTime/",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/mathematics-and-statistics/54966060"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 24,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "A distinct joint-honours degree (UCAS GG31) from QMUL's existing standalone \"Mathematics\" entry already in the dataset. Home fee: QMUL's own coursefinder page shows a stale 2024-25 figure of £9,535; the current UK fee-cap methodology (£10,050, 2027/28 entry) was applied instead per project convention."
+  },
+  {
+    "id": "qmul-chemical-engineering",
+    "university": "Queen Mary University of London",
+    "courseTitle": "Chemical Engineering BEng (Hons)",
+    "subjectArea": "Chemical Engineering",
+    "ucasCode": "H812",
+    "degreeType": "BEng (Hons)",
+    "duration": "3 years (4–5 year variants with industrial experience, year abroad, or MEng also offered)",
+    "entryRequirements": {
+      "aLevel": "AAB including A-level Mathematics, and Physics or Chemistry",
+      "ib": "34 points overall, including 6,6,5 from three Higher Level subjects (Mathematics, plus Physics or Chemistry at Higher Level)",
+      "ucasTariffPoints": 136,
+      "admissionsTests": "None required",
+      "otherRequirements": "ATAS clearance required for non-EEA/Swiss nationals; BTEC not accepted as sole qualification for the MEng route"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 32950,
+      "feeYear": "2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 75,
+      "highlySkilledWork": 75,
+      "medianSalary15mo": 30000,
+      "salaryRange15mo": "£28,000–£35,000",
+      "commonDestination": "Engineering professionals in process/chemical industries (e.g. graduates cited at Procter & Gamble, TotalEnergies); some in business/public-service associate and teaching roles"
+    },
+    "sources": [
+      "https://www.qmul.ac.uk/undergraduate/coursefinder/courses/2026/chemical-engineering/",
+      "https://discoveruni.gov.uk/course-details/10007775/UBEF-QMENNF1-USCHYZ/Full-time",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/chemical-engineering-meng/56436756"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 24,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "International fee (£32,950) is sourced from the CUG listing for the MEng route (no distinct BEng figure was found) and used as the closest available department-level figure; treat as approximate for the BEng route specifically. Home fee: QMUL's own coursefinder page shows a stale 2024-25 figure of £9,535; the current UK fee-cap methodology (£10,050, 2027/28 entry) was applied instead. Discover Uni notes the outcome figures reflect the broader \"Chemical, process and energy engineering\" cohort rather than this course exclusively, as it is relatively new."
+  },
+  {
+    "id": "qmul-materials-science-and-engineering",
+    "university": "Queen Mary University of London",
+    "courseTitle": "Materials Science and Engineering BEng (Hons)",
+    "subjectArea": "Materials Science",
+    "ucasCode": "J511",
+    "degreeType": "BEng (Hons)",
+    "duration": "3 years (4–5 year variants with industrial experience, year abroad, or MEng also offered)",
+    "entryRequirements": {
+      "aLevel": "ABB including at least two A-levels from Mathematics, Physics or Chemistry",
+      "ib": "32 points overall, including 6,5,5 from three Higher Level subjects (at least two from Mathematics, Physics or Chemistry)",
+      "ucasTariffPoints": 128,
+      "admissionsTests": "None required",
+      "otherRequirements": "Minimum five GCSE passes including English at grade C/4"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 32950,
+      "feeYear": "2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 90,
+      "highlySkilledWork": 70,
+      "medianSalary15mo": 30000,
+      "salaryRange15mo": "£28,000–£35,000",
+      "commonDestination": "Engineering professionals (30%), science/engineering/technology associate professionals (20%), IT professionals (10%); typical roles include materials engineer, research scientist, patent examiner"
+    },
+    "sources": [
+      "https://www.qmul.ac.uk/undergraduate/coursefinder/courses/2026/materials-science-and-engineering/",
+      "https://www.discoveruni.gov.uk/course-details/10007775/UBEF-QMMTLD1-USMSIZ/FullTime/",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/materials-science-and-engineering-beng/58128652"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 24,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Home fee: QMUL's own coursefinder page shows a stale 2024-25 figure of £9,535; the current UK fee-cap methodology (£10,050, 2027/28 entry) was applied instead. Discover Uni notes the outcome figures reflect the broader Engineering and Technology graduate cohort rather than this course exclusively, due to a small course-specific sample."
+  },
+  {
+    "id": "qmul-pharmacology-and-innovative-therapeutics",
+    "university": "Queen Mary University of London",
+    "courseTitle": "Pharmacology and Innovative Therapeutics BSc (Hons)",
+    "subjectArea": "Pharmacology",
+    "ucasCode": "B211",
+    "degreeType": "BSc (Hons)",
+    "duration": "3 years (4-year Year in Industry / Year Abroad variants also offered)",
+    "entryRequirements": {
+      "aLevel": "ABB including Biology or Chemistry, plus a second science subject from Biology, Chemistry, Mathematics or Physics",
+      "ib": "32 points overall, including 6,5,5 from three Higher Level subjects, including Biology and Chemistry",
+      "ucasTariffPoints": 128,
+      "admissionsTests": "None required",
+      "otherRequirements": "Minimum five GCSE passes including English and Mathematics at grade C/4"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 32950,
+      "feeYear": "2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 90,
+      "highlySkilledWork": 70,
+      "medianSalary15mo": 27000,
+      "salaryRange15mo": "£25,000–£31,000",
+      "commonDestination": "Natural/social science professional and educational-professional roles; pharmaceutical and biotechnology industry pathways"
+    },
+    "sources": [
+      "https://www.ucas.com/explore/courses/94642d97-5316-e31d-9e01-f2b6e02d054a/course",
+      "https://www.qmul.ac.uk/whri/study/undergraduate/bsc-pharmacology-and-innovative-therapeutics/",
+      "https://www.discoveruni.gov.uk/course-details/10007775/UBSF-QMBIOL1-USPIT/FullTime/",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/pharmacology-and-innovative-therapeutics/55590472"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 24,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "This course was renamed from a plain \"Pharmacology\" title; \"Pharmacology and Innovative Therapeutics\" (B211) is the current official title for 2026/27 entry. Home fee: current UK fee-cap methodology applied (£10,050, 2027/28 entry) as no current course-specific fee page was reachable."
+  },
+  {
+    "id": "qmul-dentistry",
+    "university": "Queen Mary University of London",
+    "courseTitle": "Dentistry BDS (Hons)",
+    "subjectArea": "Dentistry",
+    "ucasCode": "A200",
+    "degreeType": "BDS (Hons)",
+    "duration": "5 years",
+    "entryRequirements": {
+      "aLevel": "A*AA, achieved in one sitting over a study period of no more than two years",
+      "ib": "38 points overall, including 666 at Higher Level (Chemistry or Biology, plus one further science subject from Chemistry, Biology, Physics or Mathematics)",
+      "ucasTariffPoints": 152,
+      "admissionsTests": "UCAT required (minimum overall score in the 4th decile or above; SJT Band 1–3); no exemptions or waivers granted under any circumstances",
+      "otherRequirements": "Minimum six GCSEs at grades 777666 (AAABBB pre-2017) including Biology, Chemistry, English and Mathematics; enhanced DBS clearance, Hepatitis B vaccination course, occupational-health and fitness-to-practise clearance, and demonstrated insight into dentistry as a career"
+    },
+    "fees": {
+      "homeAnnual": 10050,
+      "internationalAnnual": 53950,
+      "feeYear": "2027/28"
+    },
+    "careerOutcomes": {
+      "inWorkOrStudy15mo": 93,
+      "highlySkilledWork": 97,
+      "medianSalary15mo": 36000,
+      "salaryRange15mo": "£32,000–£40,000",
+      "commonDestination": "77% become dental practitioners; remainder in other health-professional, managerial or scientific roles"
+    },
+    "sources": [
+      "https://www.qmul.ac.uk/fmd/study/undergraduate/courses/a200/",
+      "https://www.qmul.ac.uk/fmd/study/undergraduate/courses/a200/entry-requirements/",
+      "https://www.qmul.ac.uk/fmd/study/undergraduate/courses/a200/selection-criteria/",
+      "https://www.discoveruni.gov.uk/course-details/10007775/UBDF-QMDENT1-USDEN/FullTime/",
+      "https://www.thecompleteuniversityguide.co.uk/courses/details/dentistry-bds/58537582"
+    ],
+    "universityRanking": {
+      "russellGroupRank": 24,
+      "of": 24,
+      "source": "Complete University Guide 2027 overall ranking, restricted to Russell Group universities (1 = highest-ranked of the 24)"
+    },
+    "dataNote": "Home fee applies the standard UK fee-cap methodology (£10,050, 2027/28 entry); a specific QMUL Dentistry course fee page was not reachable, and this record does not confirm whether NHS-related funding arrangements affect the fee in the clinical (later) years — flagged rather than assumed. Discover Uni notes its outcome figures represent Medicine and Dentistry graduates combined at QMUL due to a limited Dentistry-specific survey sample."
   }
 ]
