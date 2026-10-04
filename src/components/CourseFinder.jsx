@@ -3,7 +3,11 @@ import { formatCurrency, formatPercent } from '../utils/format.js'
 import { computeDatasetStats, scoreCourse } from '../utils/ranking.js'
 import { FIELD_INFO } from '../utils/fieldInfo.js'
 import { A_LEVEL_SUBJECTS, GRADE_OPTIONS, matchCourse } from '../utils/aLevelMatch.js'
+import { getCareerPaths } from '../utils/careerPaths.js'
 import InfoIcon from './InfoIcon.jsx'
+import ShortlistButton from './ShortlistButton.jsx'
+
+const CAREER_PREVIEW_COUNT = 3
 
 const RESULT_COUNT = 25
 const CLOSE_COUNT = 12
@@ -48,6 +52,9 @@ export default function CourseFinder({
   onToggleSelect,
   onViewDetail,
   maxSelected,
+  isShortlisted,
+  onToggleShortlist,
+  signedIn,
 }) {
   const [chosenALevels, setChosenALevels] = useState(DEFAULT_A_LEVELS)
   const [gradesBySubject, setGradesBySubject] = useState({})
@@ -153,6 +160,12 @@ export default function CourseFinder({
             {round(compositeScore)}
             <span className="match-score__of">/100</span>
           </span>
+          <ShortlistButton
+            courseId={course.id}
+            isShortlisted={isShortlisted(course.id)}
+            onToggle={onToggleShortlist}
+            signedIn={signedIn}
+          />
           <button
             className="link-button course-card__details"
             onClick={() => onViewDetail(course.id)}
@@ -263,6 +276,14 @@ export default function CourseFinder({
             </span>
           </div>
         </div>
+
+        <p className="career-preview">
+          <span className="career-preview__label">
+            Typical roles
+            <InfoIcon text={FIELD_INFO.careerPaths} />
+          </span>
+          {getCareerPaths(course.subjectArea).slice(0, CAREER_PREVIEW_COUNT).join(' · ')}
+        </p>
       </li>
     )
   }

@@ -42,4 +42,6 @@ export const FIELD_INFO = {
     "Courses whose typical entry requirements aren't fully met by your chosen subjects, but where you're only missing one subject (or one alternative-subject group).",
   predictedGrades:
     "Optional. Enter a predicted (or achieved) grade for each subject to estimate your UCAS Tariff points (best 3 grades) and compare it against each course's typical offer — leave any you're unsure of as \"Not sure yet\".",
+  careerPaths:
+    'Common job titles graduates in this subject area typically go on to. General guidance for the subject as a whole, not specific to this course or university — see the disclaimer below it.',
 }

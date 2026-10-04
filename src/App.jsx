@@ -5,18 +5,33 @@ import CourseList from './components/CourseList.jsx'
 import CompareView from './components/CompareView.jsx'
 import CourseDetail from './components/CourseDetail.jsx'
 import CourseFinder from './components/CourseFinder.jsx'
+import ShortlistView from './components/ShortlistView.jsx'
+import PlanView from './components/PlanView.jsx'
+import AuthPanel from './components/AuthPanel.jsx'
+import { useAuth } from './context/AuthContext.jsx'
+import { useShortlist } from './hooks/useShortlist.js'
 
 const MAX_COMPARE = 4
 
 export default function App() {
+  const { user } = useAuth()
+  const {
+    shortlistIds,
+    isShortlisted,
+    toggleShortlist,
+    loading: shortlistLoading,
+    error: shortlistError,
+  } = useShortlist()
+
   const [search, setSearch] = useState('')
   const [subjectFilter, setSubjectFilter] = useState('')
   const [universityFilter, setUniversityFilter] = useState('')
   const [sortBy, setSortBy] = useState('university')
   const [selectedIds, setSelectedIds] = useState([])
-  const [view, setView] = useState('browse') // 'browse' | 'finder' | 'compare' | 'detail'
+  const [view, setView] = useState('finder') // 'browse' | 'finder' | 'compare' | 'detail' | 'shortlist' | 'plan'
   const [detailId, setDetailId] = useState(null)
-  const [returnView, setReturnView] = useState('browse')
+  const [planId, setPlanId] = useState(null)
+  const [returnView, setReturnView] = useState('finder')
 
   const subjects = useMemo(
     () => [...new Set(coursesData.map((c) => c.subjectArea))].sort(),
@@ -84,6 +99,10 @@ export default function App() {
     .map((id) => coursesData.find((c) => c.id === id))
     .filter(Boolean)
 
+  const shortlistCourses = shortlistIds
+    .map((id) => coursesData.find((c) => c.id === id))
+    .filter(Boolean)
+
   function toggleSelect(id) {
     setSelectedIds((prev) => {
       if (prev.includes(id)) return prev.filter((x) => x !== id)
@@ -98,23 +117,32 @@ export default function App() {
     setView('detail')
   }
 
+  function openPlan(id) {
+    setPlanId(id)
+    setReturnView(view)
+    setView('plan')
+  }
+
   const detailCourse = coursesData.find((c) => c.id === detailId)
+  const planCourse = coursesData.find((c) => c.id === planId)
 
   return (
     <div className="app">
       <header className="app-header">
-        <h1>CourseSelector</h1>
-        <p className="app-header__subtitle">
-          Compare undergraduate courses across the 24 Russell Group
-          universities — entry requirements, fees, and graduate prospects.
-        </p>
+        <div className="app-header__top">
+          <div>
+            <h1>CourseSelector</h1>
+            <p className="app-header__subtitle">
+              Compare undergraduate courses across the 24 Russell Group
+              universities — entry requirements, fees, and graduate
+              prospects.
+            </p>
+          </div>
+          <div className="app-header__account">
+            <AuthPanel />
+          </div>
+        </div>
         <nav className="app-nav">
-          <button
-            className={view === 'browse' ? 'nav-button is-active' : 'nav-button'}
-            onClick={() => setView('browse')}
-          >
-            Browse
-          </button>
           <button
             className={view === 'finder' ? 'nav-button is-active' : 'nav-button'}
             onClick={() => setView('finder')}
@@ -122,10 +150,22 @@ export default function App() {
             Find my course
           </button>
           <button
+            className={view === 'shortlist' ? 'nav-button is-active' : 'nav-button'}
+            onClick={() => setView('shortlist')}
+          >
+            My Shortlist {shortlistIds.length > 0 && `(${shortlistIds.length})`}
+          </button>
+          <button
             className={view === 'compare' ? 'nav-button is-active' : 'nav-button'}
             onClick={() => setView('compare')}
           >
             Compare ({selectedIds.length})
+          </button>
+          <button
+            className={view === 'browse' ? 'nav-button is-active' : 'nav-button'}
+            onClick={() => setView('browse')}
+          >
+            Browse
           </button>
         </nav>
       </header>
@@ -155,6 +195,9 @@ export default function App() {
               onToggleSelect={toggleSelect}
               onViewDetail={viewDetail}
               maxSelected={MAX_COMPARE}
+              isShortlisted={isShortlisted}
+              onToggleShortlist={toggleShortlist}
+              signedIn={Boolean(user)}
             />
           </>
         )}
@@ -167,6 +210,26 @@ export default function App() {
             onToggleSelect={toggleSelect}
             onViewDetail={viewDetail}
             maxSelected={MAX_COMPARE}
+            isShortlisted={isShortlisted}
+            onToggleShortlist={toggleShortlist}
+            signedIn={Boolean(user)}
+          />
+        )}
+
+        {view === 'shortlist' && (
+          <ShortlistView
+            courses={shortlistCourses}
+            coursesData={coursesData}
+            loading={shortlistLoading}
+            error={shortlistError}
+            signedIn={Boolean(user)}
+            selectedIds={selectedIds}
+            onToggleSelect={toggleSelect}
+            onViewDetail={viewDetail}
+            maxSelected={MAX_COMPARE}
+            isShortlisted={isShortlisted}
+            onToggleShortlist={toggleShortlist}
+            onOpenPlan={openPlan}
           />
         )}
 
@@ -174,7 +237,7 @@ export default function App() {
           <CompareView
             courses={selectedCourses}
             onRemove={toggleSelect}
-            onClose={() => setView('browse')}
+            onClose={() => setView('finder')}
           />
         )}
 
@@ -184,7 +247,15 @@ export default function App() {
             onBack={() => setView(returnView)}
             onToggleSelect={toggleSelect}
             isSelected={selectedIds.includes(detailCourse.id)}
+            isShortlisted={isShortlisted(detailCourse.id)}
+            onToggleShortlist={toggleShortlist}
+            signedIn={Boolean(user)}
+            onOpenPlan={openPlan}
           />
+        )}
+
+        {view === 'plan' && planCourse && (
+          <PlanView course={planCourse} onBack={() => setView(returnView)} />
         )}
       </main>
 

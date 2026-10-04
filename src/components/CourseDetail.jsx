@@ -1,8 +1,19 @@
 import { formatCurrency, formatPercent, formatValue } from '../utils/format.js'
 import { FIELD_INFO } from '../utils/fieldInfo.js'
+import { getCareerPaths, CAREER_PATHS_DISCLAIMER } from '../utils/careerPaths.js'
 import InfoIcon from './InfoIcon.jsx'
+import ShortlistButton from './ShortlistButton.jsx'
 
-export default function CourseDetail({ course, onBack, onToggleSelect, isSelected }) {
+export default function CourseDetail({
+  course,
+  onBack,
+  onToggleSelect,
+  isSelected,
+  isShortlisted,
+  onToggleShortlist,
+  signedIn,
+  onOpenPlan,
+}) {
   return (
     <div className="course-detail">
       <button className="button" onClick={onBack}>
@@ -16,12 +27,25 @@ export default function CourseDetail({ course, onBack, onToggleSelect, isSelecte
         {course.degreeType} · {course.duration} · UCAS code {course.ucasCode}
       </p>
 
-      <button
-        className="button button--primary"
-        onClick={() => onToggleSelect(course.id)}
-      >
-        {isSelected ? 'Remove from comparison' : 'Add to comparison'}
-      </button>
+      <div className="course-detail__actions">
+        <button
+          className="button button--primary"
+          onClick={() => onToggleSelect(course.id)}
+        >
+          {isSelected ? 'Remove from comparison' : 'Add to comparison'}
+        </button>
+        <ShortlistButton
+          courseId={course.id}
+          isShortlisted={isShortlisted}
+          onToggle={onToggleShortlist}
+          signedIn={signedIn}
+        />
+        {isShortlisted && (
+          <button className="button" onClick={() => onOpenPlan(course.id)}>
+            View admission plan
+          </button>
+        )}
+      </div>
 
       {course.dataNote && <p className="data-note">{course.dataNote}</p>}
 
@@ -134,6 +158,21 @@ export default function CourseDetail({ course, onBack, onToggleSelect, isSelecte
           </dt>
           <dd>{formatValue(course.careerOutcomes.commonDestination)}</dd>
         </dl>
+      </section>
+
+      <section>
+        <h3>
+          Career paths
+          <InfoIcon text={FIELD_INFO.careerPaths} />
+        </h3>
+        <ul className="career-path-list">
+          {getCareerPaths(course.subjectArea).map((role) => (
+            <li key={role} className="career-path-chip">
+              {role}
+            </li>
+          ))}
+        </ul>
+        <p className="data-note career-path-disclaimer">{CAREER_PATHS_DISCLAIMER}</p>
       </section>
 
       <section>

@@ -1,6 +1,7 @@
 import { formatCurrency, formatPercent } from '../utils/format.js'
 import { FIELD_INFO } from '../utils/fieldInfo.js'
 import InfoIcon from './InfoIcon.jsx'
+import ShortlistButton from './ShortlistButton.jsx'
 
 export default function CourseList({
   courses,
@@ -8,6 +9,9 @@ export default function CourseList({
   onToggleSelect,
   onViewDetail,
   maxSelected,
+  isShortlisted,
+  onToggleShortlist,
+  signedIn,
 }) {
   if (courses.length === 0) {
     return <p className="empty-state">No courses match your filters.</p>
@@ -42,6 +46,12 @@ export default function CourseList({
                 <h3>{course.courseTitle}</h3>
                 <p>{course.university}</p>
               </div>
+              <ShortlistButton
+                courseId={course.id}
+                isShortlisted={isShortlisted(course.id)}
+                onToggle={onToggleShortlist}
+                signedIn={signedIn}
+              />
               <button
                 className="link-button course-card__details"
                 onClick={() => onViewDetail(course.id)}

@@ -11,7 +11,11 @@ many more) across all 24 Russell Group universities — 481 courses in total.
 It also lets you sort by Complete University Guide ranking and by course
 popularity (applicants per place), and its "Find my course" tab matches a
 student's actual A-level subject choices against each course's real entry
-requirements to show which courses they're eligible for.
+requirements to show which courses they're eligible for. With a free
+account (see "Accounts, shortlist & admission plan" below), you can star
+courses to a personal shortlist that follows you across devices, and build
+an admission plan for each one — a checklist with optional deadlines, a
+notes field, and generic suggested steps/study resources.
 
 ## Running locally
 
@@ -40,15 +44,56 @@ npm run build
 This outputs static files to `dist/` which can be deployed anywhere that
 serves static sites (Vercel, Netlify, GitHub Pages, Cloudflare Pages, etc.).
 
+## Accounts, shortlist & admission plan (Supabase setup)
+
+Accounts, the cross-device shortlist, and admission plans are backed by
+[Supabase](https://supabase.com) (a free, hosted Postgres + auth service) —
+this site has no server of its own, so Supabase is what makes "sign up" and
+"save across logins" possible on a plain static site. Until you connect a
+project, the rest of the site (browsing, comparing, Find my course) works
+fine; sign-in/shortlisting/plans just show a "not set up yet" message.
+
+**One-time setup:**
+
+1. Create a free account/project at [supabase.com](https://supabase.com).
+2. Open your project's **SQL Editor**, paste in the contents of
+   [`supabase/schema.sql`](supabase/schema.sql), and run it. This creates
+   the `shortlists` and `plan_items` tables with row-level security so
+   each user can only ever see their own data.
+3. In **Project Settings → API**, copy the **Project URL** and the
+   **anon public** key. Both are safe to expose in client-side code — they
+   only grant what the SQL Editor's row-level-security policies allow.
+4. For local development: copy `.env.example` to `.env.local` and paste
+   those two values in. `.env.local` is already gitignored.
+5. For the live GitHub Pages site: add the same two values as **repo
+   secrets** (Settings → Secrets and variables → Actions) named
+   `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`. The deploy workflow
+   (`.github/workflows/deploy.yml`) passes them into the build.
+6. By default, Supabase requires email confirmation for new sign-ups —
+   you can turn that off in **Authentication → Providers → Email** while
+   testing, if you'd rather skip the confirmation email.
+
+Once that's done, `npm install` will pull in the one new dependency
+(`@supabase/supabase-js`) and everything works end to end.
+
 ## Project structure
 
 ```
 src/
   data/courses.json       — the course dataset (edit this to add/update courses)
-  components/             — UI components (Filters, CourseList, CompareView, CourseDetail)
+  components/             — UI components (Filters, CourseList, CompareView, CourseDetail,
+                             AuthPanel, ShortlistButton, ShortlistView, PlanView, TimelineView)
+  context/AuthContext.jsx  — Supabase auth session, sign up/in/out
+  hooks/useShortlist.js    — the signed-in user's shortlisted course ids
+  hooks/usePlan.js         — a course's admission-plan checklist/notes, plus the
+                             cross-course deadline timeline
+  lib/supabaseClient.js    — the Supabase client (reads VITE_SUPABASE_* env vars)
   utils/format.js          — display formatting helpers
+  utils/admissionSteps.js  — generic suggested UCAS application steps
+  utils/studyResources.js  — generic suggested study-resource types by subject area
   App.jsx                  — top-level state (search, filters, sort, comparison, routing between views)
   main.jsx                 — React entry point
+supabase/schema.sql         — run once in your Supabase project's SQL Editor (see above)
 ```
 
 ## Updating the data
