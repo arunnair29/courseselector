@@ -44,4 +44,6 @@ export const FIELD_INFO = {
     "Optional. Enter a predicted (or achieved) grade for each subject to estimate your UCAS Tariff points (best 3 grades) and compare it against each course's typical offer — leave any you're unsure of as \"Not sure yet\".",
   careerPaths:
     'Common job titles graduates in this subject area typically go on to. General guidance for the subject as a whole, not specific to this course or university — see the disclaimer below it.',
+  backupCourses:
+    "Other courses in the same subject area whose entry requirements your chosen subjects and predicted grades already meet — a safer fallback alongside this more ambitious course, ranked by the backup's own typical tariff offer (highest first).",
 }

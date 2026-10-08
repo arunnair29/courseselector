@@ -2,7 +2,13 @@ import { useMemo, useState } from 'react'
 import { formatCurrency, formatPercent } from '../utils/format.js'
 import { computeDatasetStats, scoreCourse } from '../utils/ranking.js'
 import { FIELD_INFO } from '../utils/fieldInfo.js'
-import { A_LEVEL_SUBJECTS, GRADE_OPTIONS, matchCourse } from '../utils/aLevelMatch.js'
+import {
+  A_LEVEL_SUBJECTS,
+  GRADE_OPTIONS,
+  matchCourse,
+  isTariffOnlyGap,
+  findBackupCourses,
+} from '../utils/aLevelMatch.js'
 import { getCareerPaths } from '../utils/careerPaths.js'
 import InfoIcon from './InfoIcon.jsx'
 import ShortlistButton from './ShortlistButton.jsx'
@@ -108,7 +114,10 @@ export default function CourseFinder({
       if (match.eligible) {
         eligibleRows.push({ course, match, ...scored })
       } else if (match.gapCount === 1) {
-        closeRows.push({ course, match, ...scored })
+        const backups = isTariffOnlyGap(match)
+          ? findBackupCourses(course, coursesData, chosenALevels, gradesBySubject)
+          : []
+        closeRows.push({ course, match, backups, ...scored })
       }
     }
 
@@ -129,7 +138,17 @@ export default function CourseFinder({
     setWeights((prev) => ({ ...prev, [key]: Number(value) }))
   }
 
-  function renderCourseCard({ course, match, compositeScore, popScore, rankScore, jobScore, popularityEstimated, jobPotentialEstimated }) {
+  function renderCourseCard({
+    course,
+    match,
+    backups,
+    compositeScore,
+    popScore,
+    rankScore,
+    jobScore,
+    popularityEstimated,
+    jobPotentialEstimated,
+  }) {
     const isSelected = selectedIds.includes(course.id)
     const disableCheckbox = !isSelected && selectedIds.length >= maxSelected
     const gapNote = !match.eligible ? describeGap(match) : null
@@ -205,6 +224,44 @@ export default function CourseFinder({
               </em>
             )}
           </p>
+        )}
+
+        {backups && backups.length > 0 && (
+          <div className="backup-suggestions">
+            <p className="backup-suggestions__label">
+              Potential backups if that grade slips
+              <InfoIcon text={FIELD_INFO.backupCourses} />
+            </p>
+            <ul className="backup-list">
+              {backups.map(({ course: backup }) => (
+                <li key={backup.id} className="backup-item">
+                  <div className="backup-item__info">
+                    <span className="backup-item__title">
+                      {backup.courseTitle}
+                    </span>
+                    <span className="backup-item__meta">
+                      {backup.university}
+                      {backup.entryRequirements.ucasTariffPoints != null &&
+                        ` · ${backup.entryRequirements.ucasTariffPoints} pts`}
+                    </span>
+                  </div>
+                  <ShortlistButton
+                    courseId={backup.id}
+                    isShortlisted={isShortlisted(backup.id)}
+                    onToggle={onToggleShortlist}
+                    signedIn={signedIn}
+                  />
+                  <button
+                    type="button"
+                    className="link-button"
+                    onClick={() => onViewDetail(backup.id)}
+                  >
+                    Details →
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
 
         <div className="match-breakdown">
@@ -496,9 +553,12 @@ export default function CourseFinder({
             here. The predicted-grade tariff check compares your best 3
             grades against a course's typical UCAS Tariff offer, which
             doesn't capture subject-specific grade requirements (e.g.
-            "including Mathematics at grade A"). Always check the course's
-            own entry requirements page (via "Details →" below) before
-            making decisions.
+            "including Mathematics at grade A"). "Potential backups" are
+            other courses in the same subject area that your subjects and
+            predicted grades already clear — a safety net, not a
+            recommendation that you should apply there instead. Always
+            check the course's own entry requirements page (via
+            "Details →" below) before making decisions.
           </p>
         </>
       )}

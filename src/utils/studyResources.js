@@ -18,7 +18,7 @@ const GENERIC_RESOURCES = [
 // Matched by keyword against subjectArea, broadest/most specific first.
 const CATEGORY_RESOURCES = [
   [
-    ['medic', 'dentistry', 'veterinary', 'nursing'],
+    ['medic', 'dentistry', 'dental', 'veterinary', 'nursing', 'midwif', 'therap', 'global health', 'pharmac', 'dietet', 'nutrition', 'audiolog', 'humanitarian'],
     [
       'Relevant work experience, shadowing, or volunteering in a care/clinical setting',
       'Wider reading on recent developments in medicine/healthcare',
@@ -34,7 +34,7 @@ const CATEGORY_RESOURCES = [
     ],
   ],
   [
-    ['comput', 'data science', 'cyber', 'software', 'artificial intelligence'],
+    ['comput', 'data science', 'cyber', 'software', 'artificial intelligence', 'data', 'information', 'technology and innovation'],
     [
       'A personal coding project or portfolio (e.g. on GitHub)',
       'An introductory online course in programming fundamentals',
@@ -94,6 +94,12 @@ const CATEGORY_RESOURCES = [
       'physiology',
       'health',
       'food science',
+      'biotechnolog',
+      'agricultur',
+      'animal science',
+      'agribusiness',
+      'human scien',
+      'neurosci',
     ],
     [
       'Relevant work experience or volunteering (e.g. labs, clinics, conservation)',
@@ -101,7 +107,7 @@ const CATEGORY_RESOURCES = [
     ],
   ],
   [
-    ['business', 'economic', 'management', 'finance', 'accounting'],
+    ['business', 'economic', 'management', 'finance', 'account', 'marketing', 'analytic'],
     [
       'Wider reading on business/economics news and current affairs',
       'Work experience, a part-time job, or an enterprise/school project',
@@ -132,6 +138,21 @@ const CATEGORY_RESOURCES = [
       'literature',
       'language',
       'linguistic',
+      'welsh',
+      'chinese',
+      'japanese',
+      'translat',
+      'comparative literature',
+      'spanish',
+      'portuguese',
+      'latin american',
+      'hebrew',
+      'icelandic',
+      'french',
+      'german',
+      'dutch',
+      'italian',
+      'russian',
     ],
     [
       'Wider reading beyond the A-level syllabus in this subject',
@@ -139,10 +160,24 @@ const CATEGORY_RESOURCES = [
     ],
   ],
   [
-    ['geograph', 'geolog', 'earth science'],
+    ['geograph', 'geolog', 'earth science', 'urban plan', 'town plan', 'country planning', 'land management', 'urban', 'sustainab', 'built environment'],
     [
       'Wider reading on physical or human geography topics',
       'Fieldwork or relevant outdoor/environmental experience',
+    ],
+  ],
+  [
+    ['polit', 'sociolog', 'anthropolog', 'international relations', 'international development', 'development', 'war studies', 'social polic', 'social scien', 'social work', 'government', 'criminolog', 'crime', 'youth'],
+    [
+      'Wider reading on current affairs and debates relevant to this subject',
+      'Essay practice analysing a social, political, or policy issue of your choice',
+    ],
+  ],
+  [
+    ['journalis', 'media', 'music', 'education', 'film', 'theatre', 'performance', 'communication'],
+    [
+      'A personal portfolio of relevant work (writing, media production, performance, or teaching experience as applicable)',
+      'Wider reading or listening on current developments in this field',
     ],
   ],
 ]

@@ -323,3 +323,68 @@ export function matchCourse(course, userSubjects, gradesBySubject = {}) {
     eligible: gapCount === 0,
   }
 }
+
+/**
+ * True when a match's single gap (gapCount === 1) is specifically a
+ * predicted-grade/tariff shortfall — the student's chosen subjects already
+ * satisfy the course's subject requirements, but their predicted grades'
+ * UCAS Tariff total falls short of the typical offer. This is the case
+ * "Find my course" offers backup suggestions for, since a missing subject
+ * can't be fixed by a backup course recommendation the same way a grade
+ * shortfall can.
+ */
+export function isTariffOnlyGap(match) {
+  return (
+    match.missingRequired.length === 0 &&
+    match.unmetGroups.length === 0 &&
+    match.scienceShortfall === 0 &&
+    Boolean(match.tariffMatch) &&
+    !match.tariffMatch.meetsTariff
+  )
+}
+
+/**
+ * Suggests realistic "backup" courses for when a student's predicted
+ * grades fall short of a course's typical offer (see isTariffOnlyGap):
+ * other courses in the same subject area whose own entry requirements the
+ * student's chosen subjects AND predicted grades already satisfy, so
+ * there's a safer fallback alongside a more ambitious reach course.
+ *
+ * Ranked by the backup's own required UCAS Tariff points, highest first —
+ * i.e. the most competitive course the student would still be safely
+ * eligible for, rather than the easiest one available.
+ *
+ * @param {object} course - the course the student fell short of.
+ * @param {object[]} coursesData - the full course dataset to search.
+ * @param {string[]} userSubjects
+ * @param {Record<string, string>} [gradesBySubject]
+ * @param {number} [limit] - max number of backups to return (default 3).
+ */
+export function findBackupCourses(
+  course,
+  coursesData,
+  userSubjects,
+  gradesBySubject = {},
+  limit = 3,
+) {
+  const candidates = coursesData.filter(
+    (c) => c.id !== course.id && c.subjectArea === course.subjectArea,
+  )
+
+  const viable = []
+  for (const candidate of candidates) {
+    const match = matchCourse(candidate, userSubjects, gradesBySubject)
+    if (match.eligible) {
+      viable.push({ course: candidate, match })
+    }
+  }
+
+  viable.sort((a, b) => {
+    const aTariff = a.course.entryRequirements?.ucasTariffPoints ?? -1
+    const bTariff = b.course.entryRequirements?.ucasTariffPoints ?? -1
+    if (bTariff !== aTariff) return bTariff - aTariff
+    return a.course.courseTitle.localeCompare(b.course.courseTitle)
+  })
+
+  return viable.slice(0, limit)
+}
