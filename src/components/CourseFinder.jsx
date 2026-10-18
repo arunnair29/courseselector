@@ -15,7 +15,6 @@ import ShortlistButton from './ShortlistButton.jsx'
 
 const CAREER_PREVIEW_COUNT = 3
 
-const RESULT_COUNT = 25
 const CLOSE_COUNT = 12
 const MAX_A_LEVELS = 5
 const DEFAULT_WEIGHTS = { popularity: 50, ranking: 50, jobPotential: 50 }
@@ -45,7 +44,9 @@ function describeGap(match) {
   }
   if (match.tariffMatch && !match.tariffMatch.meetsTariff) {
     parts.push(
-      `predicted grades (${match.tariffMatch.userTariff} pts) are below the typical ${match.tariffMatch.requiredTariff}pt offer`,
+      `predicted grades (${match.tariffMatch.userTariff} pts) are below the typical ${match.tariffMatch.requiredTariff}pt offer${
+        match.tariffMatch.estimated ? ' (estimated)' : ''
+      }`,
     )
   }
   return parts.join(' · ')
@@ -54,6 +55,7 @@ function describeGap(match) {
 export default function CourseFinder({
   coursesData,
   subjects,
+  universities,
   selectedIds,
   onToggleSelect,
   onViewDetail,
@@ -65,6 +67,7 @@ export default function CourseFinder({
   const [chosenALevels, setChosenALevels] = useState(DEFAULT_A_LEVELS)
   const [gradesBySubject, setGradesBySubject] = useState({})
   const [interestFilter, setInterestFilter] = useState('')
+  const [universityFilter, setUniversityFilter] = useState('')
   const [weights, setWeights] = useState(DEFAULT_WEIGHTS)
 
   const stats = useMemo(() => computeDatasetStats(coursesData), [coursesData])
@@ -101,9 +104,11 @@ export default function CourseFinder({
     if (chosenALevels.length === 0) {
       return { eligible: [], eligibleTotal: 0, close: [] }
     }
-    const pool = interestFilter
-      ? coursesData.filter((c) => c.subjectArea === interestFilter)
-      : coursesData
+    const pool = coursesData.filter((c) => {
+      const matchesSubject = !interestFilter || c.subjectArea === interestFilter
+      const matchesUniversity = !universityFilter || c.university === universityFilter
+      return matchesSubject && matchesUniversity
+    })
 
     const eligibleRows = []
     const closeRows = []
@@ -125,11 +130,11 @@ export default function CourseFinder({
     closeRows.sort((a, b) => b.compositeScore - a.compositeScore)
 
     return {
-      eligible: eligibleRows.slice(0, RESULT_COUNT),
+      eligible: eligibleRows,
       eligibleTotal: eligibleRows.length,
       close: closeRows.slice(0, CLOSE_COUNT),
     }
-  }, [coursesData, chosenALevels, gradesBySubject, interestFilter, stats, weights])
+  }, [coursesData, chosenALevels, gradesBySubject, interestFilter, universityFilter, stats, weights])
 
   const totalWeight = weights.popularity + weights.ranking + weights.jobPotential
   const weightPct = (w) => (totalWeight > 0 ? round((w / totalWeight) * 100) : 0)
@@ -221,6 +226,13 @@ export default function CourseFinder({
                 {' '}
                 (from {match.tariffMatch.gradesCounted} grade
                 {match.tariffMatch.gradesCounted === 1 ? '' : 's'} entered)
+              </em>
+            )}
+            {match.tariffMatch.estimated && (
+              <em className="detail-note">
+                {' '}
+                (offer points estimated from the typical offer text —
+                not separately published)
               </em>
             )}
           </p>
@@ -416,24 +428,49 @@ export default function CourseFinder({
               </div>
             </div>
           )}
+        </div>
 
-          <label className="finder-field finder-interest">
-            <span>
-              Narrow by subject area (optional)
-              <InfoIcon text={FIELD_INFO.interestFilter} />
-            </span>
-            <select
-              value={interestFilter}
-              onChange={(e) => setInterestFilter(e.target.value)}
-            >
-              <option value="">All subject areas</option>
-              {subjects.map((s) => (
-                <option key={s} value={s}>
-                  {s}
-                </option>
-              ))}
-            </select>
-          </label>
+        <div className="finder-refine">
+          <div className="finder-refine__header">
+            <h3>Narrow results (optional)</h3>
+          </div>
+          <div className="finder-refine__row">
+            <label className="finder-field finder-interest">
+              <span>
+                Subject area
+                <InfoIcon text={FIELD_INFO.interestFilter} />
+              </span>
+              <select
+                value={interestFilter}
+                onChange={(e) => setInterestFilter(e.target.value)}
+              >
+                <option value="">All subject areas</option>
+                {subjects.map((s) => (
+                  <option key={s} value={s}>
+                    {s}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className="finder-field finder-university">
+              <span>
+                University
+                <InfoIcon text={FIELD_INFO.universityFilter} />
+              </span>
+              <select
+                value={universityFilter}
+                onChange={(e) => setUniversityFilter(e.target.value)}
+              >
+                <option value="">All universities</option>
+                {universities.map((u) => (
+                  <option key={u} value={u}>
+                    {u}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
         </div>
 
         <div className="finder-weights">
@@ -518,13 +555,12 @@ export default function CourseFinder({
           <p className="result-count">
             {eligibleTotal} course{eligibleTotal === 1 ? '' : 's'} you meet the
             entry requirements for, based on {chosenALevels.join(', ')}
-            {eligibleTotal > eligible.length ? ` (showing top ${eligible.length})` : ''}
           </p>
 
           {eligible.length === 0 ? (
             <p className="empty-state">
               No courses matched. Try adding another subject, or clearing the
-              subject-area filter above.
+              subject-area or university filter above.
             </p>
           ) : (
             <ul className="course-list">{eligible.map(renderCourseCard)}</ul>
@@ -551,9 +587,11 @@ export default function CourseFinder({
             offers, accept EPQs, IB, BTECs, and Scottish Highers as
             alternatives, and some list requirements that aren't captured
             here. The predicted-grade tariff check compares your best 3
-            grades against a course's typical UCAS Tariff offer, which
-            doesn't capture subject-specific grade requirements (e.g.
-            "including Mathematics at grade A"). "Potential backups" are
+            grades against a course's typical UCAS Tariff offer (estimated
+            from the typical offer text where a course has no separately
+            published tariff points), which doesn't capture
+            subject-specific grade requirements (e.g. "including
+            Mathematics at grade A"). "Potential backups" are
             other courses in the same subject area that your subjects and
             predicted grades already clear — a safety net, not a
             recommendation that you should apply there instead. Always

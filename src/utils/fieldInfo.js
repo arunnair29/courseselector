@@ -38,10 +38,12 @@ export const FIELD_INFO = {
     "Select the A-level subjects being studied (or planned). We match them against each course's published A-level entry requirement text — this is best-effort text matching, not an official eligibility check.",
   interestFilter:
     'Optionally narrow results to one subject area (e.g. Biology, Computer Science) — leave as "All subject areas" to see every eligible course.',
+  universityFilter:
+    'Optionally narrow results to one Russell Group university — leave as "All universities" to see every eligible course.',
   closeMatch:
     "Courses whose typical entry requirements aren't fully met by your chosen subjects, but where you're only missing one subject (or one alternative-subject group).",
   predictedGrades:
-    "Optional. Enter a predicted (or achieved) grade for each subject to estimate your UCAS Tariff points (best 3 grades) and compare it against each course's typical offer — leave any you're unsure of as \"Not sure yet\".",
+    "Optional. Enter a predicted (or achieved) grade for each subject to estimate your UCAS Tariff points (best 3 grades) and compare it against each course's typical offer — leave any you're unsure of as \"Not sure yet\". Courses whose predicted-tariff falls short of the typical offer move out of the main list into \"close matches\" (or are hidden if you're also missing a subject). Where a course has no separately published tariff points, we estimate one from its typical offer text.",
   careerPaths:
     'Common job titles graduates in this subject area typically go on to. General guidance for the subject as a whole, not specific to this course or university — see the disclaimer below it.',
   backupCourses:

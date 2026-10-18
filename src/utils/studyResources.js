@@ -18,7 +18,7 @@ const GENERIC_RESOURCES = [
 // Matched by keyword against subjectArea, broadest/most specific first.
 const CATEGORY_RESOURCES = [
   [
-    ['medic', 'dentistry', 'dental', 'veterinary', 'nursing', 'midwif', 'therap', 'global health', 'pharmac', 'dietet', 'nutrition', 'audiolog', 'humanitarian'],
+    ['medic', 'dentistry', 'dental', 'veterinary', 'nursing', 'midwif', 'therap', 'global health', 'pharmac', 'dietet', 'nutrition', 'audiolog', 'humanitarian', 'radiograph', 'radiotherap'],
     [
       'Relevant work experience, shadowing, or volunteering in a care/clinical setting',
       'Wider reading on recent developments in medicine/healthcare',
@@ -100,6 +100,7 @@ const CATEGORY_RESOURCES = [
       'agribusiness',
       'human scien',
       'neurosci',
+      'plant',
     ],
     [
       'Relevant work experience or volunteering (e.g. labs, clinics, conservation)',
@@ -153,6 +154,8 @@ const CATEGORY_RESOURCES = [
       'dutch',
       'italian',
       'russian',
+      'celtic',
+      'middle eastern',
     ],
     [
       'Wider reading beyond the A-level syllabus in this subject',
@@ -160,7 +163,7 @@ const CATEGORY_RESOURCES = [
     ],
   ],
   [
-    ['geograph', 'geolog', 'earth science', 'urban plan', 'town plan', 'country planning', 'land management', 'urban', 'sustainab', 'built environment'],
+    ['geograph', 'geolog', 'earth science', 'urban plan', 'town plan', 'country planning', 'land management', 'land econom', 'urban', 'sustainab', 'built environment'],
     [
       'Wider reading on physical or human geography topics',
       'Fieldwork or relevant outdoor/environmental experience',
@@ -174,7 +177,7 @@ const CATEGORY_RESOURCES = [
     ],
   ],
   [
-    ['journalis', 'media', 'music', 'education', 'film', 'theatre', 'performance', 'communication'],
+    ['journalis', 'media', 'music', 'education', 'film', 'theatre', 'performance', 'communication', 'child'],
     [
       'A personal portfolio of relevant work (writing, media production, performance, or teaching experience as applicable)',
       'Wider reading or listening on current developments in this field',

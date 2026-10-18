@@ -163,6 +163,39 @@ export function computeTariffPoints(grades) {
   return values.slice(0, 3).reduce((sum, v) => sum + v, 0)
 }
 
+// Matches a leading run of 2-5 grade tokens at the very start of a course's
+// free-text A-level requirement, e.g. "AAB" in "AAB including Biology...",
+// "A*AA" in "A*AA with an A* in Mathematics", "BBB" in "BBB - CCC". This
+// dataset's source text consistently states the standard/typical offer
+// first, with ranges, contextual offers, and 4-A-level alternatives
+// following afterwards (in parentheses, after a dash, or after "or"/"to"),
+// so taking only the leading run reliably captures the typical offer.
+const GRADE_TOKEN_RE = /A\*|[A-E]/g
+const LEADING_GRADE_RE = /^((?:A\*|[A-E])(?:A\*|[A-E]){1,4})\b/
+
+/**
+ * Best-effort UCAS Tariff estimate derived from a course's free-text
+ * A-level requirement, for use when the dataset has no curated
+ * `entryRequirements.ucasTariffPoints` value for that course (a sizeable
+ * minority of entries). Returns null when the text doesn't open with a
+ * recognisable grade string (e.g. "Not separately published...", or a
+ * requirement expressed only in named subjects with no grades given).
+ */
+export function estimateTariffFromText(rawText) {
+  if (!rawText) return null
+  const m = rawText.trim().match(LEADING_GRADE_RE)
+  if (!m) return null
+  const tokens = m[1].match(GRADE_TOKEN_RE) || []
+  if (tokens.length < 2) return null
+  let total = 0
+  for (const t of tokens) {
+    const pts = GRADE_POINTS[t]
+    if (pts == null) return null
+    total += pts
+  }
+  return total
+}
+
 /**
  * Parse a course's free-text A-level requirement into a best-effort
  * structured form.
@@ -298,16 +331,35 @@ export function matchCourse(course, userSubjects, gradesBySubject = {}) {
     .map((s) => gradesBySubject[s])
     .filter(Boolean)
   const userTariff = computeTariffPoints(enteredGrades)
-  const requiredTariff = course.entryRequirements?.ucasTariffPoints ?? null
+
+  // Prefer the dataset's curated tariff figure when it's a real number
+  // (a handful of entries instead hold an explanatory string, e.g. "Not
+  // accepted - ..."; those are treated the same as missing). Otherwise -
+  // which is true for a sizeable minority of courses - fall back to a
+  // best-effort estimate parsed from the course's own stated grade text,
+  // so predicted grades are still checked against *something* rather than
+  // skipping the tariff check (and therefore eligibility) entirely.
+  const curatedTariff = course.entryRequirements?.ucasTariffPoints
+  let requiredTariff = typeof curatedTariff === 'number' ? curatedTariff : null
+  let requiredTariffEstimated = false
+  if (requiredTariff == null) {
+    const estimated = estimateTariffFromText(course.entryRequirements?.aLevel)
+    if (estimated != null) {
+      requiredTariff = estimated
+      requiredTariffEstimated = true
+    }
+  }
 
   // Only offer a tariff comparison when we have both a usable predicted
-  // tariff and a known requirement for this course - otherwise there's
-  // nothing meaningful to compare, so it's left out rather than guessed.
+  // tariff and a known (or estimable) requirement for this course -
+  // otherwise there's nothing meaningful to compare, so it's left out
+  // rather than guessed.
   let tariffMatch = null
   if (userTariff != null && requiredTariff != null) {
     tariffMatch = {
       userTariff,
       requiredTariff,
+      estimated: requiredTariffEstimated,
       gradesCounted: enteredGrades.length,
       meetsTariff: userTariff >= requiredTariff,
     }

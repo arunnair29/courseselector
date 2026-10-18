@@ -183,6 +183,21 @@ export const CAREER_PATHS = {
   'Veterinary Biosciences': ['Research Scientist', 'Laboratory Technician', 'Animal Health/Welfare roles', 'Pharmaceutical Scientist', 'Further study (Veterinary Medicine)'],
   'Veterinary Medicine': ['Veterinary Surgeon', 'Veterinary Researcher', 'Animal Welfare/Charity roles', 'Veterinary Public Health', 'Practice Ownership (later career)'],
   'Zoology': ['Conservation Officer', 'Animal Care Specialist / Zookeeper', 'Research Scientist', 'Wildlife Ranger', 'Environmental Consultant'],
+  'Ancient History': ['Civil Service Fast Stream', 'Museum/Heritage roles', 'Archivist/Records Manager', 'Teacher (with further training)', 'Further study (Ancient History/Classics)'],
+  'History of Art': ['Museum/Gallery Curator', 'Auction House roles', 'Arts Administrator', 'Heritage Consultant', 'Further study (History of Art)'],
+  'Childhood Studies': ['Early Years Practitioner', 'Family Support Worker', 'Child Protection/Safeguarding roles', 'Teaching Assistant', 'Further study (Education/Social Work)'],
+  'Plant Sciences': ['Research Scientist', 'Plant Biotechnologist', 'Conservation Officer', 'Agricultural/Crop Scientist', 'Further study (Plant Science/Botany)'],
+  'Veterinary Nursing and Companion Animal Behaviour': ['Registered Veterinary Nurse (RCVS)', 'Animal Behaviour Consultant', 'Veterinary Practice Manager (later career)', 'Research Technician', 'Further study (Veterinary Nursing/Behaviour)'],
+  'Anglo-Saxon, Norse and Celtic': ['Museum/Heritage roles', 'Archivist/Records Manager', 'Teacher (with further training)', 'Civil Service Fast Stream', 'Further study (Anglo-Saxon, Norse and Celtic)'],
+  'Asian and Middle Eastern Studies': ['Translator/Interpreter', 'Diplomatic Service/Foreign Office roles', 'International Business roles', 'Civil Service Fast Stream', 'Further study (Languages/Area Studies)'],
+  'Design': ['Product/Industrial Designer', 'UX/UI Designer', 'Design Engineer', 'Design Researcher', 'Further study (Design/MDes)'],
+  'Land Economy': ['Chartered Surveyor (RICS, with further training)', 'Property/Real Estate Analyst', 'Environmental/Planning Consultant', 'Policy Advisor (land use/planning)', 'Further study (Land Economy/Planning)'],
+  'Human, Social, and Political Sciences': ['Civil Service Fast Stream', 'Policy Analyst', 'Social Researcher', 'International Development/NGO roles', 'Further study (Social Sciences/Politics)'],
+  'Environmental Engineering': ['Environmental Engineer', 'Sustainability Consultant', 'Water/Wastewater Engineer', 'Environmental Compliance Officer', 'Renewable Energy Engineer'],
+  'Renewable Energy Engineering': ['Renewable Energy Engineer', 'Energy Systems Engineer', 'Wind/Solar Project Engineer', 'Sustainability Consultant', 'Energy Policy/Analyst roles'],
+  'Robotics and Artificial Intelligence': ['Robotics Engineer', 'Machine Learning Engineer', 'Automation/Control Systems Engineer', 'AI Research Scientist', 'R&D Engineer'],
+  'Mining Engineering': ['Mining Engineer', 'Geotechnical Engineer', 'Mine Planning Engineer', 'Health & Safety Engineer (mining)', 'Resource/Exploration Geologist'],
+  'Environmental Humanities': ['Sustainability/Environmental Policy roles', 'Heritage/Conservation roles', 'Environmental Communicator/Journalist', 'NGO/Charity Environmental roles', 'Further study (Environmental Humanities/Policy)'],
 }
 
 // Keyword-based fallback for any subjectArea not explicitly listed above
@@ -244,6 +259,8 @@ const FALLBACK_KEYWORDS = [
   ['global health', ['Public Health roles', 'Global Health/NGO roles', 'Health Policy Researcher', 'International Organisation roles', 'Further study (Public Health)']],
   ['business analytic', ['Data Analyst', 'Business Intelligence Analyst', 'Data Scientist', 'Management Consultant', 'Financial Analyst']],
   ['comparative literature', ['Publishing roles', 'Translator/Interpreter', 'Teacher (with further training)', 'Journalist', 'Further study (Comparative Literature)']],
+  ['geolog', ['Geologist', 'Environmental Consultant', 'Mining/Exploration Geologist', 'Hydrogeologist', 'Geotechnical roles']],
+  ['sustainab', ['Sustainability Officer', 'Environmental Consultant', 'Climate/Energy Analyst', 'ESG Analyst', 'Policy Advisor (sustainability)']],
 ]
 
 const DEFAULT_CAREER_PATHS = [

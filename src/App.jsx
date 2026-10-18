@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import coursesData from './data/courses.json'
 import Filters from './components/Filters.jsx'
 import CourseList from './components/CourseList.jsx'
@@ -32,6 +32,24 @@ export default function App() {
   const [detailId, setDetailId] = useState(null)
   const [planId, setPlanId] = useState(null)
   const [returnView, setReturnView] = useState('finder')
+
+  // Remembers the scroll position each view was at when the user navigated
+  // away from it (e.g. into a course's detail page), keyed by view name, so
+  // that going "back" restores the list to where the user left it instead
+  // of snapping to the top.
+  const scrollPositions = useRef({})
+
+  function navigateTo(nextView, fromView = view) {
+    scrollPositions.current[fromView] = window.scrollY
+    setView(nextView)
+  }
+
+  useEffect(() => {
+    const saved = scrollPositions.current[view]
+    // Wait a tick for the view's content to render before scrolling, so the
+    // page is tall enough to actually scroll to the saved position.
+    requestAnimationFrame(() => window.scrollTo(0, saved ?? 0))
+  }, [view])
 
   const subjects = useMemo(
     () => [...new Set(coursesData.map((c) => c.subjectArea))].sort(),
@@ -114,13 +132,13 @@ export default function App() {
   function viewDetail(id) {
     setDetailId(id)
     setReturnView(view)
-    setView('detail')
+    navigateTo('detail')
   }
 
   function openPlan(id) {
     setPlanId(id)
     setReturnView(view)
-    setView('plan')
+    navigateTo('plan')
   }
 
   const detailCourse = coursesData.find((c) => c.id === detailId)
@@ -206,6 +224,7 @@ export default function App() {
           <CourseFinder
             coursesData={coursesData}
             subjects={subjects}
+            universities={universities}
             selectedIds={selectedIds}
             onToggleSelect={toggleSelect}
             onViewDetail={viewDetail}

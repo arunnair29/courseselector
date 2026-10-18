@@ -325,8 +325,28 @@ body {
   min-width: 0;
 }
 
-.finder-interest {
-  max-width: 320px;
+.finder-refine {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 16px;
+}
+
+.finder-refine__header h3 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.finder-refine__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.finder-refine__row .finder-field {
+  flex: 1 1 240px;
+  max-width: 360px;
 }
 
 .grade-picker__header {
