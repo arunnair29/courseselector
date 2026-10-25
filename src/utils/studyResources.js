@@ -18,7 +18,7 @@ const GENERIC_RESOURCES = [
 // Matched by keyword against subjectArea, broadest/most specific first.
 const CATEGORY_RESOURCES = [
   [
-    ['medic', 'dentistry', 'dental', 'veterinary', 'nursing', 'midwif', 'therap', 'global health', 'pharmac', 'dietet', 'nutrition', 'audiolog', 'humanitarian', 'radiograph', 'radiotherap'],
+    ['medic', 'dentistry', 'dental', 'veterinary', 'nursing', 'midwif', 'therap', 'global health', 'pharmac', 'dietet', 'nutrition', 'audiolog', 'humanitarian', 'radiograph', 'radiotherap', 'ultrasound', 'sonograph', 'cardiac', 'orthopt', 'optomet'],
     [
       'Relevant work experience, shadowing, or volunteering in a care/clinical setting',
       'Wider reading on recent developments in medicine/healthcare',
@@ -122,7 +122,7 @@ const CATEGORY_RESOURCES = [
     ],
   ],
   [
-    ['art', 'design', 'landscape'],
+    ['art', 'design', 'landscape', 'fashion'],
     [
       'A portfolio of creative or design work',
       'Visits to relevant exhibitions, galleries, or sites',
@@ -156,6 +156,13 @@ const CATEGORY_RESOURCES = [
       'russian',
       'celtic',
       'middle eastern',
+      'thai',
+      'egypt',
+      'hispanic',
+      'irish',
+      'asian',
+      'arabic',
+      'american',
     ],
     [
       'Wider reading beyond the A-level syllabus in this subject',
@@ -163,7 +170,7 @@ const CATEGORY_RESOURCES = [
     ],
   ],
   [
-    ['geograph', 'geolog', 'earth science', 'urban plan', 'town plan', 'country planning', 'land management', 'land econom', 'urban', 'sustainab', 'built environment'],
+    ['geograph', 'geolog', 'earth science', 'urban plan', 'town plan', 'country planning', 'land management', 'land econom', 'urban', 'sustainab', 'built environment', 'climate', 'ocean', 'planning'],
     [
       'Wider reading on physical or human geography topics',
       'Fieldwork or relevant outdoor/environmental experience',
@@ -177,7 +184,7 @@ const CATEGORY_RESOURCES = [
     ],
   ],
   [
-    ['journalis', 'media', 'music', 'education', 'film', 'theatre', 'performance', 'communication', 'child'],
+    ['journalis', 'media', 'music', 'education', 'film', 'theatre', 'performance', 'communication', 'child', 'screen'],
     [
       'A personal portfolio of relevant work (writing, media production, performance, or teaching experience as applicable)',
       'Wider reading or listening on current developments in this field',

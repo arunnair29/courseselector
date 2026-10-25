@@ -198,6 +198,23 @@ export const CAREER_PATHS = {
   'Robotics and Artificial Intelligence': ['Robotics Engineer', 'Machine Learning Engineer', 'Automation/Control Systems Engineer', 'AI Research Scientist', 'R&D Engineer'],
   'Mining Engineering': ['Mining Engineer', 'Geotechnical Engineer', 'Mine Planning Engineer', 'Health & Safety Engineer (mining)', 'Resource/Exploration Geologist'],
   'Environmental Humanities': ['Sustainability/Environmental Policy roles', 'Heritage/Conservation roles', 'Environmental Communicator/Journalist', 'NGO/Charity Environmental roles', 'Further study (Environmental Humanities/Policy)'],
+  'Thai Studies': ['Translator/Interpreter', 'International Business roles', 'Diplomatic Service/Foreign Office roles', 'Teacher (with further training)', 'Further study (Languages/Area Studies)'],
+  'Fashion Design': ['Fashion Designer', 'Garment/Textile Technologist', 'Buying/Merchandising roles', 'Fashion Brand Manager', 'Further study (Fashion/Design)'],
+  'International Business': ['International Business Manager (early career)', 'Export/Trade Development roles', 'Management Consultant', 'Supply Chain/Logistics roles', 'Global Marketing roles'],
+  'Medical Ultrasound (Sonography)': ['Sonographer (NHS/private)', 'Clinical Technologist', 'Imaging Informatics roles', 'Clinical Researcher', 'Further study (Advanced Clinical Practice)'],
+  'Healthcare Science (Cardiac Physiology)': ['Cardiac Physiologist (NHS/private)', 'Clinical Technologist', 'Cardiovascular Research roles', 'Clinical Researcher', 'Further study (Advanced Clinical Practice)'],
+  'Egyptology': ['Museum/Collections Officer', 'Heritage Consultant', 'Archivist/Records Manager', 'Teacher (with further training)', 'Further study (Egyptology/Ancient History)'],
+  'Hispanic Studies': ['Translator/Interpreter', 'International Business roles', 'Diplomatic Service/Foreign Office roles', 'Teacher (with further training)', 'Further study (Languages/Area Studies)'],
+  'Irish Studies': ['Teacher (with further training)', 'Civil Service Fast Stream', 'Arts/Heritage roles', 'Journalist', 'Further study (Irish Studies/History)'],
+  'Screen Industries and Entertainment': ['Film/TV Production roles', 'Broadcast Researcher', 'Development Executive', 'Content Producer', 'Further study (Screen/Media Studies)'],
+  'Game Design': ['Game Designer', 'Game Developer/Programmer', 'UX/UI Designer (games)', 'Technical Artist', 'Producer (games industry)'],
+  'Climate Science': ['Climate Scientist/Researcher', 'Environmental Consultant', 'Climate/Energy Analyst', 'Sustainability Officer', 'Further study (Climate Science/PhD)'],
+  'Town and Regional Planning': ['Town Planner', 'Urban Designer', 'Planning Officer', 'Sustainability Consultant', 'Surveyor'],
+  'Orthoptics': ['Orthoptist (NHS/private, HCPC registration)', 'Vision Science Researcher', 'Ophthalmic roles', 'Clinical Researcher', 'Further study (Advanced Clinical Practice)'],
+  'East Asian Studies': ['Translator/Interpreter', 'International Business roles', 'Diplomatic Service/Foreign Office roles', 'Teacher (with further training)', 'Further study (Languages/Area Studies)'],
+  'Arabic Studies': ['Translator/Interpreter', 'International Business roles', 'Diplomatic Service/Foreign Office roles', 'Teacher (with further training)', 'Further study (Languages/Area Studies)'],
+  'Linguistics': ['Copywriter/Editor', 'Speech and Language Therapy (with further training)', 'ESL/EFL Teacher', 'Publishing roles', 'Further study (Linguistics/Education)'],
+  'American Studies': ['Civil Service Fast Stream', 'Journalist', 'Teacher (with further training)', 'Publishing roles', 'Further study (American Studies/History)'],
 }
 
 // Keyword-based fallback for any subjectArea not explicitly listed above
