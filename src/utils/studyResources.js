@@ -18,7 +18,7 @@ const GENERIC_RESOURCES = [
 // Matched by keyword against subjectArea, broadest/most specific first.
 const CATEGORY_RESOURCES = [
   [
-    ['medic', 'dentistry', 'dental', 'veterinary', 'nursing', 'midwif', 'therap', 'global health', 'pharmac', 'dietet', 'nutrition', 'audiolog', 'humanitarian', 'radiograph', 'radiotherap', 'ultrasound', 'sonograph', 'cardiac', 'orthopt', 'optomet'],
+    ['medic', 'dentistry', 'dental', 'veterinary', 'nursing', 'midwif', 'therap', 'rehab', 'global health', 'pharmac', 'dietet', 'nutrition', 'audiolog', 'humanitarian', 'radiograph', 'radiotherap', 'ultrasound', 'sonograph', 'cardiac', 'orthopt', 'optomet'],
     [
       'Relevant work experience, shadowing, or volunteering in a care/clinical setting',
       'Wider reading on recent developments in medicine/healthcare',
@@ -122,7 +122,7 @@ const CATEGORY_RESOURCES = [
     ],
   ],
   [
-    ['art', 'design', 'landscape', 'fashion'],
+    ['art', 'design', 'landscape', 'fashion', 'illustrat'],
     [
       'A portfolio of creative or design work',
       'Visits to relevant exhibitions, galleries, or sites',
@@ -163,6 +163,7 @@ const CATEGORY_RESOURCES = [
       'asian',
       'arabic',
       'american',
+      'jewish',
     ],
     [
       'Wider reading beyond the A-level syllabus in this subject',
@@ -188,6 +189,13 @@ const CATEGORY_RESOURCES = [
     [
       'A personal portfolio of relevant work (writing, media production, performance, or teaching experience as applicable)',
       'Wider reading or listening on current developments in this field',
+    ],
+  ],
+  [
+    ['natural science'],
+    [
+      'Wider reading across the sciences (physics, chemistry, and biology) beyond the A-level syllabus',
+      'A personal project or practical experience spanning more than one science discipline',
     ],
   ],
 ]
